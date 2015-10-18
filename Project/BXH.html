@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Trang Chủ Đề</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+
+<header id="myheader">
+
+
+</header>
+<nav id="mynav">
+
+
+</nav>
+<div class="container">
+
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-lg-8" style="background-color: #009900; height: 500px">
+            <div  class="hidden-xs"style="background-color: rgba(126, 210, 48, 0.69);height: 50px; margin-top: 15px">
+                <ul class="nav nav-pills">
+
+                    <li class="active"><a href="#">Việt Nam</a></li>
+                    <li><a href="#">Hàn Quốc</a></li>
+                    <li><a href="#">Âu Mỹ</a></li>
+                </ul>
+            </div>
+            <div class="" style="background-color: #ff6ff9;height: 60px; margin-top: 15px;">
+                <div class=""><h3  style=" float:left;">Bảng Xếp Hạng Bài Hát Việt Nam</h3></div>
+                <div class="btn-group hidden-xs" style="float: right; margin-top: 10px">
+                    <a  class="btn btn-danger">Bài Hát</a>
+                    <a  class="btn btn-default">Album</a>
+                    <a  class="btn btn-default">Video</a>
+                </div>
+            </div>
+            <div style="background-color: rgba(15, 15, 15, 0.36);height: 50px;">
+                <div class="form-group">
+
+                    <select class="form-control" id="sel1" style="float: left;width:80%">
+                        <option>Tuần 4 Tháng 10</option>
+                        <option></option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+            </div>
+            <div style="background-color: rgba(196, 37, 25, 0.63);height: 400px;">
+                <ul id="BXH" class="list-group" style="list-style-type: none">
+                    <li class="list-group-item ">
+                        <span class="sodb">1</span>
+                        <div class="row"style="margin-left: 30px">
+                            <div class="col-xs-3" style="background-color: #39b3d7; height: 100px">
+                                <img src="images/BXH/Sontung.jpg">
+                            </div>
+                            <div class="col-xs-5" style="background-color: #009900; height: 100px"></div>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item "></li>
+                    <li class="list-group-item "></li>
+                    <li class="list-group-item "></li>
+                    <li class="list-group-item "></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 hidden-xs" style="background-color: #f6f546;height: 500px"></div>
+    </div>
+</div>
+<script >
+    $(document).ready(function() {
+
+        $("#BXH > li").bind('mouseenter', function () {
+            $(this).css('background-color','#C8C8C8')
+
+        }).bind('mouseleave', function () {
+            $(this).css('background-color','white');
+        });
+    });
+    $(document).ready(function(){
+        $("#myheader").load("templates/header.html");
+        $("#mynav").load("templates/nav.html");
+    });
+</script>
+</body>
+</html>

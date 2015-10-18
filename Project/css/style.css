@@ -1,4 +1,26 @@
 .mega-dropdown{
-    width: 700px;
+    width: 600px;
     border: white thin solid;
+}
+.mega-dropdown > li > ul{
+    list-style-type: circle;
+
+}
+.mega-dropdown a:hover{
+   text-decoration: none;
+
+
+}
+#BXH > li{
+    height: 100px;
+
+}
+.sodb{
+    font-size: 18pt;
+    margin-top: 20px;
+   float: left;
+}
+#BXH img{
+    width: 82px;
+    height: 82px;
 }

@@ -1,61 +1,8 @@
 <button type="button" class="btn btn-info hidden-sm hidden-xs" style="position: absolute; right: 14px;">Phản Hồi|Góp Ý</button>
-<div class="container hidden-xs hidden-sm">
 
-    <ul class="nav nav-tabs " id="mega-menu">
-        <li class="active"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-        <li class=" mega-menu"data-toggle="dropdown"><a data-toggle="tab" href="#menu1">Chủ Đề</a>
-            <ul class="dropdown-menu mega-dropdown "style="display: none">
-                <li class="col-xs-4 "><a href="#">Chủ Đề</a></li>
-                <li class="col-xs-4 "><a href="#">BXH</a></li>
-                <li class="col-xs-4 "><a href="#">Nghệ Sĩ</a></li>
 
-            </ul>
-        </li>
-        <li class=" mega-menu"data-toggle="dropdown"><a data-toggle="tab" href="#menu2">Playlist</a>
-            <ul class="dropdown-menu mega-dropdown "style="display: none">
-                <li class="col-xs-4 "><a href="#">Chủ Đề</a></li>
-                <li class="col-xs-4 "><a href="#">BXH</a></li>
-                <li class="col-xs-4 "><a href="#">Nghệ Sĩ</a></li>
 
-            </ul>
-        </li>
-        <li class=" mega-menu "data-toggle="dropdown"><a data-toggle="tab" href="#menu3">Video</a>
-            <ul class="dropdown-menu mega-dropdown "style="display: none">
-                <li class="col-xs-4 "><a href="#">Chủ Đề</a></li>
-                <li class="col-xs-4 "><a href="#">BXH</a></li>
-                <li class="col-xs-4 "><a href="#">Nghệ Sĩ</a></li>
-
-            </ul>
-        </li>
-        <li class=" mega-menu "><a data-toggle="tab" href="#menu1">Bài Hát</a>
-            <ul class="dropdown-menu mega-dropdown "style="display: none">
-                <li class="col-xs-4 "><a href="#">Chủ Đề</a></li>
-                <li class="col-xs-4 "><a href="#">BXH</a></li>
-                <li class="col-xs-4 "><a href="#">Nghệ Sĩ</a></li>
-
-            </ul>
-        </li>
-        <li class=" mega-menu "><a data-toggle="tab" href="#menu2">BXH</a>
-            <ul class="dropdown-menu mega-dropdown "style="display: none">
-                <li class="col-xs-4 "><a href="#">Chủ Đề</a></li>
-                <li class="col-xs-4 "><a href="#">BXH</a></li>
-                <li class="col-xs-4 "><a href="#">Nghệ Sĩ</a></li>
-
-            </ul>
-        </li>
-        <li class=" mega-menu "><a data-toggle="tab" href="#menu3">Nghệ Sĩ</a><ul class="dropdown-menu mega-dropdown "style="display: none">
-            <li class="col-xs-4 "><a href="#">Chủ Đề</a></li>
-            <li class="col-xs-4 "><a href="#">BXH</a></li>
-            <li class="col-xs-4 "><a href="#">Nghệ Sĩ</a></li>
-
-        </ul>
-        </li>
-        <li class=" mega-menu "><a data-toggle="tab" href="#menu3">Tin Tức</a></li>
-
-    </ul>
-
-</div>
-    <div class="container hidden-lg hidden-md " style="margin:auto">
+    <div id ="mini-menu"class="container hidden-lg hidden-md" style="margin:auto">
 
         <ul class="nav nav-tabs ">
             <li class="dropdown mega-menu">
@@ -69,30 +16,140 @@
                     <li><a href="#">Tin tức</a></li>
                 </ul>
             </li>
-            <li class="active"><a data-toggle="tab" href="#home"> Bài Hát</a></li>
+            <li class=""><a data-toggle="tab" href="#home"> Bài Hát</a></li>
 
             <li><a data-toggle="tab" href="#menu2">Playlist</a></li>
             <li><a data-toggle="tab" href="#menu3">Video</a></li>
 
         </ul>
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
 
-        </div>
    </div>
+<div class="container hidden-xs hidden-sm">
+    <ul class="nav nav-tabs container" id="mega-menu">
+    <li class=""><a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+    <li class="dropdown ">
+        <a  class="dropdown-toggle disabled"href="chude.html" data-toggle="dropdown">Chủ Đề </a>
+        <ul class="dropdown-menu mega-dropdown container-fluid">
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="../chude.html">Top Tháng Này</a></li>
+                    <li><a href="#">Nhạc Remix</a></li>
+                    <li><a href="#">Nhạc Phim</a></li>
+                </ul>
+            </li>
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Nhạc Hot Việt Nam</a></li>
+                    <li><a href="#">Nhạc Hot Hàn Quốc</a></li>
+                    <li><a href="#">Nhạc Hot Âu Mĩ</a></li>
+                </ul>
+            </li>
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Tin Tức Âm Nhạc</a></li>
+                    <li><a href="#">Nhạc Tình Cảm</a></li>
+                    <li><a href="#">Nhạc Cưới</a></li>
+                </ul>
+            </li>
+
+        </ul>
+
+    </li>
+    <li class="dropdown ">
+        <a class="dropdown-toggle disabled" href="playlist.html" data-toggle="dropdown">Playlist</a>
+        <ul class="dropdown-menu mega-dropdown ">
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Chủ Đề</a></li>
+                    <li><a href="#">BXH</a></li>
+                    <li><a href="#">Nghệ Sĩ</a></li>
+                </ul>
+            </li>
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Chủ Đề</a></li>
+                    <li><a href="#">BXH</a></li>
+                    <li><a href="#">Nghệ Sĩ</a></li>
+                </ul>
+            </li>
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Chủ Đề</a></li>
+                    <li><a href="#">BXH</a></li>
+                    <li><a href="#">Nghệ Sĩ</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+    <li class="dropdown">
+        <a href="#">Video</a>
+        <ul class="dropdown-menu mega-dropdown ">
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Chủ Đề</a></li>
+                    <li><a href="#">BXH</a></li>
+                    <li><a href="#">Nghệ Sĩ</a></li>
+                </ul>
+            </li>
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Chủ Đề</a></li>
+                    <li><a href="#">BXH</a></li>
+                    <li><a href="#">Nghệ Sĩ</a></li>
+                </ul>
+            </li>
+            <li class="col-xs-4 ">
+                <ul class="container-fluid">
+
+                    <li><a href="#">Chủ Đề</a></li>
+                    <li><a href="#">BXH</a></li>
+                    <li><a href="#">Nghệ Sĩ</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </li>
+
+    <li class="dropdown">
+        <a href="#">Bài Hát</a>
+    </li>
+    <li class="dropdown">
+        <a href="BXH.html">BXH</a>
+    </li>
+    <li class="dropdown">
+        <a href="#">Nghệ Sĩ</a>
+    </li>
+    <li class="dropdown">
+        <a href="#">Tin Tức</a>
+    </li>
+</ul>
+    </div>
 <script>
+    $(document).ready(function(){
 
-    $(function(){
-        $("#mega-menu > li").bind('mouseenter',function(){
-            $(this).find('.mega-dropdown').slideToggle(500);
+            $("#mega-menu > li").bind('mouseenter',function(){S
+                $(this).find('.mega-dropdown').slideDown(500);
 
-        }).bind('mouseleave',function(){
-            $(this).find('.mega-dropdown').hide();
-        });
+            }).bind('mouseleave',function(){
+                $(this).find('.mega-dropdown').hide();
+            });
+
+        var url = window.location;
+
+
+
+        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
+        $('ul.nav a').filter(function() {
+            return this.href == url;
+        }).parent().addClass('active');
     });
-
 </script>
