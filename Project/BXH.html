@@ -13,7 +13,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="js/bootstrap.js"></script>
-
+    <script src="data/productsBXH.js"></script>
 </head>
 <body>
 
@@ -28,8 +28,8 @@
 <div class="container">
 
     <div class="row" style="margin-top: 20px;">
-        <div class="col-lg-8" style="background-color: #009900; height: 500px">
-            <div  class="hidden-xs"style="background-color: rgba(126, 210, 48, 0.69);height: 50px; margin-top: 15px">
+        <div class="col-lg-8" style=" height: 500px">
+            <div  class="hidden-xs"style="height: 50px; margin-top: 15px">
                 <ul class="nav nav-pills">
 
                     <li class="active"><a href="#">Việt Nam</a></li>
@@ -37,7 +37,7 @@
                     <li><a href="#">Âu Mỹ</a></li>
                 </ul>
             </div>
-            <div class="" style="background-color: #ff6ff9;height: 60px; margin-top: 15px;">
+            <div class="" style="height: 60px; margin-top: 15px;">
                 <div class=""><h3  style=" float:left;">Bảng Xếp Hạng Bài Hát Việt Nam</h3></div>
                 <div class="btn-group hidden-xs" style="float: right; margin-top: 10px">
                     <a  class="btn btn-danger">Bài Hát</a>
@@ -45,7 +45,7 @@
                     <a  class="btn btn-default">Video</a>
                 </div>
             </div>
-            <div style="background-color: rgba(15, 15, 15, 0.36);height: 50px;">
+            <div style="height: 50px;">
                 <div class="form-group">
 
                     <select class="form-control" id="sel1" style="float: left;width:80%">
@@ -56,42 +56,68 @@
                     </select>
                 </div>
             </div>
-            <div style="background-color: rgba(196, 37, 25, 0.63);height: 400px;">
+            <div style="background-color: rgba(126, 210, 48, 0.63);height: 3000px;">
                 <ul id="BXH" class="list-group" style="list-style-type: none">
-                    <li class="list-group-item ">
-                        <span class="sodb">1</span>
-                        <div class="row"style="margin-left: 30px">
-                            <div class="col-xs-3" style="background-color: #39b3d7; height: 100px">
-                                <img src="images/BXH/Sontung.jpg">
-                            </div>
-                            <div class="col-xs-5" style="background-color: #009900; height: 100px"></div>
 
-                        </div>
-                    </li>
-                    <li class="list-group-item "></li>
-                    <li class="list-group-item "></li>
-                    <li class="list-group-item "></li>
-                    <li class="list-group-item "></li>
+
 
                 </ul>
             </div>
         </div>
-        <div class="col-lg-4 hidden-xs" style="background-color: #f6f546;height: 500px"></div>
+        <div  id ="BXHbaihat"class="col-lg-4 hidden-xs" style="height: 500px"></div>
     </div>
 </div>
 <script >
+
+    $(document).ready(function(){
+        $("#myheader").load("templates/header.html");
+        $("#mynav").load("templates/nav.html");
+        $("#BXHbaihat").load("templates/BXH/baihat.html")
+    });
+    $(document).ready(function(){
+            loadProducts();
+        });
+
+        function loadProducts() {
+            var html = "";
+            var t=1;
+            // vòng lặp: duyệt qua từng phần tử trong mảng products
+            $.each (products, function(index, item) {
+                var s = "";
+
+                s+=' <li class="list-group-item ">';
+                s+='         <span class="sodb">'+t+'</span>';
+                s+='         <div style="width: 400px;height: 90px;margin-left: 30px">';
+
+                s+='         <a style="float: left" href="images/BXH/Sontung.jpg"><img src="'+ item.imgSrc+'"></a>';
+                s+='         <table style="float:left;margin-left: 20px; margin-top: 10px;">';
+                s+='                 <tr>';
+                s+='                      <td><a href="#">'+item.title+'</a></td>';
+                s+='                 <tr>';
+                s+='                      <td><a href="#">'+item.name+'</a></td>';
+                s+='                 <tr>';
+                s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>Lượt Nghe</h6></td>';
+                s+='         </tr>';
+                s+='</table>';
+                s+='</div>';
+                s+='</li>';
+
+
+                t++;
+                html += s;
+            });
+
+            // Bỏ chuỗi html vào bên trong thẻ divProducts
+            $("#BXH").html(html);
+    }
     $(document).ready(function() {
 
         $("#BXH > li").bind('mouseenter', function () {
-            $(this).css('background-color','#C8C8C8')
+            $(this).css('background-color','#DADADA')
 
         }).bind('mouseleave', function () {
             $(this).css('background-color','white');
         });
-    });
-    $(document).ready(function(){
-        $("#myheader").load("templates/header.html");
-        $("#mynav").load("templates/nav.html");
     });
 </script>
 </body>

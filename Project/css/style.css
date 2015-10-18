@@ -18,9 +18,18 @@
 .sodb{
     font-size: 18pt;
     margin-top: 20px;
-   float: left;
+    position: relative;
+    left:5px;
+    float: left;
 }
 #BXH img{
     width: 82px;
     height: 82px;
+}
+.img-bxh{
+    width: 120px;
+    height: 120px;
+}
+.td-bxh{
+    height: 50px;
 }
