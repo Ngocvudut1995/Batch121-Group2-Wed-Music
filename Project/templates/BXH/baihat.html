@@ -3,25 +3,38 @@
         <a style="float: left;margin-left: 40px;"href="#">BXH Bài Hát</a>
         <a href="#" style="margin-left: 20px"><span class="glyphicon glyphicon-play-circle"></span></a>
     </h2>
-    <table class="table table-hover " style="width: 300px;">
+    <table class="table table-hover " style="width: 350px;">
         <thead>
         <tr>
             <th style="">
-                <div  class="hidden-xs"style="height: 50px; margin-top: 15px">
+                <div  class=""style="height: 50px; margin-top: 15px;margin-left: 15px ">
                     <ul class="nav nav-pills">
+                        <li class="active"><a data-toggle="pill" href="#vn">Việt Nam</a></li>
+                        <li><a data-toggle="pill" href="#hanquoc">Hàn Quốc</a></li>
+                        <li><a data-toggle="pill" href="#menu2">Âu Mỹ</a></li>
 
-                        <li class="active"><a href="#">Việt Nam</a></li>
-                        <li><a href="#">Hàn Quốc</a></li>
-                        <li><a href="#">Âu Mỹ</a></li>
                     </ul>
                 </div>
             </th>
 
         </tr>
         </thead>
-        <tbody id="table-baihat"></tbody>
+     </table>
+        <div class="tab-content">
+            <div  class="tab-pane fade in active"id="vn">
+                <table class="table table-hover " style="width: 300px;">
+                    <tbody  id="BXHbaihat-VN" ></tbody>
+                </table>
 
-    </table>
+            </div>
+            <div  class="tab-pane fade"id="hanquoc">
+                <table class="table table-hover " style="width: 300px;">
+                    <tbody  id="BXHbaihat-hanquoc" ></tbody>
+                </table>
+            </div>
+
+        </div>
+
 </div>
 <script>
     $(document).ready(function(){
@@ -40,7 +53,7 @@
             s+='<td>';
 
             s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
-            s+='         <div style="width: 400px;height: 120px;margin-left: 30px">';
+            s+='         <div style="width: 300px;height: 120px;margin-left: 30px">';
 
             s+='         <a style="float: left" href="images/BXH/Sontung.jpg"><img class="img-bxh" src="'+ item.imgSrc+'"></a>';
             s+='         <table style="float:left;margin-left: 20px; margin-top: 10px;">';
@@ -60,7 +73,7 @@
                 s+='<td>';
 
                 s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';
-                s+='         <div style="width: 400px;height: 10px;margin-left: 30px">';
+                s+='         <div style="width: 300px;height: 10px;margin-left: 30px">';
                 s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
                 s+='                 <tr>';
                 s+='                      <td width="40%"><a href="#">'+item.title+'</a></td>';
@@ -83,6 +96,67 @@
         });
 
         // Bỏ chuỗi html vào bên trong thẻ divProducts
-        $("#table-baihat").html(html);
+        $("#BXHbaihat-VN").html(html);
+    }
+    $(document).ready(function(){
+        loadProducts1();
+    });
+
+    function loadProducts1() {
+        var html = "";
+        var t=1;
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (baihathanquoc, function(index, item) {
+            var s = "";
+            if(t==1){
+                s+='<tr>';
+
+                s+='<td>';
+
+                s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
+                s+='         <div style="width: 350px;height: 120px;margin-left: 30px">';
+
+                s+='         <a style="float: left" href="images/BXH/Han Quoc/bigbang.jpg"><img class="img-bxh" src="'+ item.img+'"></a>';
+                s+='         <table style="float:left;margin-left: 20px; margin-top: 10px;">';
+                s+='                 <tr>';
+                s+='                      <td><a href="#">'+item.title+'</a></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td><a href="#">'+item.name+'</a></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>Lượt Nghe</h6></td>';
+                s+='                </tr>';
+
+                s+='        </table>';}
+            else {
+                s+='<tr>';
+                s+='<td>';
+
+                s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';
+                s+='         <div style="width: 350px;height: 10px;margin-left: 30px">';
+                s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
+                s+='                 <tr>';
+                s+='                      <td width="40%"><a href="#">'+item.title+'</a></td>';
+                s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>Lượt Nghe</h6></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td><a href="#">'+item.name+'</a></td>';
+
+
+                s+='                 </tr>';
+                s+='        </table>';
+            }
+            s+='</div>';
+
+            s+='</td>';
+            s+='</tr>';
+
+            t++;
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#BXHbaihat-hanquoc").html(html);
     }
 </script>
