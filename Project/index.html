@@ -38,7 +38,7 @@
                         </ol>
                         <div class="carousel-inner" >
                             <div class="item active">
-                                <img data-src="images/slider/01.jpg" style="width: 100%;height: 400px" alt="" src='images/slide.jpg'>
+                                <img data-src="images/slider/01.jpg" style="width: 100%;height: 400px" alt="" src='images/bxh2.jpg'>
                             </div>
                             <div class="item">
                                 <img data-src="images/slider/02.jpg" style="width: 100%;height: 400px" alt="" src='images/bxh1.jpg'>
@@ -70,35 +70,16 @@
 
                     </div>
                 </div>
-                <div style="height: 600px; margin-top: 20px;background-color: yellow">
+                <div style="height: 600px; margin-top: 20px">
                     <h1><a href="#"> Video|MV</a></h1>
-                    <div class="row"style="margin-top: 20px">
-                        <div class="col-xs-3"style="background-color: #1b6d85;height: 200px; margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #851f40;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #448551;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #111a85;height: 200px;margin-bottom: 20px"></div>
+                    <div id="mvIndex" class="row"style="margin-top: 20px">
 
-
-                        <div class="col-xs-3"style="background-color: #1b6d85;height: 200px; margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #851f40;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #448551;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #111a85;height: 200px;margin-bottom: 20px"></div>
 
                     </div>
                 </div>
-                <div style="height: 600px; margin-top: 20px;background-color: yellow">
-                    <h1><a href="#"> Album|Playlist</a></h1>
-                    <div class="row"style="margin-top: 20px">
-                        <div class="col-xs-3"style="background-color: #1b6d85;height: 200px; margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #851f40;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #448551;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #111a85;height: 200px;margin-bottom: 20px"></div>
-
-
-                        <div class="col-xs-3"style="background-color: #1b6d85;height: 200px; margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #851f40;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #448551;height: 200px;margin-bottom: 20px"></div>
-                        <div class="col-xs-3"style="background-color: #111a85;height: 200px;margin-bottom: 20px"></div>
+                <div style=" margin-top: 20px">
+                    <h1 style="margin-left: 30px"><a href="#"> Ca Khúc Hot</a></h1>
+                    <div id="caKhucHotIndex" class="row"style="margin-top: 20px">
 
                     </div>
                 </div>
@@ -120,6 +101,8 @@
 <script>
     $(document).ready(function(){
         loadProducts();
+        loadProductsMV();
+        loadProductsCaKhuc();
     });
 
     function loadProducts() {
@@ -141,6 +124,45 @@
 
         // Bỏ chuỗi html vào bên trong thẻ divProducts
         $("#playlistIndex").html(html);
+    }
+    function loadProductsMV() {
+        var html = "";
+
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (mvIndex, function(index, item) {
+            var s = "";
+            s+='<div class="col-xs-3"style="height: 250px; margin-bottom: 20px">'
+            s+='        <div><a  href="#"><img style="height: 120px" class="img-thumbnail" src="'+item.img+'"></a></div>'
+            s+='       <h4 style="text-align: center"><a href="#">'+item.title+'</a></h4>'
+            s+='        <p style="text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='</div>'
+
+
+
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#mvIndex").html(html);
+    }
+    function loadProductsCaKhuc() {
+        var html = "";
+
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (caKhucHotIndex, function(index, item) {
+            var s = "";
+            s+='<div class="col-xs-5"style="height: 50px; margin: 20px">'
+            s+='       <h2 style="text-align: left"><a href="#">'+item.music+'</a></h2><p style="text-align: right;float: right">'+item.title+'</p>'
+            s+='        <h4 style="text-align: left"><a href="#">'+item.name+'</a></h4>'
+            s+='</div>'
+
+
+
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#caKhucHotIndex").html(html);
     }
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");
