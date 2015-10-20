@@ -10,8 +10,6 @@ playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài
 playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
 playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
 playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
-
-
 var mvIndex =[];
 mvIndex.push({img:'images/Playlist/index/download.jpg', title:'MV về ....',name:'Hoàng Yến Chi BI'});
 mvIndex.push({img:'images/Playlist/index/issac.jpg', title:'MV về ....',name:'Issac'});

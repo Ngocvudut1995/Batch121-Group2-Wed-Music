@@ -63,14 +63,15 @@
                         $('.carousel').carousel();
                     </script>
                 </div>
-
+                <!--Album-->
                 <div style="height: 600px; margin-top: 20px;">
                     <h1><a href="#"> Album|Playlist</a></h1>
                     <div id="playlistIndex"class="row"style="margin-top: 20px">
 
                     </div>
                 </div>
-                <div style="height: 600px; margin-top: 20px">
+                <div style="height: 600px; margin-top: 20px;">
+                <!--Video-->
                     <h1><a href="#"> Video|MV</a></h1>
                     <div id="mvIndex" class="row"style="margin-top: 20px">
 
@@ -78,26 +79,35 @@
                     </div>
                 </div>
                 <div style=" margin-top: 20px">
-                    <h1 style="margin-left: 30px"><a href="#"> Ca Khúc Hot</a></h1>
+                    <h1 style=""><a href="#"> Ca Khúc Hot</a></h1>
                     <div id="caKhucHotIndex" class="row"style="margin-top: 20px">
 
                     </div>
                 </div>
 
-            </div>
-                <div class="col-lg-4"style="height: 1000px">
-                    <!--Banner-->
-                    <div style="background-color: #985f0d; height: 400px"></div>
-                    <!--BXH-->
-                    <div id="BXHbaihat">
-
-                    </div>
                 </div>
-        </div>
-    </div>-->
- <!--  <section id="mysection">
+            <div class="col-lg-4"style="height: 1000px;">
+                <!--Banner-->
+                <div style=" height: 400px"></div>
+                <!--BXH-->
+                <div id="BXHbaihat">
 
-    </section>-->
+                </div>
+                <div id="BXHvideo">
+
+                </div>
+                <div id="BXHalbum">
+
+                </div>
+            </div>
+            </div>
+
+      </div>
+    </div>
+
+
+
+
 <script>
     $(document).ready(function(){
         loadProducts();
@@ -151,9 +161,17 @@
         // vòng lặp: duyệt qua từng phần tử trong mảng products
         $.each (caKhucHotIndex, function(index, item) {
             var s = "";
-            s+='<div class="col-xs-5"style="height: 50px; margin: 20px">'
-            s+='       <h2 style="text-align: left"><a href="#">'+item.music+'</a></h2><p style="text-align: right;float: right">'+item.title+'</p>'
-            s+='        <h4 style="text-align: left"><a href="#">'+item.name+'</a></h4>'
+
+            s+='<div class="col-xs-5 "style="height: 20px; margin: 20px">';
+            s+='         <table class="table table-hover"style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
+            s+='                 <tr>';
+            s+='                      <td width="40%"><a href="#">Tên Ca Khúc</a><br>' ;
+            s+='                        <a href="#">Ca Sĩ</a>'
+            s+=                      '</td>';
+            s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>Lượt Nghe</h6></td>';
+            s+='                 </tr>';
+
+            s+='        </table>';
             s+='</div>'
 
 
@@ -168,7 +186,9 @@
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
        // $("#mysection").load("templates/section.html");
-        $("#BXHbaihat").load("templates/BXH/baihat.html")
+        $("#BXHbaihat").load("templates/BXH/baihat.html");
+        $("#BXHvideo").load("templates/BXH/video.html");
+        $("#BXHalbum").load("templates/BXH/playlist.html");
     });
 
 </script>
