@@ -1,0 +1,16 @@
+<script>
+
+    (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+</script>
+<div class="row">
+    <div class="col-md-6 col-xs-12">
+        <div>
+            <audio id ="a1"src="Music/ads.mp3" preload="auto" controls></audio>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/audioplayer.js"></script>
+            <script>$( function() { $( '#a1' ).audioPlayer(); } );
+            </script>
+
+        </div>
+    </div>
+</div>

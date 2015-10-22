@@ -15,11 +15,20 @@
     <script src="js/bootstrap.js"></script>
     <script src="data/productsBXH.js"></script>
     <script src="data/productsPlaylist.js"></script>
+    <script src="js/facebook.js"></script>
 
 </head>
 
 <body>
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=434498566754391";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
     <header id="myheader">
 
     </header>
@@ -38,7 +47,7 @@
                         </ol>
                         <div class="carousel-inner" >
                             <div class="item active">
-                                <img data-src="images/slider/01.jpg" style="width: 100%;height: 400px" alt="" src='images/bxh2.jpg'>
+                                <img data-src="" style="width: 100%;height: 400px" alt="" src='images/bxh2.jpg'>
                             </div>
                             <div class="item">
                                 <img data-src="images/slider/02.jpg" style="width: 100%;height: 400px" alt="" src='images/bxh1.jpg'>
@@ -70,6 +79,7 @@
 
                     </div>
                 </div>
+
                 <div style="height: 600px; margin-top: 20px;">
                 <!--Video-->
                     <h1><a href="#"> Video|MV</a></h1>
@@ -78,15 +88,39 @@
 
                     </div>
                 </div>
-                <div style=" margin-top: 20px">
+                <div class=""style=" margin-top: 20px">
                     <h1 style=""><a href="#"> Ca Khúc Hot</a></h1>
-                    <div id="caKhucHotIndex" class="row"style="margin-top: 20px">
+                    <div id="caKhucHotIndex" class="row"style="margin-top: 20px; margin-left: -50px">
 
                     </div>
                 </div>
+                <div class=""style=" margin-top: 20px;">
+                    <h1 style=""><a href="#">Tin Tức Âm Nhạc</a></h1>
+                    <div class="row">
+                        <div class="col-md-6 col-xs-5"id="tintucIndex1">
 
+
+                        </div>
+                        <div class="col-md-4 col-xs-5">
+                            <ul id="tintucIndex2">
+
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            <div class="col-lg-4"style="height: 1000px;">
+
+                <div    style="margin-top: 100px"
+                        class="fb-like"
+                        data-share="true"
+                        data-width="450"
+                        data-show-faces="true">
+                </div>
+                <div class="fb-comments" data-href="http://localhost:63342/Project/index.html" data-numposts="5"></div>
+
+            </div>
+
+            <div class="col-lg-4 hidden-xs"style="height: 1000px;">
                 <!--Banner-->
                 <div style=" height: 400px"></div>
                 <!--BXH-->
@@ -100,9 +134,11 @@
 
                 </div>
             </div>
+
             </div>
 
       </div>
+
     </div>
 
 
@@ -113,6 +149,7 @@
         loadProducts();
         loadProductsMV();
         loadProductsCaKhuc();
+        loadProductsTintuc();
     });
 
     function loadProducts() {
@@ -162,7 +199,7 @@
         $.each (caKhucHotIndex, function(index, item) {
             var s = "";
 
-            s+='<div class="col-xs-5 "style="height: 20px; margin: 20px">';
+            s+='<div class="col-md-5 col-xs-12 "style="height: 20px; margin: 20px">';
             s+='         <table class="table table-hover"style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
             s+='                 <tr>';
             s+='                      <td width="40%"><a href="#">Tên Ca Khúc</a><br>' ;
@@ -182,6 +219,35 @@
         // Bỏ chuỗi html vào bên trong thẻ divProducts
         $("#caKhucHotIndex").html(html);
     }
+    function loadProductsTintuc(){
+        var html1="";
+        var html2="";
+        var t=1;
+        $.each (tintucIndex, function(index, item) {
+            var s = "";
+            if(t==1){
+            s+='    <a href="#"><img style="width: 100px;height: 100px;float: left; margin-right: 30px" src="images/Tin%20Tuc/index/tony.jpg"></a> '
+            s+='     <table style="">'
+            s+='        <tr>'
+            s+='            <td><a href="#">'+item.title+'</a></td>'
+            s+='    </tr>'
+            s+='        <tr>'
+            s+='            <td style="font-size: 8pt">'+item.content+'</td>'
+            s+='        </tr>'
+            s+='    </table>'
+            html1+=s;
+              }
+            else {
+             s+='<li style="margin-bottom: 10px"><a href"#">'+item.title+'</a></li>'
+                        html2+=s;
+            }
+
+            t++;
+
+        });
+        $("#tintucIndex1").html(html1);
+        $("#tintucIndex2").html(html2);
+    }
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
@@ -193,4 +259,5 @@
 
 </script>
 </body>
+
 </html>
