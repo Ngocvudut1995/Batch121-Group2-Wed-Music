@@ -13,6 +13,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="js/bootstrap.js"></script>
+    <script src="data/pagePlayList.js"></script>
 </head>
 <body>
 
@@ -24,12 +25,49 @@
 
 
 </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12"style="margin:30px auto auto -20px">
+            <h2><a href="#" style="color: tomato ">THỂ LOẠI PLAYLIST</a> </h2>
+        </div>
+        <div id="pagePlayList" class="col-xs-12" style="">
+
+        </div>
+    </div>
+
+</div>
+<div id="divPlayList">
+
+</div>
 
 <script >
+    $(document).ready(function(){
+        loadDS();
+    });
+    function loadDS() {
+        var html = "";
+
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (pagePlayList, function(index, item) {
+            var s = "";
+            s+='<div class="col-xs-3"style="height: 50px">'
+            s+='        <h4 style="text-align:left"><a href="#"> <span class="glyphicon glyphicon-chevron-right"></span>'+item.name+'</a></h4> '
+
+            s+='</div>'
+
+
+
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#pagePlayList").html(html);
+    }
 
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
+        $("#divPlayList").load("templates/playList/divplayList");
     });
 </script>
 </body>

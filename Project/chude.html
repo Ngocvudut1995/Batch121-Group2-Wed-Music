@@ -13,19 +13,52 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="js/bootstrap.js"></script>
+    <script src="data/pageChuDe.js"></script>
 </head>
 <body>
 
     <header id="myheader">
 
-
     </header>
     <nav id="mynav">
 
-
     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 " STYLE="background-color: #080808;margin-bottom: 50px">
+                <img src="images/chude/head.jpg" style="width: 1150px">
+                <h2 style="color: white">Những Bài Hit Mới</h2>
+                <p style="color: white">
+                    <br>Chuyên mục được cập nhật vào tuần lễ cuối cùng của tháng với từ 10 đến 15 ca khúc thành công nhất.
+                    Đó là những bài hát được lọt vào bảng xếp hạng hoặc tạo được hiệu ứng mạnh mẽ trên cộng đồng mạng.
+                </p>
+            </div>
+            <a href="#"> <h2>CHỦ ĐỀ NỔI BẬC<span class="glyphicon glyphicon-chevron-right"></span></h2></a>
+        </div>
+        <div class="col-xs-12"id="chude">
 
+        </div>
+    </div>
     <script >
+        $(document).ready(function(){
+            loadProducts();
+        });
+        function loadProducts(){
+            var html = "";
+            $.each(page,function(index, item){
+                var s = "";
+                s+='<div class="col-xs-4"style="height: 250px; margin-bottom: 20px">'
+                s+='       <a href="#"> <img class="img-thumbnail" style="width:350px;height:200px" src="'+item.src+'"></a>'
+                s+='        <h3 style="text-align: center"><a href="#">'+item.name+'</a></h3>'
+                s+='</div>'
+
+
+
+                html += s;
+            });
+            // Bỏ chuỗi html vào bên trong thẻ divProducts
+            $("#chude").html(html);
+        }
 
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");

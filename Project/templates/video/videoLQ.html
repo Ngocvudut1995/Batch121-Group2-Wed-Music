@@ -1,0 +1,62 @@
+<div class="container" style="margin-left: 30px">
+    <h2>
+        <a style="float: left;margin-left: 40px;"href="#">Video Liên Quan</a>
+        <a href="#" style="margin-left: 20px"><span class="glyphicon glyphicon-play-circle"></span></a>
+    </h2>
+
+    <div class="tab-content">
+        <div  class="tab-pane fade in active"id="vn">
+            <table class="table table-hover " style="width: 300px;">
+                <tbody  id="BXHbaihat-VN" ></tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function(){
+        loadProducts();
+    });
+    function loadProducts() {
+        var html = "";
+        var t=1;
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (videoLQ, function(index, item) {
+            var s = "";
+                s+='<tr>';
+
+                s+='<td>';
+
+                s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
+                s+='         <div style="width: 300px;height: 120px;margin-left: 30px">';
+
+                s+='         <a style="float: left" href="amthambenem.html"><img class="img-bxh" style="width: 100px;height: 100px" src="'+ item.imgSrc+'"></a>';
+                s+='         <table style="float:left;margin-left: 20px; margin-top: 10px;">';
+                s+='                 <tr>';
+                s+='                      <td><a href="#">'+item.title+'</a></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td><a href="#">'+item.name+'</a></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>Lượt Nghe</h6></td>';
+                s+='                </tr>';
+
+                s+='        </table>';
+            s+='</div>';
+
+            s+='</td>';
+            s+='</tr>';
+
+            t++;
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#BXHbaihat-VN").html(html);
+    }
+</script>
+    </div>
