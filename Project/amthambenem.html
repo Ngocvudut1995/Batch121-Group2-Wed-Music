@@ -46,45 +46,43 @@
             <div style="background-color: rgba(76, 84, 70, 0.22);height: 170px">
                 <img style="float: left;margin-right: 30px" src="images/BXH/Sontung.jpg">
 
-                     <table style="margin-left: 100px; margin-top: 10px;">
-                                <tr>
-                                          <td><H3>Âm Thầm Bên Em - <a href>Sơn Tùng</a></H3></td>
-                                    </tr>
-                              <tr>
-                                          <td><H4>Sáng tác: <a>Sơn Tùng-MTP</a></H4></td>
-                                    </tr>
-                                              <td><h6>Thể Loại: <a>Nhạc Trẻ</a></h6></td>
-                                   </tr>
+                     <div style="margin-left: 100px; margin-top: 10px;">
+                         <H3 style="padding-top: 10px">Âm Thầm Bên Em - <a href>Sơn Tùng</a></H3><br>
+                         <H4 style="margin-top: -20px">Sáng tác: <a>Sơn Tùng-MTP</a></H4><br>
+                         <h6 style="margin-top: -15px">Thể Loại: <a>Nhạc Trẻ</a></h6>
 
-                   </table>
-            </div>
-            <!--The audio-->
-            <div class="container"id="audio" style=" margin-left: -15px; margin-top: -30px;	clear: both;">
-                <script>
 
-                    (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
-                </script>
-                <div class="row">
-                    <div class="col-md-8 col-xs-12 ">
-                        <div>
-                            <audio id ="a1"src="Music/ads.mp3" preload="auto"controls></audio>
-                            <script src="js/jquery.min.js"></script>
-                            <script src="js/audioplayer.js"></script>
-                            <script>$( function() { $( '#a1' ).audioPlayer(); } );
-                            </script>
+                   </div>
+                <div class="container"id="audio" style=" margin-left: -15px; margin-top: -35px;	clear: both;">
+                    <script>
 
+                        (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+                    </script>
+                    <div class="row">
+                        <div class="col-md-8 col-xs-12 ">
+                            <div>
+                                <audio id ="a1"src="Music/ads.mp3" preload="auto"controls></audio>
+                                <script src="js/jquery.min.js"></script>
+                                <script src="js/audioplayer.js"></script>
+                                <script>$( function() { $( '#a1' ).audioPlayer(); } );
+                                </script>
+
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
+            <!--The audio-->
+
 
             <div style="height: 50px">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default">Thêm</button>
-                    <button type="button" class="btn btn-default">Tải Về</button>
-                    <button type="button" class="btn btn-default">Chia Sẻ</button>
-                    <button type="button" class="btn btn-default">Nhạc Chờ</button>
+                    <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
+                    <a href="Music/ads.mp3" download="amthambenem"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
+                    <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>
+
                 </div>
 
                 <div    style="float :right; width: 100px;margin-right: 100px; margin-top: 10px"
@@ -96,7 +94,7 @@
             </div>
 
             <div id="" style=" margin-top: 20px;min-height: 300px">
-                <h3>Bài hát: Âm Thầm Bên Em - Sơn Tùng (M-TP)</h3>
+                <h3 style="margin-top: 60px;margin-bottom: -30px">Bài hát: Âm Thầm Bên Em - Sơn Tùng (M-TP)</h3>
                 <p id="show1" style="max-height:255px;overflow: hidden">
 
                     <br>
@@ -167,28 +165,28 @@
             <div style="height: 300px;margin-top: 40px">
                 <h1 style=""><a href="#">Album Sơn Tùng-MTP</a></h1>
                 <div id="" class="row"style="margin-top: 20px; margin-left: 10px">
-                    <div class="col-xs-2"style="margin-left: 10px">
+                    <div class="col-md-2 col-xs-3"style="margin-left: 10px">
                         <img  class="img-thumbnail"style="width: 100px" src="images/BXH/Sontung.jpg">
                         <h5>Âm Thầm Bên Em</h5>
                         <h6>Sơn Tùng</h6>
                     </div>
 
-                    <div class="col-xs-2"style="margin-left: 10px">
+                    <div class="col-md-2 col-xs-3"style="margin-left: 10px">
                          <img class="img-thumbnail" style="width: 100px" src="images/BXH/Sontung.jpg">
                         <h5>Âm Thầm Bên Em</h5>
                         <h6>Sơn Tùng</h6>
                     </div>
-                    <div class="col-xs-2"style="margin-left: 10px">
+                    <div class="col-md-2 col-xs-3"style="margin-left: 10px">
                         <img class="img-thumbnail" style="width: 100px" src="images/BXH/Sontung.jpg">
                         <h5>Âm Thầm Bên Em</h5>
                         <h6>Sơn Tùng</h6>
                     </div>
-                    <div class="col-xs-2"style="margin-left: 10px">
+                    <div class="col-md-2 hidden-xs"style="margin-left: 10px">
                         <img class="img-thumbnail" style="width: 100px" src="images/BXH/Sontung.jpg">
                         <h5>Âm Thầm Bên Em</h5>
                         <h6>Sơn Tùng</h6>
                     </div>
-                    <div class="col-xs-2"style="margin-left: 10px">
+                    <div class="col-md-2 hidden-xs"style="margin-left: 10px">
                         <img  class="img-thumbnail"style="width: 100px" src="images/BXH/Sontung.jpg">
                         <h5>Âm Thầm Bên Em</h5>
                         <h6>Sơn Tùng</h6>
@@ -200,23 +198,23 @@
                 <h1 style=""><a href="#">MV Sơn Tùng-MTP</a></h1>
                 <div id="" class="row"style="margin-top: 20px; margin-left:10px">
                     <div id="" class="row"style="margin-top: 20px; margin-left: 10px">
-                        <div class="col-xs-2"style="margin-left: 10px">
+                        <div class="col-xs-3"style="margin-left: -15px">
                             <img  class="img-thumbnail"style="width: 120px" src="images/BXH/Sontung.jpg">
                             <h5>Âm Thầm Bên Em</h5>
                             <h6>Sơn Tùng</h6>
                         </div>
 
-                        <div class="col-xs-2"style="margin-left: 10px">
+                        <div class="col-xs-3"style="margin-left: -15px">
                             <img  class="img-thumbnail"style="width: 120px" src="images/BXH/Sontung.jpg">
                             <h5>Âm Thầm Bên Em</h5>
                             <h6>Sơn Tùng</h6>
                         </div>
-                        <div class="col-xs-2"style="margin-left: 10px">
+                        <div class="col-xs-3 "style="margin-left: -15px">
                             <img class="img-thumbnail" style="width: 120px" src="images/BXH/Sontung.jpg">
                             <h5>Âm Thầm Bên Em</h5>
                             <h6>Sơn Tùng</h6>
                         </div>
-                        <div class="col-xs-2"style="margin-left: 10px">
+                        <div class="col-xs-3 "style="margin-left: -15px">
                             <img class="img-thumbnail" style="width: 120px" src="images/BXH/Sontung.jpg">
                             <h5>Âm Thầm Bên Em</h5>
                             <h6>Sơn Tùng</h6>
@@ -229,7 +227,7 @@
             </div>
             <div class="row">
                 <h1 style="">Bình Luận</h1>
-                <div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://localhost:63342/Project/amthambenem.html" data-numposts="5"></div>
+                <div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://batch121.aptech-vietnam.net/amthambenem.html" data-numposts="5"></div>
             </div>
 
         </div>
@@ -242,6 +240,9 @@
 
 </body>
 <script>
+
+
+
     $(document).ready(function(){
         $('#rg').hide();
         $('#xt').click(function(){

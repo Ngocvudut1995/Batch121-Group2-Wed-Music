@@ -37,3 +37,6 @@
 .show{
     height: 700px;
 }
+a:hover{
+    text-decoration: none;
+}
