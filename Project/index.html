@@ -159,9 +159,9 @@
         $.each (playlistIndex, function(index, item) {
             var s = "";
             s+='<div class="col-xs-3"style="height: 250px; margin-bottom: 20px">'
-            s+='        <img class="img-thumbnail" src="images/Playlist/index/phunuvn.jpg">'
-            s+='       <h4 style="text-align: center"><a href="#">'+item.title+'</a></h4>'
-            s+='        <p style="text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='        <a href="'+item.url+'"><img class="img-thumbnail" src="'+item.img+'"></a>'
+            s+='       <p style=" font-size:13pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
+            s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
             s+='</div>'
 
 
@@ -180,8 +180,8 @@
             var s = "";
             s+='<div class="col-xs-3"style="height: 250px; margin-bottom: 20px">'
             s+='        <div><a  href="#"><img style="height: 120px" class="img-thumbnail" src="'+item.img+'"></a></div>'
-            s+='       <h4 style="text-align: center"><a href="#">'+item.title+'</a></h4>'
-            s+='        <p style="text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='       <p style="font-size:13pt;text-align: center"><a href="#">'+item.title+'</a></p>'
+            s+='        <p style="margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
             s+='</div>'
 
 
