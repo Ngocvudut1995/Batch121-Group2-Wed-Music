@@ -2,11 +2,11 @@
  * Created by Vu Dang on 10/20/2015.
  */
 var playlistIndex =[];
-playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
-playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
-playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
-playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
-playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
+playlistIndex.push({img:'images/Playlist/index/khongyeucungdunglamban.jpg', title:'Không Yêu Cũng Đừng...',name:'Khắc Việt',url:'playlist-BXHbhvn.html'});
+playlistIndex.push({img:'images/Playlist/index/simple-ToNy.jpg', title:'Simple',name:'Tố Ny',url:'playlist-BXHbhvn.html'});
+playlistIndex.push({img:'images/Playlist/index/The-color-of-vietnam.png', title:'The color of Viet....',name:'Uyên Linh',url:'playlist-BXHbhvn.html'});
+playlistIndex.push({img:'images/Playlist/index/vo-tuyet-voi-nhat.jpg', title:'Vợ Tuyệt Vời Nhất',name:'Vũ Duy Khánh',url:'playlist-BXHbhvn.html'});
+playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists',url:'playlist-BXHbhvn.html'});
 playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
 playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});
 playlistIndex.push({img:'images/Playlist/index/phunuvn.jpg', title:'Những bài bát về ....',name:'Various Artists'});

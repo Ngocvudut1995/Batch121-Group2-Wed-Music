@@ -43,23 +43,47 @@
 <div class="container"style="margin-top: 30px">
     <div class="row">
         <div class="col-lg-8 col-xs-12" style="">
-            <div style="background-color: rgba(35, 40, 32, 0.32);height: 170px">
+            <div style="height: 170px">
                 <img style="float: left;margin-right: 30px" src="images/BXH/Sontung.jpg">
 
                 <div style="margin-left: 100px; margin-top: 10px;">
                     <H3 style="padding-top: 10px">Bảng Xếp Hạng Bài Hát- <a href="#">Tuần 4-Tháng 10</a></H3><br>
                     <H4 style="margin-top: -20px">Phát Hành: <a href="#">2015</a></H4><br>
-
-
-
                 </div>
 
 
-            </div>
-            <!--Khung PlayList-->
-            <div style="height: 500px; background-color: #1b6d85"></div>
 
-            <div style="height: 50px">
+            </div>
+            <div  class="hinhanh" style="background:  50% 50%/cover no-repeat ;  height: 200px">
+                <h2 style="color: black; padding-top: 20px;margin-left: 20px" class="baihat"></h2>
+                <p style="color: rgba(89, 89, 89, 0.82);margin-left: 20px" class="trinhbay"></p>
+            </div>
+
+            <div style=" height: 355px;">
+                <div style="background-color: rgb(0, 0, 0);margin-bottom: 5px;min-height: 50px;height: auto;position: relative ">
+                    <input id="seek"style="width: 100%;margin-top: -5px;margin-bottom: 5px" type="range" max="100">
+                    <button class="btn-success myButton"id="prev"style="margin-left: 40px;float: left">  <span class="glyphicon glyphicon-step-backward" style="font-size: 15pt;float: left"></span></button>
+                    <button class="btn-success myButton"id="play"style="float: left">  <span class="glyphicon glyphicon-play play" style="float: left;font-size: 15pt"></span></button>
+                    <button class="btn-success myButton" id="pause"style="float: left">  <span class="glyphicon glyphicon-pause pause" style="float: left;font-size: 15pt"></span></button>
+                     <button class="btn-success myButton"id="next"style="float: left">  <span class="glyphicon glyphicon-step-forward" style="float: left;font-size: 15pt"></span></button>
+                     <button class="btn-success myButton"id="muteon"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-up"style="float:left;font-size: 15pt;"></span> </button>
+                    <button class="btn-success myButton"id="muteoff"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-off"style="float:left;font-size: 15pt;"></span> </button>
+                     <input id='vol'style="float: left;width: 200px;margin-top: 10px;margin-left: 20px" type="range"value="40" max="100">
+                </div>
+                    <!--Khung PlayList-->
+                <div style="height: 300px;  overflow: scroll; clear: both">
+
+                    <ul id ="PL" class="list-group playlist">
+
+                    </ul>
+                    <script src="js/audio.js"></script>
+                    <script src="js/player.js"></script>
+                    <script src="js/prefixfree.js"></script>
+                </div>
+            </div>
+
+
+            <div style="height: 60px">
                 <div class="btn-group">
                     <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
                     <a href="Music/ads.mp3" download="amthambenem"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
@@ -187,6 +211,7 @@
             <div id="lquan"></div>
         </div>
     </div>
+
 </div>
 
 
@@ -213,13 +238,26 @@
     });
 </script>
 <script>
+    $(document).ready(function() {
 
+        $("#PL li").bind('mouseenter', function () {
+            $(this).css('background-color','#C8C8C8');
+
+
+
+
+        }).bind('mouseleave', function () {
+            $(this).css('background-color','white');
+
+        });
+    });
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
         $("#lquan").load("templates/BXH/baihat.html");
 
     });
+
 
 </script>
 </html>

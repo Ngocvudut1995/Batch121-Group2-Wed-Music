@@ -1,0 +1,50 @@
+{
+	"playlist" : [
+		{
+			"tenbaihat" : "Âm Thầm Bên Em",
+			"trinhbay" : "Sơn Tùng-MTP",
+			"url" : "Music/ads.mp3",
+		  	"hinhanh": "http://avatar.nct.nixcdn.com/mv/2015/10/06/9/2/3/4/1444102477580_268.jpg"
+		},
+	  {
+		"tenbaihat" : "See You Again",
+		"trinhbay" : "Sơn Tùng-MTP",
+		"url" : "audio/seeyouagain.mp3",
+		"hinhanh": "http://image.mp3.zdn.vn/cover3_artist/b/f/bf6c48ab7a398f07c82c5702b1c25d61_1444293819.jpg"
+	  },
+	  {
+		"tenbaihat" : "See You Again",
+		"trinhbay" : "Sơn Tùng-MTP",
+		"url" : "audio/seeyouagain.mp3",
+		"hinhanh": "http://image.mp3.zdn.vn/cover3_artist/b/f/bf6c48ab7a398f07c82c5702b1c25d61_1444293819.jpg"
+	  },
+	  {
+		"tenbaihat" : "Âm Thầm Bên Em",
+		"trinhbay" : "Sơn Tùng-MTP",
+		"url" : "audio/seeyouagain.mp3",
+		"hinhanh": "http://image.mp3.zdn.vn/cover3_artist/b/f/bf6c48ab7a398f07c82c5702b1c25d61_1444293819.jpg"
+	  },
+	  {
+		"tenbaihat" : "Âm Thầm Bên Em",
+		"trinhbay" : "Sơn Tùng-MTP",
+		"url" : "Music/ads.mp3"
+	  },
+	  {
+		"tenbaihat" : "Âm Thầm Bên Em",
+		"trinhbay" : "Sơn Tùng-MTP",
+		"url" : "audio/seeyouagain.mp3"
+	  },
+	  {
+		"tenbaihat" : "Âm Thầm Bên Em",
+		"trinhbay" : "Sơn Tùng-MTP",
+		"url" : "audio/seeyouagain.mp3"
+	  },
+	  {
+		"tenbaihat" : "Âm Thầm Bên Em",
+		"trinhbay" : "Sơn Tùng-MTP",
+		"url" : "audio/seeyouagain.mp3"
+	  }
+
+
+	]
+}

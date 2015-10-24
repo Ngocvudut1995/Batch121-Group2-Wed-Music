@@ -4,10 +4,10 @@
 var baihatvn = []; // Khai bao 1 mang rong.
 
 
-baihatvn.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
+baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em',url:'amthambenem.html'});
+baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em',url:'amthambenem.html'});
+baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em',url:'amthambenem.html'});
+baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em',url:'amthambenem.html'});
 baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
 baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
 baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
@@ -63,18 +63,3 @@ albumvn.push({imgSrc:'images/BXH album/VN/vonguoita.jpg',name: 'Phan Mạnh Qu�
 albumvn.push({imgSrc:'images/BXH album/VN/vonguoita.jpg',name: 'Phan Mạnh Quỳnh', title: 'Vợ Người Ta'});
 albumvn.push({imgSrc:'images/BXH album/VN/vonguoita.jpg',name: 'Phan Mạnh Quỳnh', title: 'Vợ Người Ta'});
 var albumhanhuoc=[];
-
-var videoLQ = []; // Khai bao 1 mang rong.
-
-
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-videoLQ.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
