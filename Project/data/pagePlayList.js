@@ -19,3 +19,20 @@ pagePlayList.push({name:"Nhạc Phim"});
 pagePlayList.push({name:"Thể Loại Khác"});
 
 
+var divVideo=[];
+divVideo.push({src:'images/Playlist/hoangyen.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/nhatTue.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/perfect.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/PlayList/tientien.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/hoangyen.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/nhatTue.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/perfect.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/PlayList/tientien.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/perfect.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/PlayList/tientien.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/hoangyen.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/nhatTue.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/perfect.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/PlayList/tientien.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/hoangyen.jpg',name:'ten BH',title:'ca sĩ'});
+divVideo.push({src:'images/Playlist/nhatTue.jpg',name:'ten BH',title:'ca sĩ'});
