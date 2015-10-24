@@ -4,9 +4,9 @@
 var baihatvn = []; // Khai bao 1 mang rong.
 
 
-baihatvn.push({imgSrc: 'http://localhost:63342/Project/images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
-baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
+baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em',url:"amthambenem.html"});
+baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em',url:"amthambenem.html"});
+baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em',url:"amthambenem.html"});
 baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
 baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
 baihatvn.push({imgSrc: 'images/BXH/Sontung.jpg', name: 'Sơn Tùng', title: 'Âm Thầm Bên Em'});
