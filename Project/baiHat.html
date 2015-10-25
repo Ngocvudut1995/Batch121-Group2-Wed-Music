@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bài Hát</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <script src="data/pageVideo.js"></script>
+    <script src="data/pageBH.js"></script>
+    <script src="data/productsBXH.js"></script>
+
+</head>
+<body>
+
+<header id="myheader">
+
+</header>
+<nav id="mynav">
+
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-8">
+                <div id="pageVideo" class="col-xs-12" style="text-align: center">
+
+                </div>
+                <div class="col-xs-7">
+                     <h2><a href="#" style="color: tomato ">BÀi Hát MỚi</a> </h2>
+                </div>
+                <div class="btn-group hidden-xs,col-xs-12" style="text-align: center; margin: 30px -30px">
+
+                        <a   class="btn btn-danger">Hot Nhất</a>
+                        <a   class="btn btn-default">Mới Nhất</a>
+
+                </div>
+                <div class="col-xs-12" id="dsBH">
+
+                </div>
+                <div class="col-xs-12" style="background-color:#e2e2e2;height: 50px;text-align: center">
+                    <div style="margin: 20px">
+                        <a href="#" style="margin: 30px"> 1 </a>
+                        <a href="#" style="margin: 30px"> 2 </a>
+                        <a href="#" style="margin: 30px"> 3 </a>
+                        <a href="#" style="margin: 30px"> 4 </a>
+                        <a href="#" style="margin: 30px"> trang cuối</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-lg-4 hidden-xs"style="height: 1000px;">
+
+                <!--BXH-->
+                <div id="BXHbaihat">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        loadDS();
+        loadBH();
+    });
+    function loadDS() {
+        var html = "";
+
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (pageVideo, function(index, item) {
+            var s = "";
+            s+='<div class="col-xs-3"style="height: 50px;margin-top: 10px">'
+            s+='        <h4 style="text-align:left"><a href="#"> <span class="glyphicon glyphicon-chevron-right"></span>'+item.name+'</a></h4> '
+
+            s+='</div>'
+
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#pageVideo").html(html);
+    }
+    function loadBH() {
+        var html = "";
+
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (ds, function(index, item) {
+            var s = "";
+            s+='<tr>';
+            s+='<td>';
+
+
+            s+='         <div class="col-xs-12">';
+            s+='         <table  class="table table-hover "style="width: 100%">';
+            s+='                 <tr>';
+            s+='                      <td width="62%"><a href="#" style="color: #00001e;text-align: center">'+item.Music+''+item.name+'</a></td>';
+            s+='                      <td  width="20%" style=" text-align:center"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.choise+'</h6></td>';
+            s+='                       <td widtth="6%" style="text-align:center"><a href="#"> <span class="glyphicon glyphicon-play"></span></a></td>'
+            s+='                       <td widtth="6%" style="float: left"><a href="#"><span class="glyphicon glyphicon-plus"></span></a></td>'
+            s+='                       <td widtth="6%" style="text-align:center"><a href="#"><span class="glyphicon glyphicon-download-alt"></span></a></td>'
+            s+='                 </tr>';
+
+            s+='        </table>';
+            s+='</div>';
+
+            s+='</td>';
+            s+='</tr>';
+
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#dsBH").html(html);
+    }
+    $(document).ready(function(){
+        $("#myheader").load("templates/header.html");
+        $("#mynav").load("templates/nav.html");
+        $("#BXHbaihat").load("templates/BXH/baihat.html");
+
+    });
+</script>
+</body>
+</html>
