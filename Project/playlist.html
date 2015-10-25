@@ -44,17 +44,19 @@
 
         </div>
     </div>
-    <div style="height: 50px;background-color: #f9f2f4;margin: 20px ;text-align: center">
-        <div style="margin: 20px">
-            <a href="#" style="margin: 15px"> 1 </a>
-            <a href="#" style="margin: 15px"> 2 </a>
-            <a href="#" style="margin: 15px"> 3 </a>
-            <a href="#" style="margin: 15px"> 4 </a>
-            <a href="#" style="margin: 15px"> trang cuối</a>
-        </div>
+    <div style="margin: 20px ;text-align: center">
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
     </div>
 </div>
-
+<footer id="myfooter"></footer>
 
 <script >
     $(document).ready(function(){
@@ -94,6 +96,7 @@
         $("#playlist").html(html);
     }
     $(document).ready(function(){
+        $("#myfooter").load("templates/footer.html");
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
         $("#divPlayList").load("templates/playList/divplayList");

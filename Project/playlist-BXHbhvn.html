@@ -54,7 +54,7 @@
 
 
             </div>
-            <div  class="hinhanh" style="background:  50% 50%/cover no-repeat ;  height: 200px">
+            <div  class="hinhanh" style="background:  50% 50%/cover no-repeat ;  height: 200px;border-radius: 10px">
                 <h2 style="color: black; padding-top: 20px;margin-left: 20px" class="baihat"></h2>
                 <p style="color: rgba(89, 89, 89, 0.82);margin-left: 20px" class="trinhbay"></p>
             </div>
@@ -100,68 +100,9 @@
             </div>
 
             <div id="" style=" margin-top: 20px;min-height: 300px">
-                <h3 style="margin-top: 60px;margin-bottom: -30px">Bài hát: Âm Thầm Bên Em - Sơn Tùng (M-TP)</h3>
+                <h3  class="tieude"style="margin-top: 60px;margin-bottom: -30px"></h3>
                 <p id="show1" style="max-height:255px;overflow: hidden">
 
-                    <br>
-                    <br>[Verse]
-                    <br>Khi bên anh em thấy điều chi
-                    <br>Khi bên anh em thấy điều gì
-                    <br>Nước mắt rơi gần kề làn mi
-                    <br>Chẳng còn những giây phút
-                    <br>Chẳng còn những ân tình
-                    <br>Gió mang em rời xa nơi đây
-                    <br>
-                    <br>Khi xa anh em nhớ về ai
-                    <br>Khi xa anh em nhớ một người
-                    <br>Chắc không phải một người như anh
-                    <br>Người từng làm em khóc
-                    <br>Người từng khiến em buồn
-                    <br>Buông bàn tay
-                    <br>Rời xa lặng thinh bước đi
-                    <br>
-                    <br>[Chorus]
-                    <br>Hạt mưa rơi bủa vây trái tim hiu quạnh
-                    <br>Ngàn yêu thương vụt tan bỗng xa
-                    <br>Người từng nói ở bên cạnh anh mỗi khi anh buồn
-                    <br>Cớ sao giờ lời nói kia như gió bay
-                    <br>Đừng bỏ rơi bàn tay ấy bơ vơ mà
-                    <br>Một mình anh lặng im chốn đây
-                    <br>Yêu em âm thầm bên em
-                    <br>
-                    <br>[Rap]
-                    <br>Yêu thương không còn nơi đây
-                    <br>Mang tình buồn theo mây
-                    <br>Cơn mơ về
-                    <br>Mong manh câu thề
-                    <br>Tan trôi qua mau quên đi phút giây
-                    <br>Mưa rơi trên đôi mi qua lối vắng
-                    <br>Ánh sáng mờ buông lơi Làn khói trắng
-                    <br>Bóng dáng em, nụ cười ngày hôm qua
-                    <br>Kí ức có ngủ quên chìm trong màn sương đắng
-                    <br>Anh nhớ giọt nước mắt sâu lắng
-                    <br>Anh nhớ nỗi buồn của em ngày không nắng
-                    <br>
-                    <br>[Chorus]
-                    <br>Hạt mưa rơi bủa vây trái tim hiu quạnh
-                    <br>Ngàn yêu thương vụt tan bỗng xa
-                    <br>Người từng nói ở bên cạnh anh mỗi khi anh buồn
-                    <br>Cớ sao giờ lời nói kia như gió bay
-                    <br>Đừng bỏ rơi bàn tay ấy bơ vơ mà
-                    <br>Cầm bông hoa chờ mong nhớ thương
-                    <br>Làm sao quên người ơi, tình anh mãi như hôm nào
-                    <br>Vẫn yêu người và vẫn mong em về đây
-                    <br>
-                    <br>[Coda]
-                    <br>Giọt nước mắt tại sao cứ lăn rơi hoài
-                    <br>Ở bên anh chỉ có đớn đau
-                    <br>Thì anh xin nhận hết ngàn đau đớn để thấy em cười
-                    <br>Dẫu biết rằng người đến không như giấc mơ
-                    <br>Yêu em âm thầm bên em
-                    <br>
-                    <br>Thì anh xin nhận hết ngàn đau đớn để thấy em cười
-                    <br>Dẫu biết rằng người đến không như giấc mơ
-                    <br>Yêu em âm thầm bên em
 
                 </p>
                 <button  class ="btn btn-default btn-xs"id="xt" data-toggle="button"style="position: absolute;left: 15px;">Xem Thêm</button>
@@ -213,7 +154,7 @@
     </div>
 
 </div>
-
+<footer id="myfooter"></footer>
 
 </body>
 <script>
@@ -252,6 +193,7 @@
         });
     });
     $(document).ready(function(){
+        $("#myfooter").load("templates/footer.html");
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
         $("#lquan").load("templates/BXH/baihat.html");

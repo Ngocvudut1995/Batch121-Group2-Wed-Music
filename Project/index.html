@@ -16,6 +16,7 @@
     <script src="data/productsBXH.js"></script>
     <script src="data/productsPlaylist.js"></script>
     <script src="js/facebook.js"></script>
+    <link rel="stylesheet" href="social-button/social-buttons.css">
 
 </head>
 
@@ -33,11 +34,11 @@
 
     </header>
     <nav id="mynav"></nav>
-  <div class="container"style="margin-top: 30px">
+    <div class="container"style="margin-top: 30px;">
         <div class="row">
-            <div class="col-lg-8" style=" height: 1000px">
+            <div class="col-lg-8" style="">
                 <!--Slide-->
-                <div id="slide" style="height: 400px;margin-bottom: 20px">
+                <div id="slide" style="margin-bottom: 20px">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -73,14 +74,14 @@
                     </script>
                 </div>
                 <!--Album-->
-                <div style="height: 600px; margin-top: 20px;">
+                <div style="margin-top: 20px;">
                     <h1><a href="#"> Album|Playlist</a></h1>
                     <div id="playlistIndex"class="row"style="margin-top: 20px">
 
                     </div>
                 </div>
 
-                <div style="height: 600px; margin-top: 20px;">
+                <div style=" margin-top: 20px;">
                 <!--Video-->
                     <h1><a href="#"> Video|MV</a></h1>
                     <div id="mvIndex" class="row"style="margin-top: 20px">
@@ -94,7 +95,7 @@
 
                     </div>
                 </div>
-                <div class=""style=" margin-top: 20px;">
+                <div class=""style=" margin-top: 20px; margin-bottom: 30px">
                     <h1 style=""><a href="#">Tin Tức Âm Nhạc</a></h1>
                     <div class="row">
                         <div class="col-md-6 col-xs-5"id="tintucIndex1">
@@ -110,19 +111,12 @@
                     </div>
                 </div>
 
-                <div    style="margin-top: 100px"
-                        class="fb-like"
-                        data-share="true"
-                        data-width="450"
-                        data-show-faces="true">
-                </div>
-                <div class="fb-comments" data-href="http://localhost:63342/Project/index.html" data-numposts="5"></div>
 
             </div>
 
-            <div class="col-lg-4 hidden-xs"style="height: 1000px;">
+            <div class="col-lg-4 hidden-xs"style="">
                 <!--Banner-->
-                <div style=" height: 400px"></div>
+                <div style=""></div>
                 <!--BXH-->
                 <div id="BXHbaihat">
 
@@ -135,15 +129,20 @@
                 </div>
             </div>
 
-            </div>
+        </div>
 
       </div>
 
-    </div>
+    <hr/>
+    <footer id="myFooter" style="clear: both;">
+
+    </footer>
 
 
 
 
+
+</body>
 <script>
     $(document).ready(function(){
         loadProducts();
@@ -226,20 +225,20 @@
         $.each (tintucIndex, function(index, item) {
             var s = "";
             if(t==1){
-            s+='    <a href="#"><img style="width: 100px;height: 100px;float: left; margin-right: 30px" src="images/Tin%20Tuc/index/tony.jpg"></a> '
-            s+='     <table style="">'
-            s+='        <tr>'
-            s+='            <td><a href="#">'+item.title+'</a></td>'
-            s+='    </tr>'
-            s+='        <tr>'
-            s+='            <td style="font-size: 8pt">'+item.content+'</td>'
-            s+='        </tr>'
-            s+='    </table>'
-            html1+=s;
-              }
+                s+='    <a href="#"><img style="width: 100px;height: 100px;float: left; margin-right: 30px" src="images/Tin%20Tuc/index/tony.jpg"></a> '
+                s+='     <table style="">'
+                s+='        <tr>'
+                s+='            <td><a href="#">'+item.title+'</a></td>'
+                s+='    </tr>'
+                s+='        <tr>'
+                s+='            <td style="font-size: 8pt">'+item.content+'</td>'
+                s+='        </tr>'
+                s+='    </table>'
+                html1+=s;
+            }
             else {
-             s+='<li style="margin-bottom: 10px"><a href"#">'+item.title+'</a></li>'
-                        html2+=s;
+                s+='<li style="margin-bottom: 10px"><a href"#">'+item.title+'</a></li>'
+                html2+=s;
             }
 
             t++;
@@ -251,13 +250,13 @@
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
-       // $("#mysection").load("templates/section.html");
+
         $("#BXHbaihat").load("templates/BXH/baihat.html");
         $("#BXHvideo").load("templates/BXH/video.html");
         $("#BXHalbum").load("templates/BXH/playlist.html");
+        $("#myFooter").load("templates/footer.html");
     });
 
 </script>
-</body>
 
 </html>

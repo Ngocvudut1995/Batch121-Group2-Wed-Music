@@ -69,6 +69,8 @@ function songPlayIndex(i,l,s) {
    $('.hinhanh').css('background-image',str);
    $('.baihat').text(l[i].tenbaihat);
    $('.trinhbay').text(l[i].trinhbay);
+    $('.tieude').text('Bài Hát: '+l[i].tenbaihat+' - '+l[i].trinhbay);
+    $('#show1').html(l[i].verse);
     s.src = l[i].url;
     s.play();
 }
