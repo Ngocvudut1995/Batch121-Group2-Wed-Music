@@ -16,6 +16,7 @@
     <script src="data/pageVideo.js"></script>
     <script src="data/pageBH.js"></script>
     <script src="data/productsBXH.js"></script>
+    <link rel="stylesheet" href="social-button/social-buttons.css">
 
 </head>
 <body>
@@ -28,24 +29,49 @@
 </nav>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12">
-            <div class="col-xs-8">
-                <div id="pageVideo" class="col-xs-12" style="text-align: center">
+
+            <div class="col-lg-8 col-md-12">
+                <div id="pageVideo" class="col-xs-12 hidden-xs" style="text-align: center;">
 
                 </div>
-                <div class="col-xs-7">
-                     <h2><a href="#" style="color: tomato ">BÀi Hát MỚi</a> </h2>
+                <div class="col-ms-12"style="margin-top: 30px">
+                     <a href="#" style="color: tomato; font-size: 20pt;float: left">BÀi Hát MỚi</a>
+                    <div class="btn-group hidden-lg hidden-md" style="float:right;">
+                        <button type="button" class="btn btn-info">Thể Loại</button>
+                        <button type="button" class="btn btn-info dropdown-toggle-" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right container-fluid" role="menu" style="width: 400px">
+                            <li class="col-xs-6">
+                                <ul class="container-fluid">
+                                    <li><a>Cách Mạng</a></li>
+                                    <li><a>Thiếu Nhi</a></li>
+                                    <li><a>Trữ Tình</a></li>
+                                    <li><a>Nhạc Trẻ</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-xs-6">
+                                <ul class="container-fluid">
+                                    <li><a>Playlist Hot</a></li>
+                                    <li><a>Hàn Quốc</a></li>
+                                    <li><a>Hoa Ngữ</a></li>
+                                    <li><a>Nhạc Phim</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="btn-group hidden-xs,col-xs-12" style="text-align: center; margin: 30px -30px">
+                <div class="btn-group hidden-xs,col-xs-12" style="text-align: center; margin-top: 10px;margin-bottom: 30px;float: right">
 
                         <a   class="btn btn-danger">Hot Nhất</a>
                         <a   class="btn btn-default">Mới Nhất</a>
 
                 </div>
-                <div class="col-xs-12" id="dsBH">
+                <div class="col-md-12" id="dsBH">
 
                 </div>
-                <div style="text-align: center">
+                <div style="text-align: center;clear: both; position: relative; top: 30px;">
                     <ul class="pagination">
                         <li><a href="#">&laquo;</a></li>
                         <li><a href="#">1</a></li>
@@ -59,7 +85,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-4 hidden-xs"style="height: 1000px;">
+            <div class="col-lg-4 hidden-xs"style="">
 
                 <!--BXH-->
                 <div id="BXHbaihat">
@@ -67,7 +93,7 @@
                 </div>
 
             </div>
-        </div>
+
     </div>
 </div>
 <footer id="myfooter"></footer>
@@ -104,12 +130,12 @@
 
 
             s+='         <div class="col-xs-12">';
-            s+='         <table  class="table table-hover "style="width: 100%">';
+            s+='         <table  class="table table-hover "style="width: 100%;margin-bottom: 5px">';
             s+='                 <tr>';
             s+='                      <td width="62%"><a href="#" style="color: #00001e;text-align: center">'+item.Music+''+item.name+'</a></td>';
             s+='                      <td  width="20%" style=" text-align:center"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.choise+'</h6></td>';
             s+='                       <td widtth="6%" style="text-align:center"><a href="#"> <span class="glyphicon glyphicon-play"></span></a></td>'
-            s+='                       <td widtth="6%" style="float: left"><a href="#"><span class="glyphicon glyphicon-plus"></span></a></td>'
+            s+='                       <td widtth="6%" style=""><a href="#"><span class="glyphicon glyphicon-plus"></span></a></td>'
             s+='                       <td widtth="6%" style="text-align:center"><a href="#"><span class="glyphicon glyphicon-download-alt"></span></a></td>'
             s+='                 </tr>';
 

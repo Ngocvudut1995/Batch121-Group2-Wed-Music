@@ -14,6 +14,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="js/bootstrap.js"></script>
     <script src="data/pageChuDe.js"></script>
+    <link rel="stylesheet" href="social-button/social-buttons.css">
 </head>
 <body>
 
@@ -26,7 +27,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 " STYLE="background-color: #080808;margin-bottom: 50px">
-                <img src="images/chude/head.jpg" style="width: 1150px">
+                <img  class="img-responsive" src="images/chude/head.jpg" style=" height: 340px;">
                 <h2 style="color: white">Những Bài Hit Mới</h2>
                 <p style="color: white">
                     <br>Chuyên mục được cập nhật vào tuần lễ cuối cùng của tháng với từ 10 đến 15 ca khúc thành công nhất.
@@ -48,7 +49,7 @@
             var html = "";
             $.each(page,function(index, item){
                 var s = "";
-                s+='<div class="col-xs-4"style="height: 250px; margin-bottom: 20px">'
+                s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin-bottom: 20px">'
                 s+='       <a href="#"> <img class="img-thumbnail" style="width:350px;height:200px" src="'+item.src+'"></a>'
                 s+='        <h3 style="text-align: center"><a href="#">'+item.name+'</a></h3>'
                 s+='</div>'

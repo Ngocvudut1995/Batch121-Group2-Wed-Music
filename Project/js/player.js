@@ -65,6 +65,8 @@ function control_player(song,button,list,ul) {
 
 	button.prev.on('click', function(e) {
 		e.preventDefault();
+		$('#play').hide();
+		$('#pause').show();
 		if(i==0){ songPlayIndex(i,list,song);}
 		else{
 			i = ul.find('li.active').removeClass('active').prev().addClass('active').data('idx');
@@ -75,6 +77,8 @@ function control_player(song,button,list,ul) {
 
 	button.next.on('click', function(e) {
 		e.preventDefault();
+		$('#play').hide();
+		$('#pause').show();
 		i = ul.find('li.active').removeClass('active').next().addClass('active').data('idx');
 		if(i>=list.length){ return }
 		songPlayIndex(i,list,song);

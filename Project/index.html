@@ -157,8 +157,8 @@
         // vòng lặp: duyệt qua từng phần tử trong mảng products
         $.each (playlistIndex, function(index, item) {
             var s = "";
-            s+='<div class="col-xs-3"style="height: 250px; margin-bottom: 20px">'
-            s+='        <a href="'+item.url+'"><img class="img-thumbnail" src="'+item.img+'"></a>'
+            s+='<div class="col-md-3 col-xs-6 img-responsive"style="height: 250px; margin-bottom: 20px">'
+            s+='        <a href="'+item.url+'"><img class="img-responsive" src="'+item.img+'"></a>'
             s+='       <p style=" font-size:13pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
             s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
             s+='</div>'
@@ -177,8 +177,8 @@
         // vòng lặp: duyệt qua từng phần tử trong mảng products
         $.each (mvIndex, function(index, item) {
             var s = "";
-            s+='<div class="col-xs-3"style="height: 250px; margin-bottom: 20px">'
-            s+='        <div><a  href="#"><img style="height: 120px" class="img-thumbnail" src="'+item.img+'"></a></div>'
+            s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin-bottom: 20px">'
+            s+='        <div><a  href="#"><img style="height: 120px" class="img-responsive" src="'+item.img+'"></a></div>'
             s+='       <p style="font-size:13pt;text-align: center"><a href="#">'+item.title+'</a></p>'
             s+='        <p style="margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
             s+='</div>'
@@ -199,9 +199,9 @@
             var s = "";
 
             s+='<div class="col-md-5 col-xs-12 "style="height: 20px; margin: 20px">';
-            s+='         <table class="table table-hover"style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
+            s+='         <table class="table table-hover"style="float:left;margin-left: 20px; margin-top: -5px; width: 350px">';
             s+='                 <tr>';
-            s+='                      <td width="40%"><a href="#">Tên Ca Khúc</a><br>' ;
+            s+='                      <td class="namesong"width="40%"><a href="#">Tên Ca Khúc</a><br>' ;
             s+='                        <a href="#">Ca Sĩ</a>'
             s+=                      '</td>';
             s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>Lượt Nghe</h6></td>';
