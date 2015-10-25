@@ -150,11 +150,14 @@ input[type=range]:focus::-ms-fill-upper {
     position:relative;
     top:1px;
 }
-a.namesong{
+.namesong{
     white-space: nowrap;
-
+    max-width: 172px;
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box;
     line-height: 18px;
+}
+.namesong a{
+    white-space: nowrap;
 }
