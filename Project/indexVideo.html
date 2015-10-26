@@ -116,6 +116,8 @@
     $(document).ready(function(){
         loadDS();
         loadVideo();
+        loadVideo1();
+        loadVideo2();
     });
     function loadDS() {
         var html = "";
@@ -140,13 +142,41 @@
             var s="";
             s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin: 20px 0px">'
             s+='       <a href="video.html"> <img class="img-thumbnail" style="width:300px;height:200px" src="'+item.src+'"></a>'
-            s+='        <h3 style="text-align: center"><a href="video.html">'+item.name+'</a></h3>'
-            s+='        <h5 style="text-align: center"><a href="video.htmlo">'+item.title+'</a></h5>'
+            s+='        <h3 class="namesong" style="text-align: left"><a href="video.html">'+item.name+'</a></h3>'
+            s+='        <h5 style="text-align: left"><a href="video.htmlo">'+item.title+'</a></h5>'
             s+='</div>'
             html += s;
         });
         $("#videoVN").html(html);
+
+    }
+    function loadVideo1(){
+        var html="";
+        $.each(divVideo1,function(index,item){
+            var s="";
+            s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin: 20px 0px">'
+            s+='       <a href="video.html"> <img class="img-thumbnail" style="width:300px;height:200px" src="'+item.src+'"></a>'
+            s+='        <h3 class="namesong"style="text-align: left"><a href="video.html">'+item.name+'</a></h3>'
+            s+='        <h5 style="text-align: left"><a href="video.htmlo">'+item.title+'</a></h5>'
+            s+='</div>'
+            html += s;
+        });
+
         $("#videoAu").html(html);
+
+    }
+    function loadVideo2(){
+        var html="";
+        $.each(divVideo2,function(index,item){
+            var s="";
+            s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin: 20px 0px">'
+            s+='       <a href="video.html"> <img class="img-thumbnail" style="width:300px;height:200px" src="'+item.src+'"></a>'
+            s+='        <h3 class="namesong"style="text-align: left"><a href="video.html">'+item.name+'</a></h3>'
+            s+='        <h5 style="text-align: left"><a href="video.htmlo">'+item.title+'</a></h5>'
+            s+='</div>'
+            html += s;
+        });
+
         $("#videoHan").html(html);
     }
     $(document).ready(function(){
