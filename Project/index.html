@@ -158,7 +158,11 @@
         $.each (playlistIndex, function(index, item) {
             var s = "";
             s+='<div class="col-md-3 col-xs-6 img-responsive"style="height: 250px; margin-bottom: 20px">'
-            s+='        <a href="'+item.url+'"><img class="img-responsive" src="'+item.img+'"></a>'
+            s+='<div class="move" style="background-image:url('+item.img+');background-size:120%;height: 165px; width:auto;heigth:200px">'
+            s+='<div class="div-hover" >'
+            s+='      <p style="font-size: 40pt;color: white"> <span  style="margin: 60px;" class="glyphicon glyphicon-play-circle"></span> </p>'
+            s+=     '</div>'
+            s+=       '</div>'
             s+='       <p style=" font-size:13pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
             s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
             s+='</div>'
@@ -178,7 +182,11 @@
         $.each (mvIndex, function(index, item) {
             var s = "";
             s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin-bottom: 20px">'
-            s+='        <div><a  href="#"><img style="height: 170px" class="img-responsive" src="'+item.img+'"></a></div>'
+            s+='<div class="move" style="background-image:url('+item.img+');background-size:120%;height: 165px; width:auto;heigth:180px">'
+            s+='<div class="div-hover" >'
+            s+='      <p style="font-size: 40pt;color: white"> <span  style="margin: 60px;" class="glyphicon glyphicon-play-circle"></span> </p>'
+            s+=  '</div>'
+            s+=  '</div>'
             s+='       <p style="font-size:13pt;text-align: center"><a href="#">'+item.title+'</a></p>'
             s+='        <p style="margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
             s+='</div>'
@@ -255,6 +263,17 @@
         $("#BXHvideo").load("templates/BXH/video.html");
         $("#BXHalbum").load("templates/BXH/playlist.html");
         $("#myFooter").load("templates/footer.html");
+    });
+    $(document).ready(function(){
+        $(".div-hover").hide();
+        $('.move').bind('mouseenter',function(){
+            $(this).find('.div-hover').show().css('background-color','black').css('opacity','0.1');
+
+        }).bind('mouseleave',function(){
+            $(this).find('.div-hover').hide();
+        });
+
+
     });
 
 </script>
