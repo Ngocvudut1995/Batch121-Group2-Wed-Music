@@ -23,6 +23,9 @@
     <script src="data/productsBXH.js"></script>
     <script src="data/productsPlaylist.js"></script>
     <script src="js/facebook.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+    <script src="data/user.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
 
 </head>
@@ -80,7 +83,7 @@
 
             <div style="height: 50px">
                 <div class="btn-group">
-                    <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
+                    <a href="#"><button  id="bh1"type="button" class="btn btn-default addUserlist" data-name="Âm Thầm Bên Em"data-src="Music/ads.mp3 "data-singer="Sơn Tùng"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
                     <a href="Music/ads.mp3" download="amthambenem"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
                     <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>
 
@@ -270,6 +273,49 @@
         $("#myfooter").load("templates/footer.html");
 
     });
+
+</script>
+<script>
+    var playlistofUser=[];
+    $(document).ready(function(){
+        // Kiểm tra nếu đã có localStorage["shopping-cart-items"] hay chưa?
+        if (localStorage["play-list-of-User"] != null) {
+            playlistofUser = JSON.parse(localStorage["play-list-of-User"].toString());
+        }
+        $(".addUserlist").click(function(){
+            var button=$(this);
+            var id=button.attr("id");
+            var namesong=button.attr("data-name");
+            var singer=button.attr('data-singer');
+            var src=button.attr('data-src');
+            var item={
+                id:id,
+                namesong:namesong,
+                singer:singer,
+                src:src
+            };
+            var exists = false;
+            if (playlistofUser.length > 0) {
+                $.each(playlistofUser, function (index, value) {
+                    // Nếu mặt hàng đã tồn tại trong giỏ hàng thì chỉ cần tăng số lượng mặt hàng đó trong giỏ hàng.
+                    if (value.id == item.id) {
+                       swal("Thông báo","Bạn Đã Thêm Bài Hát Này.","success");
+                        exists = true;
+                        return false;
+                    }
+                });
+            }
+            if(exists==false){
+                playlistofUser.push(item);
+                swal("Thông báo", "Bạn Đã Thêm Thành Công", "success");
+            }
+
+            localStorage["play-list-of-User"]=JSON.stringify(playlistofUser);
+        });
+    });
+</script>
+<script>
+    var username=localStorage.getItem('username');
 
 </script>
 </html>

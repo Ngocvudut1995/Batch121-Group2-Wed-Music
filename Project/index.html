@@ -16,6 +16,9 @@
     <script src="data/productsBXH.js"></script>
     <script src="data/productsPlaylist.js"></script>
     <script src="js/facebook.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+    <script src="data/user.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
 
 </head>
@@ -145,26 +148,30 @@
 </body>
 <script>
     $(document).ready(function(){
-        loadProducts();
+        loadProductsPL();
         loadProductsMV();
         loadProductsCaKhuc();
         loadProductsTintuc();
     });
 
-    function loadProducts() {
+    function loadProductsPL() {
         var html = "";
 
         // vòng lặp: duyệt qua từng phần tử trong mảng products
         $.each (playlistIndex, function(index, item) {
             var s = "";
-            s+='<div class="col-md-3 col-xs-6 img-responsive"style="height: 250px; margin-bottom: 20px">'
-            s+='<div class="move" style="background-image:url('+item.img+');background-size:120%;height: 165px; width:auto;heigth:200px">'
-            s+='<div class="div-hover" >'
-            s+='      <p style="font-size: 40pt;color: white"> <span  style="margin: 60px;" class="glyphicon glyphicon-play-circle"></span> </p>'
-            s+=     '</div>'
-            s+=       '</div>'
-            s+='       <p style=" font-size:13pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
+            s+='<div class="col-lg-3 col-xs-6 "style= "height: 250px; margin-bottom: 20px">'
+            s+='    <div class="col-lg-12 col-xs-12 move">'
+            s+='        <img class=""style="width:100%; height:150px" src="'+item.img+'">'
+            s+='            <div class="mark col-lg-12 col-md-12">'
+            s+='                    <a  class="col-lg-12 col-xs-12"href="'+item.url+'"style=" text-align: center;position: inherit;font-size: 40pt;height: 100%;left:0"> <span  style="top: 33%;left: 0;" class="glyphicon glyphicon-play-circle"></span> </a>'
+
+            s+= '           </div>'
+            s+='    </div>'
+            s+='    <div>'
+            s+='       <p style=" font-size:12pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
             s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='    </div>'
             s+='</div>'
 
 
@@ -181,14 +188,18 @@
         // vòng lặp: duyệt qua từng phần tử trong mảng products
         $.each (mvIndex, function(index, item) {
             var s = "";
-            s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin-bottom: 20px">'
-            s+='<div class="move" style="background-image:url('+item.img+');background-size:120%;height: 165px; width:auto;heigth:180px">'
-            s+='<div class="div-hover" >'
-            s+='      <p style="font-size: 40pt;color: white"> <span  style="margin: 60px;" class="glyphicon glyphicon-play-circle"></span> </p>'
-            s+=  '</div>'
-            s+=  '</div>'
-            s+='       <p style="font-size:13pt;text-align: center"><a href="#">'+item.title+'</a></p>'
-            s+='        <p style="margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='<div class="col-lg-3 col-xs-6 "style= "height: 250px; margin-bottom: 20px">'
+            s+='    <div class="col-lg-12 col-xs-12 move">'
+            s+='        <img class=""style="width:100%; height:150px" src="'+item.img+'">'
+            s+='            <div class="mark col-lg-12 col-md-12">'
+            s+='                    <a  class="col-lg-12 col-xs-12"href="'+item.url+'"style=" text-align: center;position: inherit;font-size: 40pt;height: 100%;left:0"> <span  style="top: 33%;left: 0;" class="glyphicon glyphicon-play-circle"></span> </a>'
+
+            s+= '           </div>'
+            s+='    </div>'
+            s+='    <div>'
+            s+='       <p style=" font-size:12pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
+            s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='    </div>'
             s+='</div>'
 
 
@@ -265,17 +276,16 @@
         $("#myFooter").load("templates/footer.html");
     });
     $(document).ready(function(){
-        $(".div-hover").hide();
+        $(".mark").hide();
         $('.move').bind('mouseenter',function(){
-            $(this).find('.div-hover').show().css('background-color','black').css('opacity','0.1');
+            $(this).find('.mark').show();
 
         }).bind('mouseleave',function(){
-            $(this).find('.div-hover').hide();
+            $(this).find('.mark').hide();
         });
-
-
     });
+</script>
+<script>
+    var username=localStorage.getItem('username');
 
 </script>
-
-</html>

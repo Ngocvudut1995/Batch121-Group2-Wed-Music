@@ -161,3 +161,15 @@ input[type=range]:focus::-ms-fill-upper {
 .namesong a{
     white-space: nowrap;
 }
+.mark{
+
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.73);
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    left: 0;
+    width: 90%;
+    margin-left: 5%;
+
+}

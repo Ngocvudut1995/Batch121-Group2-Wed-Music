@@ -16,9 +16,13 @@
                 <li><a href="#"style="font-size: 15pt">TV</a></li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
+            <ul id="login"class="nav navbar-nav navbar-right">
+                <li><a href="dangnhap.html"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
                 <li><a href="dangki.html"><span class="glyphicon glyphicon-user"></span> Đăng Kí</a></li>
+
+            </ul>
+            <ul id="user"class="nav navbar-nav navbar-right">
+                <li><a id="dangnhap"href=""></a></li>
 
             </ul>
             <div class="hidden-xs hidden-md hidden-sm">
@@ -38,4 +42,22 @@
     </nav>
 
 </div>
+<script>
+    $(document).ready(function(){
+        $('#login').show();
+        $('#user').hide();
+        if(username!=null){
+            $('#login').hide();
+            $('#user').show();
+        }
+    });
+</script>
+<script>
+    var username=localStorage.getItem('username');
+
+    $(document).ready(function(){
+        $('#dangnhap').html('<p style="font-size: 18pt">'+username+'</p>');
+    });
+
+</script>
 

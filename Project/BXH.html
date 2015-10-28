@@ -16,6 +16,8 @@
     <script src="js/bootstrap.js"></script>
     <script src="data/productsBXH.js"></script>
     <script src="js/facebook.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="data/user.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
 </head>
 <body>
@@ -81,7 +83,7 @@
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
-        $("#BXHbaihat").load("templates/BXH/baihat.html")
+        $("#BXHbaihat").load("templates/BXH/baihat.html");
         $("#myfooter").load("templates/footer.html");
     });
     $(document).ready(function(){
@@ -126,11 +128,17 @@
             $(this).css('background-color','#C8C8C8');
 
 
+
+
         }).bind('mouseleave', function () {
             $(this).css('background-color','white');
 
         });
     });
+</script>
+<script>
+    var username=localStorage.getItem('username');
+
 </script>
 </body>
 </html>
