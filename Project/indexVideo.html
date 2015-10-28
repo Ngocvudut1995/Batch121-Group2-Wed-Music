@@ -141,7 +141,11 @@
         $.each(divVideo,function(index,item){
             var s="";
             s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin: 20px 0px">'
-            s+='       <a href="video.html"> <img class="img-thumbnail" style="width:300px;height:200px" src="'+item.src+'"></a>'
+            s+='<div class="move" style="background-image:url('+item.src+');background-size:120%;height: 165px; ">'
+            s+='<div class="div-hover" >'
+            s+='      <p style="font-size: 40pt;color: white"> <span  style="margin: 60px 90px;" class="glyphicon glyphicon-play-circle"></span> </p>'
+            s+=  '</div>'
+            s+=  '</div>'
             s+='        <h3 class="namesong" style="text-align: left"><a href="video.html">'+item.name+'</a></h3>'
             s+='        <h5 style="text-align: left"><a href="video.htmlo">'+item.title+'</a></h5>'
             s+='</div>'
@@ -155,7 +159,11 @@
         $.each(divVideo1,function(index,item){
             var s="";
             s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin: 20px 0px">'
-            s+='       <a href="video.html"> <img class="img-thumbnail" style="width:300px;height:200px" src="'+item.src+'"></a>'
+            s+='<div class="move" style="background-image:url('+item.src+');background-size:120%;height: 165px; ">'
+            s+='<div class="div-hover" >'
+            s+='      <p style="font-size: 40pt;color: white"> <span  style="margin: 60px 90px;" class="glyphicon glyphicon-play-circle"></span> </p>'
+            s+=  '</div>'
+            s+=  '</div>'
             s+='        <h3 class="namesong"style="text-align: left"><a href="video.html">'+item.name+'</a></h3>'
             s+='        <h5 style="text-align: left"><a href="video.htmlo">'+item.title+'</a></h5>'
             s+='</div>'
@@ -170,7 +178,11 @@
         $.each(divVideo2,function(index,item){
             var s="";
             s+='<div class="col-xs-6 col-md-3"style="height: 250px; margin: 20px 0px">'
-            s+='       <a href="video.html"> <img class="img-thumbnail" style="width:300px;height:200px" src="'+item.src+'"></a>'
+            s+='<div class="move" style="background-image:url('+item.src+');background-size:120%;height: 165px; ">'
+            s+='<div class="div-hover" >'
+            s+='      <p style="font-size: 40pt;color: white"> <span  style="margin: 60px 90px;" class="glyphicon glyphicon-play-circle"></span> </p>'
+            s+=  '</div>'
+            s+=  '</div>'
             s+='        <h3 class="namesong"style="text-align: left"><a href="video.html">'+item.name+'</a></h3>'
             s+='        <h5 style="text-align: left"><a href="video.htmlo">'+item.title+'</a></h5>'
             s+='</div>'
@@ -183,6 +195,17 @@
         $("#myheader").load("templates/header.html");
          $("#mynav").load("templates/nav.html");
         $("#myfooter").load("templates/footer.html");
+    });
+    $(document).ready(function(){
+        $(".div-hover").hide();
+        $('.move').bind('mouseenter',function(){
+            $(this).find('.div-hover').show().css('background-color','black').css('opacity','0.1');
+
+        }).bind('mouseleave',function(){
+            $(this).find('.div-hover').hide();
+        });
+
+
     });
 </script>
 </body>
