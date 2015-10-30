@@ -16,9 +16,12 @@
     <!-- Latest compiled JavaScript -->
     <script src="js/bootstrap.js"></script>
     <script src="data/productsBXH.js"></script>
-
+    <script src="data/productsPlaylist.js"></script>
+    <script src="data/pageVideo.js"></script>
     <script src="js/facebook.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
+    <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 
 </head>
 <body>
@@ -39,10 +42,10 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-10 col-md-10">
-                <video width="100%" height="100%" controls autoplay loop style="margin: 50px 20px">
+                <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
                     <source src="video/MTP.mp4" type="video/mp4">
                 </video>
-                <div class="btn-group" style="margin-top: -20px">
+                <div class="btn-group" style="margin-top: 20px">
                     <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
                     <a href="#" ><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
 
@@ -59,11 +62,11 @@
                 <div class="col-lg-8" >
                     <div class="col-xs-12" style="">
                         <div class="col-xs-4 col-md-4">
-                            <img src="images/bxh1.jpg" style="width: 120px;height:120px">
+                            <img src="http://image.mp3.zdn.vn/thumb/240_135/thumb_video/2/5/25747d4a489d65a91193241f43afd5d5_1349669610.jpg" style="width: 120px;height:120px">
                         </div>
                         <div class="col-md-8 col-xs-8">
-                            <h3 style="text-align: left"><a href="#">Vợ Người Ta<br></a> </h3>
-                            <h5><a href="#"style="text-align: left">Phạm Mạnh Quỳnh</a> </h5>
+                            <h3 style="text-align: left"><a href="#">Không Phải Dạng Vừa đâu<br></a> </h3>
+                            <h5><a href="#"style="text-align: left">SƠn Tùng MTP</a> </h5>
                         </div>
                     </div>
                     <div class="col-md-12 col-xs-12" style="">
@@ -130,30 +133,15 @@
                         <button  class ="btn btn-default btn-xs"id="xt" data-toggle="button"style="position: absolute;left: 15px;">Xem Thêm</button>
                         <button class ="btn btn-default btn-xs"id="rg"data-toggle="button"style="position: absolute;left: 15px;">Rút gọn</button>
                     </div>
-                    <div class="col-xs-12" style="margin-top: 30px ">
-                        <h2 class="col-xs-12"><a href="#">MV của Sơn Tùng</a> </h2>
+                    <div  class="col-xs-12" style="margin-top: 30px ">
+                        <div><h2 class="col-xs-12"><a href="#">MV của Sơn Tùng</a> </h2></div>
+                        <div id="MVlq" class="col-xs-12 ">
 
-                        <div class="col-xs-4" style="margin-top: 30px">
-                            <img src="images/BXH/Sontung.jpg" class="img-responsive">
                         </div>
-                        <div class="col-xs-4" style="margin-top: 30px">
-                            <img src="images/BXH/Sontung.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-xs-4" style="margin-top: 30px">
-                            <img src="images/BXH/Sontung.jpg" class="img-responsive">
-                         </div>
-                        <div class="col-xs-4" style="margin-top: 30px">
-                            <img src="images/BXH/Sontung.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-xs-4" style="margin-top: 30px">
-                            <img src="images/BXH/Sontung.jpg" class="img-responsive">
-                        </div>
-                        <div class="col-xs-4" style="margin-top: 30px">
-                            <img src="images/BXH/Sontung.jpg" class="img-responsive">
-                        </div>
+
                     </div>
                 </div>
-                <div  class="col-lg-4">
+                <div  class="col-lg-4 hidden-sm">
                     <div id="videoLQ1" style="max-height:1000px;overflow: hidden">
                         <div id="videoLQ" >
 
@@ -167,6 +155,33 @@
     </div>
     <footer id="myfooter"></footer>
     <script>
+        $(document).ready(function(){
+            loadVideo();
+        });
+        function loadVideo() {
+            var html = "";
+            $.each (mvIndex, function(index, item) {
+                var s = "";
+                s+='<div class="col-lg-3 col-xs-6 "style= "height: 250px; margin-bottom: 20px">'
+                s+='    <div class="col-lg-12 col-xs-12 move">'
+                s+='        <img class=""style="width:100%; height:150px" src="'+item.img+'">'
+                s+='            <div class="mark col-lg-12 col-md-12">'
+                s+='                    <a  class="col-lg-12 col-xs-12"href="'+item.url+'"style=" text-align: center;position: inherit;font-size: 40pt;height: 100%;left:0"> <span  style="top: 33%;left: 0;" class="glyphicon glyphicon-play-circle"></span> </a>'
+
+                s+= '           </div>'
+                s+='    </div>'
+                s+='    <div>'
+                s+='       <p style=" font-size:12pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
+                s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
+                s+='    </div>'
+                s+='</div>'
+
+
+
+                html += s;
+        });
+            $("#MVlq").html(html);
+        }
         $(document).ready(function(){
             $('#rg').hide();
             $('#xt').click(function(){
@@ -204,6 +219,15 @@
             $("#mynav").load("templates/nav.html");
             $("#videoLQ").load("templates/video/videoLQ.html");
             $("#myfooter").load("templates/footer.html");
+        });
+        $(document).ready(function(){
+            $(".mark").hide();
+            $('.move').bind('mouseenter',function(){
+                $(this).find('.mark').fadeToggle(500);
+
+            }).bind('mouseleave',function(){
+                $(this).find('.mark').hide();
+            });
         });
 
     </script>

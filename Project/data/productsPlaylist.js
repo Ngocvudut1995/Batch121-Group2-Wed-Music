@@ -10,6 +10,7 @@ playlistIndex.push({img:'images/PlayList/tientien.jpg',title:'Vì Tôi Còn Số
 playlistIndex.push({img:'images/Playlist/nhatTue.jpg',title:'Mật Ngữ 12 Chòm Sao',name:' Tăng Nhật Tuệ, SG Prider',url:'playlist-BXHbhvn.html'});
 playlistIndex.push({img:'images/Playlist/baoanh.jpg',title:'Safe And Sound',name:'Bảo Anh',url:'playlist-BXHbhvn.html'});
 playlistIndex.push({img:'images/Playlist/perfect.jpg',title:'Perfect (EP)',name:' One Direction',url:'playlist-BXHbhvn.html'});
+
 var mvIndex =[];
 mvIndex.push({img:'images/Playlist/tony.jpg',title:'Simple',name:'Tố Ny'});
 mvIndex.push({img:'images/Playlist/buctuong.jpg',title:'Ngày Khác',name:'Bức Tường Band'});
