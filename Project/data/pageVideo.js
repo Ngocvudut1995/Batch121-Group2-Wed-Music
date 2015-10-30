@@ -1,7 +1,7 @@
 /**
  * Created by TU on 10/24/2015.
  */
-var pageVideo=[];
+var pageVideo =[];
 pageVideo.push({name:'Mới & HOT'});
 pageVideo.push({name:'Việt Nam'});
 pageVideo.push({name:'Âu Mỹ'});
@@ -14,7 +14,7 @@ pageVideo.push({name:'Phim'});
 pageVideo.push({name:'Giải Trí Khác'});
 pageVideo.push({name:'Không Lời'});
 pageVideo.push({name:'Thể Loại Khác'});
-var divVideo=[];
+var divVideo =[];
 divVideo.push({src:'images/indexVideo/chithien.jpg',name:'Cười Cười Nói Nói',title:'CHí Thiện'});
 divVideo.push({src:'images/indexVideo/sontung1.jpg',name:'Âm Thầm Bên Em ',title:'Sơn Tùng'});
 divVideo.push({src:'images/indexVideo/ungdaive.jpg',name:'Vẫn Mãi Trong Tim',title:'Ưng Đại Vệ, LiL Knight'});

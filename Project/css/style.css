@@ -169,7 +169,11 @@ input[type=range]:focus::-ms-fill-upper {
     top: 0;
     z-index: 11;
     left: 0;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: 0;
 
+}
+.move{
+    width: 100%;
+    padding: 2px;
 }
