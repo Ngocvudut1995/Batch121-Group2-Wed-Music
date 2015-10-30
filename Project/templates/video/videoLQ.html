@@ -23,13 +23,12 @@
     function loadProducts() {
         var html = "";
         // vòng lặp: duyệt qua từng phần tử trong mảng products
-        $.each (mvIndex, function(index, item) {
+        $.each (mvIndex1, function(index, item) {
             var s = "";
                 s+='<tr>';
 
                 s+='<td>';
 
-                s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
                 s+='         <div style="width: 300px;height: 120px;margin-left: 30px">';
 
                 s+='         <a style="float: left" href="#"><img class="img-bxh" style="width: 100px;height: 100px" src="'+ item.img+'"></a>';

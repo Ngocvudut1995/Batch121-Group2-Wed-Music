@@ -45,12 +45,12 @@ divVideo1.push({src:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/2012/06/2
 divVideo1.push({src:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/8/5/8510bca2bbd5cb44c60cffd8b879b751_1386748351.jpg',name:'I Know You Were Trouble (The Victoria Secret Fashion Show 2013)',title:' Taylor Swift'});
 divVideo1.push({src:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/7/f/7fffb663120dd173020ed4b9bc223583_1433842088.jpg',name:'Best Song Ever (Live At The Summertime Ball 2015)',title:' One Direction'});
 
-var mvIndex =[];
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/8/f/8ffcb87289215a21d169d7a8ec86162e_1414118901.jpg',title:'Chàng trai năm ấy',name:'Sơn Tùng'});
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/9/e/9edfd7a190f23d7645e60891c0495d4c_1399868563.png',title:'Sống như nhũng đóa hoa',name:'Nhiều Nghệ SĨ'});
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/b/1/b1c839bd85e6081614cf770278b8f782_1387164001.jpg',title:'Em của ngày hôm qua ',name:'Sơn Tùng'});
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/d/3/d3987e294552bfd40eeb770946a8db2d_1375685055.jpg',title:"Đừng về trễ",name:'Sơn Tùng'});
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/5/5/554da9302e4666a165e1e75beaa16af3_1435118569.jpg', title:'Mashub.',name:'Sơn Tùng'});
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/a/b/abac174e3b0f6fb9f430dc8a9287319e_1438745458.jpg', title:'Ấn Nút Nhớ…Thả Giấc Mơ',name:'Sơn Tùng'});
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/c/9/c934b64ce7174caf557f89821749f9a5_1428028455.jpg', title:'Không Phải Dạng Vừa Đâu',name:'Sơn Tùng'});
-mvIndex.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/e/9/e983d7a3680535ca364ae236ecf7408e_1427432684.jpg', title:'Không Phải Dạng Vừa Đâu',name:'Sơn Tùng'});
+var mvIndex1 =[];
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/8/f/8ffcb87289215a21d169d7a8ec86162e_1414118901.jpg',title:'Chàng trai năm ấy',name:'Sơn Tùng'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/9/e/9edfd7a190f23d7645e60891c0495d4c_1399868563.png',title:'Sống như nhũng đóa hoa',name:'Nhiều Nghệ SĨ'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/b/1/b1c839bd85e6081614cf770278b8f782_1387164001.jpg',title:'Em của ngày hôm qua ',name:'Sơn Tùng'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/d/3/d3987e294552bfd40eeb770946a8db2d_1375685055.jpg',title:"Đừng về trễ",name:'Sơn Tùng'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/5/5/554da9302e4666a165e1e75beaa16af3_1435118569.jpg', title:'Mashub.',name:'Sơn Tùng'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/a/b/abac174e3b0f6fb9f430dc8a9287319e_1438745458.jpg', title:'Ấn Nút Nhớ…Thả Giấc Mơ',name:'Sơn Tùng'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/c/9/c934b64ce7174caf557f89821749f9a5_1428028455.jpg', title:'Không Phải Dạng Vừa Đâu',name:'Sơn Tùng'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/e/9/e983d7a3680535ca364ae236ecf7408e_1427432684.jpg', title:'Không Phải Dạng Vừa Đâu',name:'Sơn Tùng'});

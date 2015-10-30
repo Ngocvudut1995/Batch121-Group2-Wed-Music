@@ -42,7 +42,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-10 col-md-10">
-                <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+                <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="768" height="360" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
                     <source src="video/MTP.mp4" type="video/mp4">
                 </video>
                 <div class="btn-group" style="margin-top: 20px">
@@ -146,6 +146,8 @@
                         <div id="videoLQ" >
 
                         </div>
+                        <button  class ="btn btn-default btn-xs"id="xt2" data-toggle="button"style="position: absolute;left: 15px;">Xem Thêm</button>
+                        <button class ="btn btn-default btn-xs"id="rg2"data-toggle="button"style="position: absolute;left: 15px;">Rút gọn</button>
                     </div>
 
                 </div>
@@ -160,7 +162,7 @@
         });
         function loadVideo() {
             var html = "";
-            $.each (mvIndex, function(index, item) {
+            $.each (mvIndex1, function(index, item) {
                 var s = "";
                 s+='<div class="col-lg-3 col-xs-6 "style= "height: 250px; margin-bottom: 20px">'
                 s+='    <div class="col-lg-12 col-xs-12 move">'
@@ -231,5 +233,10 @@
         });
 
     </script>
+    <script>
+        var username=localStorage.getItem('username');
+
+    </script>
+
 </body>
 </html>
