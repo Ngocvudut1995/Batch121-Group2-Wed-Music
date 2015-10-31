@@ -41,16 +41,16 @@
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
         <div class="row">
-            <div class="col-xs-10 col-md-10">
+            <div class="col-xs-12 col-md-10">
                 <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="768" height="360" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
                     <source src="video/MTP.mp4" type="video/mp4">
                 </video>
-                <div class="btn-group" style="margin-top: 20px">
+                <div class="btn-group col-xs-6" style="margin-top: 5px; margin-bottom: 20px;float: left">
                     <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
                     <a href="#" ><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
 
                 </div>
-                <div    style="float: right; width: 100px;margin-right: 100px; margin-top: 10px"
+                <div class="col-xs-6" style="float: right; width: 100px;margin-right: 100px; margin-top: 10px"
                         class="fb-like"
                         data-share="true"
                         data-width="100"
@@ -142,12 +142,12 @@
                     </div>
                 </div>
                 <div  class="col-lg-4 hidden-sm">
-                    <div id="videoLQ1" style="max-height:1000px;overflow: hidden">
-                        <div id="videoLQ" >
+                    <div id="videoLQ1" >
+                        <div id="videoLQ" style="max-height:1000px;overflow: hidden">
 
                         </div>
-                        <button  class ="btn btn-default btn-xs"id="xt2" data-toggle="button"style="position: absolute;left: 15px;">Xem Thêm</button>
-                        <button class ="btn btn-default btn-xs"id="rg2"data-toggle="button"style="position: absolute;left: 15px;">Rút gọn</button>
+                        <button  class ="btn btn-default btn-xs"id="xt2" data-toggle="button"style="position: absolute;left: 180px;margin-top: 15px">Xem Thêm</button>
+                        <button class ="btn btn-default btn-xs"id="rg2"data-toggle="button"style="position: absolute;left: 180px;">Rút gọn</button>
                     </div>
 
                 </div>
@@ -203,13 +203,13 @@
         $(document).ready(function(){
             $('#rg2').hide();
             $('#xt2').click(function(){
-                $('#videoLQ1').css("max-height",'none')
+                $('#videoLQ').css("max-height",'none')
                         .css('height','none');
                 $(this).hide();
                 $('#rg2').show();
             });
             $('#rg2').click(function () {
-                $('#videoLQ1').css("max-height",'1000px')
+                $('#videoLQ').css("max-height",'1000px')
                         .css('height','auto').css('overflow','hidden');
                 $(this).hide();
                 $('#xt2').show();

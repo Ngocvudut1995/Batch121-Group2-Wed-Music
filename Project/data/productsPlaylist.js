@@ -10,16 +10,15 @@ playlistIndex.push({img:'images/PlayList/tientien.jpg',title:'Vì Tôi Còn Số
 playlistIndex.push({img:'images/Playlist/nhatTue.jpg',title:'Mật Ngữ 12 Chòm Sao',name:' Tăng Nhật Tuệ, SG Prider',url:'playlist-BXHbhvn.html'});
 playlistIndex.push({img:'images/Playlist/baoanh.jpg',title:'Safe And Sound',name:'Bảo Anh',url:'playlist-BXHbhvn.html'});
 playlistIndex.push({img:'images/Playlist/perfect.jpg',title:'Perfect (EP)',name:' One Direction',url:'playlist-BXHbhvn.html'});
-
 var mvIndex =[];
-mvIndex.push({img:'images/Playlist/tony.jpg',title:'Simple',name:'Tố Ny'});
-mvIndex.push({img:'images/Playlist/buctuong.jpg',title:'Ngày Khác',name:'Bức Tường Band'});
-mvIndex.push({img:'images/Playlist/unghoangphuc.jpg',title:'Căn Gác Trống ',name:'Ưng Hoàng Phúc'});
-mvIndex.push({img:'images/PlayList/duykhanh.jpg',title:'Vợ Tuyệt Vời Nhất',name:'Vũ Duy Khánh'});
-mvIndex.push({img:'images/Playlist/index/issac.jpg', title:'Yêu Không Nghỉ Phép.',name:'Issac'});
-mvIndex.push({img:'images/Playlist/index/bxh6.jpg', title:'MV về ....',name:'Issac'});
-mvIndex.push({img:'images/Playlist/index/download.jpg', title:'Chào ngày Mới',name:'Hoàng Yến Chi BI'});
-mvIndex.push({img:'images/Playlist/khacviet.jpg', title:'Không yêu cũng đừng làm bạn',name:'Khắc Việt'});
+mvIndex.push({img:'images/Playlist/tony.jpg',title:'Simple',name:'Tố Ny',url:"video.html"});
+mvIndex.push({img:'images/Playlist/buctuong.jpg',title:'Ngày Khác',name:'Bức Tường Band',url:"video.html"});
+mvIndex.push({img:'images/Playlist/unghoangphuc.jpg',title:'Căn Gác Trống ',name:'Ưng Hoàng Phúc',url:"video.html"});
+mvIndex.push({img:'images/PlayList/duykhanh.jpg',title:'Vợ Tuyệt Vời Nhất',name:'Vũ Duy Khánh',url:"video.html"});
+mvIndex.push({img:'images/Playlist/index/issac.jpg', title:'Yêu Không Nghỉ Phép.',name:'Issac',url:"video.html"});
+mvIndex.push({img:'images/Playlist/index/bxh6.jpg', title:'MV về ....',name:'Issac',url:"video.html"});
+mvIndex.push({img:'images/Playlist/index/download.jpg', title:'Chào ngày Mới',name:'Hoàng Yến Chi BI',url:"video.html"});
+mvIndex.push({img:'images/Playlist/khacviet.jpg', title:'Không yêu cũng đừng làm bạn',name:'Khắc Việt',url:"video.html"});
 
 
 var caKhucHotIndex=[];

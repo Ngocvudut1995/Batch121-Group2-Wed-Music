@@ -9,8 +9,8 @@
             <th style="">
                 <div  class=""style="height: 50px; margin-top: 15px;margin-left: 15px ">
                     <ul class="nav nav-pills">
-                        <li class="active"><a data-toggle="pill" href="#vn">Việt Nam</a></li>
-                        <li><a data-toggle="pill" href="#hanquoc">Hàn Quốc</a></li>
+                        <li id="bxhvn" class="active"><a data-toggle="pill" href="#vn">Việt Nam</a></li>
+                        <li id="bxhhq"><a data-toggle="pill" href="#hanquoc">Hàn Quốc</a></li>
                         <li><a data-toggle="pill" href="#menu2">Âu Mỹ</a></li>
 
                     </ul>
@@ -162,11 +162,11 @@
 </script>
 <script>
     $(document).ready(function(){
-        if($('#hanquoc').hasClass('active')){
-            $('#playBXH').attr('href','playlist-BXHbhhq.html');
-        }
-        if($('#vn').hasClass('active')){
-            $('#playBXH').attr('href','playlist-BXHbhvn.html');
-        }
+        $('#playBXH').attr('href','playlist-BXHbhvn.html');
+        $('#bxhhq').click(function(){
+            $('#playBXH').attr('href','playlist-BXHbhhp.html');});
+        $('#bxhvn').click(function(){
+            $('#playBXH').attr('href','playlist-BXHbhvn.html');});
+
     });
 </script>

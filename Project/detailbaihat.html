@@ -54,7 +54,7 @@
             <div style="background: rgba(0, 0, 0, 0.75) 50% 50%/cover no-repeat;height: 170px">
                 <img id="anhdaidien"style="float: left;margin-right: 30px;width: 139px;height: 139px" >
 
-                     <div id="playframe" style="margin-left: 100px; margin-top: 10px;"></div>
+                <div id="playframe" style="margin-left: 100px; margin-top: 10px;"></div>
                 <div class="container"id="audio" style=" margin-left: -15px; margin-top: -35px;	clear: both;">
 
                     <div class="row">
@@ -75,10 +75,8 @@
 
 
             <div id="player" style="height: 50px">
-                <div class="btn-group">
-                    <a href="#"><button  id="bh1"type="button" class="btn btn-default addUserlist" data-name="Âm Thầm Bên Em"data-src="Music/ads.mp3 "data-singer="Sơn Tùng"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
-                    <a href="Music/ads.mp3" download="amthambenem"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
-                    <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>
+                <div class="btn-group" id="download">
+
 
                 </div>
 
@@ -91,68 +89,11 @@
             </div>
 
             <div id="verse" style=" margin-top: 20px;min-height: 300px">
-                <h3 style="margin-top: 60px;margin-bottom: -30px">Bài hát: Âm Thầm Bên Em - Sơn Tùng (M-TP)</h3>
-                <p id="show1" style="max-height:255px;overflow: hidden">
+                <h3 style="margin-top: 60px;margin-bottom: -30px"></h3>
+                <!--verse-->
+                <p id="show1" style="max-height:255px;overflow: hidden;line-height: 15pt">
 
-                    <br>
-                    <br>[Verse]
-                    <br>Khi bên anh em thấy điều chi
-                    <br>Khi bên anh em thấy điều gì
-                    <br>Nước mắt rơi gần kề làn mi
-                    <br>Chẳng còn những giây phút
-                    <br>Chẳng còn những ân tình
-                    <br>Gió mang em rời xa nơi đây
-                    <br>
-                    <br>Khi xa anh em nhớ về ai
-                    <br>Khi xa anh em nhớ một người
-                    <br>Chắc không phải một người như anh
-                    <br>Người từng làm em khóc
-                    <br>Người từng khiến em buồn
-                    <br>Buông bàn tay
-                    <br>Rời xa lặng thinh bước đi
-                    <br>
-                    <br>[Chorus]
-                    <br>Hạt mưa rơi bủa vây trái tim hiu quạnh
-                    <br>Ngàn yêu thương vụt tan bỗng xa
-                    <br>Người từng nói ở bên cạnh anh mỗi khi anh buồn
-                    <br>Cớ sao giờ lời nói kia như gió bay
-                    <br>Đừng bỏ rơi bàn tay ấy bơ vơ mà
-                    <br>Một mình anh lặng im chốn đây
-                    <br>Yêu em âm thầm bên em
-                    <br>
-                    <br>[Rap]
-                    <br>Yêu thương không còn nơi đây
-                    <br>Mang tình buồn theo mây
-                    <br>Cơn mơ về
-                    <br>Mong manh câu thề
-                    <br>Tan trôi qua mau quên đi phút giây
-                    <br>Mưa rơi trên đôi mi qua lối vắng
-                    <br>Ánh sáng mờ buông lơi Làn khói trắng
-                    <br>Bóng dáng em, nụ cười ngày hôm qua
-                    <br>Kí ức có ngủ quên chìm trong màn sương đắng
-                    <br>Anh nhớ giọt nước mắt sâu lắng
-                    <br>Anh nhớ nỗi buồn của em ngày không nắng
-                    <br>
-                    <br>[Chorus]
-                    <br>Hạt mưa rơi bủa vây trái tim hiu quạnh
-                    <br>Ngàn yêu thương vụt tan bỗng xa
-                    <br>Người từng nói ở bên cạnh anh mỗi khi anh buồn
-                    <br>Cớ sao giờ lời nói kia như gió bay
-                    <br>Đừng bỏ rơi bàn tay ấy bơ vơ mà
-                    <br>Cầm bông hoa chờ mong nhớ thương
-                    <br>Làm sao quên người ơi, tình anh mãi như hôm nào
-                    <br>Vẫn yêu người và vẫn mong em về đây
-                    <br>
-                    <br>[Coda]
-                    <br>Giọt nước mắt tại sao cứ lăn rơi hoài
-                    <br>Ở bên anh chỉ có đớn đau
-                    <br>Thì anh xin nhận hết ngàn đau đớn để thấy em cười
-                    <br>Dẫu biết rằng người đến không như giấc mơ
-                    <br>Yêu em âm thầm bên em
-                    <br>
-                    <br>Thì anh xin nhận hết ngàn đau đớn để thấy em cười
-                    <br>Dẫu biết rằng người đến không như giấc mơ
-                    <br>Yêu em âm thầm bên em
+
 
                 </p>
                 <button  class ="btn btn-default btn-xs"id="xt" data-toggle="button"style="position: absolute;left: 15px;">Xem Thêm</button>
@@ -160,7 +101,7 @@
 
             </div>
             <div style="height: 300px;margin-top: 40px">
-                <h1 style=""><a href="#">Album Sơn Tùng-MTP</a></h1>
+                <h1 style=""><a id="Albumlq" href="#"></a></h1>
                 <div id="" class="row"style="margin-top: 20px; margin-left: 10px">
                     <div class="col-md-2 col-xs-3"style="margin-left: 10px">
                         <img  class="img-thumbnail"style="width: 100px" src="http://avatar.nct.nixcdn.com/playlist/2015/04/11/5/4/7/2/1428730518202.jpg">
@@ -169,7 +110,7 @@
                     </div>
 
                     <div class="col-md-2 col-xs-3"style="margin-left: 10px">
-                         <img class="img-thumbnail" style="width: 100px" src="http://avatar.nct.nixcdn.com/playlist/2015/03/12/7/1/7/1/1426126612560.jpg">
+                        <img class="img-thumbnail" style="width: 100px" src="http://avatar.nct.nixcdn.com/playlist/2015/03/12/7/1/7/1/1426126612560.jpg">
                         <h5>Hòa Âm Ánh Sáng</h5>
                         <h6>Sơn Tùng,Trang..</h6>
                     </div>
@@ -192,7 +133,7 @@
 
             </div>
             <div style="height: 300px;margin-bottom: 100px">
-                <h1 style=""><a href="#">MV Sơn Tùng-MTP</a></h1>
+                <h1 style=""><a href="#" id="MVlp"></a></h1>
                 <div id="" class="row"style="margin-top: 20px; margin-left:10px">
                     <div id="" class="row"style="margin-top: 20px; margin-left: 10px">
                         <div class="col-xs-3"style="margin-left: -15px">
@@ -218,9 +159,9 @@
                         </div>
 
 
-                </div>
+                    </div>
 
-            </div>
+                </div>
             </div>
             <div class="row">
                 <h1 style="">Bình Luận</h1>
@@ -292,7 +233,7 @@
                 $.each(playlistofUser, function (index, value) {
                     // Nếu mặt hàng đã tồn tại trong giỏ hàng thì chỉ cần tăng số lượng mặt hàng đó trong giỏ hàng.
                     if (value.id == item.id) {
-                       swal("Thông báo","Bạn Đã Thêm Bài Hát Này.","success");
+                        swal("Thông báo","Bạn Đã Thêm Bài Hát Này.","success");
                         exists = true;
                         return false;
                     }
@@ -310,7 +251,7 @@
 <script>
     $(document).ready(function(){
         var getid=getUrlVars()['id'];
-        var a='', b='', c='',d='';
+        var a='', b='', c='',d='',e='',f='',g='',h='';
         $.each(detailbaihat,function(index,item){
             if(item.id==getid){
                 a+='<H3 style="padding-top: 10px;color: white">'+item.tenbaihat+' - '+item.trinhbay+'</H3><br>'
@@ -319,13 +260,24 @@
                 b+=item.hinhanh;
                 c+='<audio style="width:100%;background-color:black;"id ="a1" src="'+item.url+'" preload="none"controls></audio>';
                 d+='Bài hát: '+item.tenbaihat+' - '+item.trinhbay;
+                e+=item.verse;
+                f+='<a href="#"><button  id="'+item.id+'"type="button" class="btn btn-default addUserlist" data-name="'+item.tenbaihat+'"data-src="'+item.url+' "data-singer="'+item.trinhbay+'"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>'
+                f+='<a href="'+item.url+'" download="'+item.tenbaihat+'"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>'
+                f+='<a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>'
+                g+='Album '+item.trinhbay;
+                h+='MV '+item.trinhbay
             }
+
 
         });
         $('#anhdaidien').attr('src',b);
         $('#play-song').html(c);
         $('#playframe').html(a);
         $('#verse > h3').text(d);
+        $('#show1').html(e);
+        $('#download').html(f);
+        $('#Albumlq').text(g);
+        $('#MVlp').text(h);
     });
 </script>
 

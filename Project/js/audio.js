@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
     var btn = {
         play  : $('#play'),
@@ -10,22 +12,20 @@ $(document).ready(function(){
         vol	: 	$('#vol')
     }
     ul_playlist = $('.playlist');
-    $.getJSON('data/playlist.json', function(data) {
-        playlist = data.playlist;
 
         create_playlist(playlist, ul_playlist);
 
         song 	= new Audio();
         song.type= 'audio/mpeg';
         song.volume = btn.vol.val()/100;
-        song.src='seeyouagain.mp3';
+
 
         i = ul_playlist.find('.active').data('idx');
 
         songPlayIndex(i,playlist,song);
 
         control_player(song, btn, playlist, ul_playlist);
-    });
+
 
 });
 function create_playlist(list,ele) {
