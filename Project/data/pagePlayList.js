@@ -38,4 +38,15 @@ divVideo.push({src:'images/Playlist/tara.jpg',name:'So Good',title:'T-ara'});
 divVideo.push({src:'images/Playlist/snsd.jpg',name:'Lion Heart (The 5th Album)',title:'SNSD'});
 divVideo.push({src:'images/PlayList/TFBoys.jpg',name:'Biểu Tượng May Mắn (EP)',title:'TFBoys'});
 divVideo.push({src:'images/Playlist/2ne1.jpg',name:'Tuyển Tập Các Bài Hát Hay Nhất của 2NE1',title:'2NE1'});
-
+var albumlp=[];
+albumlp.push({hinhanh:"jhdf",ten:'sjahf'});
+var detailplaylist=[];
+detailplaylist.push({
+    'id':'1',
+    "tenalbum" : "Âm Thầm Bên Em",
+    "trinhbay" : "Sơn Tùng-MTP",
+    theloai:'Nhạc Trẻ',
+    hinhlp:["sdasd","kaskjdg"],
+    tenAlbumlp:[],
+    singerAlbumlp:[]
+});

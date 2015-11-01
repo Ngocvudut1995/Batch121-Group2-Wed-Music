@@ -1,13 +1,254 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<h1>
-    asadgjasjgasdg
+<head>
+    <meta charset="utf-8" />
+    <title>BXH Bài Hát Hàn Quốc</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- Them Phan Audio-->
 
-</h1>
+    <link rel="stylesheet" href="css/Audio.css" />
+    <link rel="stylesheet" href="css/audioplayer.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <script src="data/productsBXH.js"></script>
+    <script src="data/productsPlaylist.js"></script>
+    <script src="js/facebook.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="data/user.js"></script>
+    <link rel="stylesheet" href="social-button/social-buttons.css">
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="data/playlist.js"></script>
+    <script src="data/bxhhanquoc.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div id="fb-root"></div>
+
+
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=434498566754391";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header id="myheader">
+
+</header>
+<nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
+<div class="container"style="margin-top: 30px">
+    <div class="row">
+        <div class="col-lg-8 col-xs-12" style="">
+            <div style="height: 170px">
+                <img style="float: left;margin-right: 30px" src="http://image.mp3.zdn.vn/thumb/165_165/charts_cover/bxh-song-han-quoc-tuan.jpg">
+
+                <div style="margin-left: 100px; margin-top: 10px;">
+                    <H3 style="padding-top: 10px">Bảng Xếp Hạng Bài Hát Hàn Quốc- <a href="#">Tuần 4-Tháng 10</a></H3><br>
+                    <H4 style="margin-top: -20px">Phát Hành: <a href="#">2015</a></H4><br>
+                </div>
+
+
+
+            </div>
+            <div  class="hinhanh" style="background:  50% 50%/cover no-repeat ;  height: 200px;border-radius: 10px">
+                <h2 style="color: black; padding-top: 20px;margin-left: 20px" class="baihat"></h2>
+                <p style="color: rgba(89, 89, 89, 0.82);margin-left: 20px" class="trinhbay"></p>
+            </div>
+
+            <div style="">
+                <div  class="btn-group-justified" style="background-color: rgb(0, 0, 0);margin-bottom:0px;padding-bottom: 10px">
+                    <input id="seek"style="width: 100%;margin-top: -5px;margin-bottom: 5px" type="range" max="100">
+                    <button class="btn-success myButton"id="prev"style="margin-left: 40px;float: left">  <span class="glyphicon glyphicon-step-backward" style="font-size: 15pt;float: left"></span></button>
+                    <button class="btn-success myButton"id="play"style="float: left">  <span class="glyphicon glyphicon-play play" style="float: left;font-size: 15pt"></span></button>
+                    <button class="btn-success myButton" id="pause"style="float: left">  <span class="glyphicon glyphicon-pause pause" style="float: left;font-size: 15pt"></span></button>
+                    <button class="btn-success myButton"id="next"style="float: left">  <span class="glyphicon glyphicon-step-forward" style="float: left;font-size: 15pt"></span></button>
+                    <button class="btn-success myButton"id="muteon"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-up"style="float:left;font-size: 15pt;"></span> </button>
+                    <button class="btn-success myButton"id="muteoff"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-off"style="float:left;font-size: 15pt;"></span> </button>
+                    <input class="hidden-xs" id='vol'style="float: left;width: 200px;margin-top: 10px;margin-left: 20px" type="range"value="100" max="100">
+                    <div style="margin-top: 10px"><em id="currenttime"style="color: white;margin-left: 20px">sdsd</em><em style="color: white">/</em><em id="time" style="color: white;">sdsd</em></div>
+                </div>
+                <!--Khung PlayList-->
+                <div class="scroll"style="height: 300px; border: 2px solid rgba(0, 0, 0, 0.19);-moz-border-radius-bottomleft: 10px; clear: both;position: relative">
+
+                    <ul id ="PL" class="list-group playlist">
+
+                    </ul>
+                    <script src="js/audio.js"></script>
+                    <script src="js/player.js"></script>
+                    <script src="js/prefixfree.js"></script>
+                </div>
+                <script>
+                    $('.scroll').slimScroll({
+                        railVisible: true,
+                        color:"#273EBE",
+                        height:"300px",
+                        distance:"2px",
+                        size:"8px"
+
+                    });
+                </script>
+            </div>
+
+
+            <div style="height: 60px; margin-top: 35px">
+                <div class="btn-group">
+                    <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
+                    <a href="Music/ads.mp3" download="amthambenem"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
+                    <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>
+
+                </div>
+
+                <div    style="float :right; width: 100px;margin-right: 100px; margin-top: 10px"
+                        class="fb-like"
+                        data-share="true"
+                        data-width="100"
+                        data-show-faces="true">
+                </div>
+            </div>
+
+            <div id="" style=" margin-top: 20px;min-height: 300px">
+                <h3  class="tieude"style="margin-top: 60px;margin-bottom: -30px"></h3>
+                <p id="show1" style="max-height:255px;overflow: hidden;line-height: 15pt;background-color: rgba(82, 82, 82, 0.29)">
+
+
+                </p>
+                <button  class ="btn btn-default btn-xs"id="xt" data-toggle="button"style="position: absolute;left: 15px;">Xem Thêm</button>
+                <button class ="btn btn-default btn-xs"id="rg"data-toggle="button"style="position: absolute;left: 15px;">Rút gọn</button>
+
+            </div>
+            <div style="height: 300px;margin-top: 40px">
+                <h1 style=""><a href="#">Playlist|Album</a></h1>
+                <div id="" class="row"style="margin-top: 20px; margin-left: 10px">
+                    <div class="col-md-2 col-xs-3"style="margin-left: 10px">
+                        <img  class="img-thumbnail"style="width: 100px" src="http://avatar.nct.nixcdn.com/playlist/2015/04/11/5/4/7/2/1428730518202.jpg">
+                        <h5>Chàng Trai Năm Ấy</h5>
+                        <h6>Sơn Tùng(MTP)</h6>
+                    </div>
+
+                    <div class="col-md-2 col-xs-3"style="margin-left: 10px">
+                        <img class="img-thumbnail" style="width: 100px" src="http://avatar.nct.nixcdn.com/playlist/2015/03/12/7/1/7/1/1426126612560.jpg">
+                        <h5>Hòa Âm Ánh Sáng</h5>
+                        <h6>Sơn Tùng,Trang..</h6>
+                    </div>
+                    <div class="col-md-2 col-xs-3"style="margin-left: 10px">
+                        <img class="img-thumbnail" style="width: 100px" src="http://avatar.nct.nixcdn.com/playlist/2015/08/10/3/6/8/f/1439222954228.jpg">
+                        <h5>Tuyển Chọn Playlist 2015..</h5>
+                        <h6>Sơn Tùng</h6>
+                    </div>
+                    <div class="col-md-2 hidden-xs"style="margin-left: 10px">
+                        <img class="img-thumbnail" style="width: 100px" src="images/BXH/Sontung.jpg">
+                        <h5>Âm Thầm Bên Em</h5>
+                        <h6>Sơn Tùng</h6>
+                    </div>
+                    <div class="col-md-2 hidden-xs"style="margin-left: 10px">
+                        <img  class="img-thumbnail"style="width: 100px" src="images/BXH/Sontung.jpg">
+                        <h5>Âm Thầm Bên Em</h5>
+                        <h6>Sơn Tùng</h6>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <h1 style="">Bình Luận</h1>
+                <div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://batch121.aptech-vietnam.net/playlist-BXHbhvn.html" data-numposts="5"></div>
+            </div>
+
+        </div>
+        <div class="col-lg-4 hidden-xs"style="height: 700px">
+            <div id="lquan"></div>
+        </div>
+    </div>
+
+</div>
+<footer id="myfooter"></footer>
+
 </body>
+<script>
+
+
+    $(document).ready(function(){
+        var btn = {
+            play  : $('#play'),
+            pause  : $('#pause'),
+            prev : $('#prev'),
+            next  : $('#next'),
+            stop  : $('#stop'),
+            muteon  : $('#muteon'),
+            muteoff :$('#muteoff'),
+            vol	: 	$('#vol')
+        }
+        ul_playlist = $('.playlist');
+
+        create_playlist(bxhhanquoc, ul_playlist);
+
+        song 	= new Audio();
+        song.type= 'audio/mpeg';
+        song.volume = btn.vol.val()/100;
+
+
+        i = ul_playlist.find('.active').data('idx');
+
+        songPlayIndex(i,bxhhanquoc,song);
+
+        control_player(song, btn, bxhhanquoc, ul_playlist);
+
+
+    });
+
+    $(document).ready(function(){
+        $('#rg').hide();
+        $('#xt').click(function(){
+            $('#show1').css("max-height",'none')
+                    .css('height','none');
+            $(this).hide();
+            $('#rg').show();
+        });
+        $('#rg').click(function () {
+            $('#show1').css("max-height",'255px')
+                    .css('height','auto').css('overflow','hidden');
+            $(this).hide();
+            $('#xt').show();
+        });
+
+    });
+</script>
+<script>
+    $(document).ready(function() {
+
+        $("#PL li").bind('mouseenter', function () {
+            $(this).css('background-color','#C8C8C8');
+
+
+
+
+        }).bind('mouseleave', function () {
+            $(this).css('background-color','white');
+
+        });
+    });
+    $(document).ready(function(){
+        $("#myfooter").load("templates/footer.html");
+        $("#myheader").load("templates/header.html");
+        $("#mynav").load("templates/nav.html");
+        $("#lquan").load("templates/BXH/baihat.html");
+
+    });
+
+
+</script>
+<script>
+    var username=localStorage.getItem('username');
+
+</script>
 </html>

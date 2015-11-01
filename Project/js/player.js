@@ -19,7 +19,7 @@ function control_player(song,button,list,ul) {
 
 	var volmoment=button.vol.val();
 	button.muteon.on('click', function(e){
-		volmoment=button.vol.val()
+		volmoment=button.vol.val();
 		e.preventDefault();
 		song.volume=0;
 		button.vol.val(0);
@@ -32,8 +32,21 @@ function control_player(song,button,list,ul) {
 	});
 	button.vol.change(function(e) {
 		song.volume = ($(this).val())/100;
-		$('#vol-fill').css('width', $(this).val() + '%');
+		//$('#vol-fill').css('width', $(this).val() + '%');
+		if(song.volume==0){
+			$('#muteoff').show();
+			$('#muteon').hide();
+		}
+		if(song.volume>0){
+			$('#muteoff').hide();
+			$('#muteon').show();
+		}
 	});
+
+	var secondsToTime = function( secs ) {
+		var hours = Math.floor(secs / 3600), minutes = Math.floor(secs % 3600 / 60), seconds = Math.ceil(secs % 3600 % 60);
+		return ( hours == 0 ? '' : hours > 0 && hours.toString().length < 2 ? '0' + hours + ':' : hours + ':' ) + ( minutes.toString().length < 2 ? '0' + minutes : minutes ) + ':' + ( seconds.toString().length < 2 ? '0' + seconds : seconds );
+	}
 
 	song.addEventListener('timeupdate',function (){
 		per = (song.currentTime/song.duration)*100;
@@ -43,8 +56,12 @@ function control_player(song,button,list,ul) {
 			if(i>=list.length){ i=0;return }
 			songPlayIndex(i,list,song);
 		}else{
+		//	var t=round(song.currentTime);
+			$('#currenttime').text(secondsToTime(song.currentTime));
+			$('#time').text(secondsToTime(song.duration));
 			$('#seek').val(per);
 			$('#seek').attr('value', per);
+
 		}
 	});
 
@@ -53,13 +70,13 @@ function control_player(song,button,list,ul) {
 		song.currentTime = time;
 	});
 
-	ul.on('click', 'li', function(e) {
+	ul.on('click','.playsong', function(e) {
 		e.preventDefault();
 		ul.find('li.active').removeClass('active');
 		$('#play').hide();
 		$('#pause').show();
-		$(this).addClass('active');
-		i = $(this).data('idx');
+		$(this).parents('li').addClass('active');
+		i = $(this).parents('li').data('idx');
 		songPlayIndex(i,list,song);
 	});
 
@@ -91,6 +108,7 @@ $.fn.changeClass = function(before, after) {
 }
 
 	$(document).ready(function(){
+
 		$('#play').hide();
 		$('#play').click(function(){
 
@@ -113,6 +131,7 @@ $.fn.changeClass = function(before, after) {
 			$(this).hide();
 			$('#muteoff').show();
 		});
+
 
 	});
 $(document).ready(function() {

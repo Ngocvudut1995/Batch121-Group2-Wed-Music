@@ -508,13 +508,14 @@ fieldset[disabled] .btn-danger.active {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   text-shadow: 0 -1px 0 #286090;
-  background-image: -webkit-linear-gradient(top, #337ab7 0%, #2b669a 100%);
-  background-image:      -o-linear-gradient(top, #337ab7 0%, #2b669a 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2b669a));
-  background-image:         linear-gradient(to bottom, #337ab7 0%, #2b669a 100%);
+  background-color: rgba(89, 89, 89, 0.57);
+  background-image: -webkit-linear-gradient(top, rgba(51, 122, 183, 0.51) 0%, rgba(43, 102, 154, 0.68) 100%);
+  background-image:      -o-linear-gradient(top, rgba(51, 122, 183, 0.5) 0%, rgba(43, 102, 154, 0.67) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 122, 183, 0.51)), to(rgba(43, 102, 154, 0.67)));
+  background-image:         linear-gradient(to bottom, rgba(51, 122, 183, 0.51) 0%, rgba(43, 102, 154, 0.67) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
   background-repeat: repeat-x;
-  border-color: #2b669a;
+  border-color: rgba(43, 102, 154, 0.5);
 }
 .list-group-item.active .badge,
 .list-group-item.active:hover .badge,

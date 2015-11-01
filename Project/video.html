@@ -24,11 +24,11 @@
     <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <header id="myheader">
     </header>
 
-    <nav id="mynav"></nav>
+    <nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
     <div id="fb-root"></div>
 
     <div id="fb-root"></div>
@@ -40,11 +40,27 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <div class="container">
+        <div class="col-md-10">
+        <video  id="example_video_direct_link"
+                class="video-js vjs-default-skin vjs-big-play-centered"
+                controls
+                preload="auto"
+                width="100%"
+                height="264"
+                poster="http://video-js.zencoder.com/oceans-clip.png"
+                data-setup='{
+                        "example_option":true
+                    }'>
+            <source src="http://music.vegacdn.vn/72e70472/563601f2/media1/video/web3/1/12532/12532.mp4" type="video/mp4">
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+            </p>
+        </video>
+        </div>
         <div class="row">
             <div class="col-xs-12 col-md-10">
-                <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="768" height="360" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
-                    <source src="video/MTP.mp4" type="video/mp4">
-                </video>
+
+                <source src="http://music.vegacdn.vn/72e70472/563601f2/media1/video/web3/1/12532/12532.mp4" type="video/mp4">
                 <div class="btn-group col-xs-6" style="margin-top: 5px; margin-bottom: 20px;float: left">
                     <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
                     <a href="#" ><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>

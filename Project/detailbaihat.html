@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Âm Thầm Bên Em</title>
+    <title id="tieude"></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- Them Phan Audio-->
@@ -28,12 +28,13 @@
     <script src="data/user.js"></script>
     <script src="js/geturl.js"></script>
     <script src="data/detail.js"></script>
+    <script src="data/bxhhanquoc.js"></script>
 
 
     <link rel="stylesheet" href="social-button/social-buttons.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div id="fb-root"></div>
 
 <div id="fb-root"></div>
@@ -47,7 +48,7 @@
 <header id="myheader">
 
 </header>
-<nav id="mynav"></nav>
+<nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
 <div class="container"style="margin-top: 30px;">
     <div class="row">
         <div class="col-lg-8 col-xs-12" style="">
@@ -91,7 +92,7 @@
             <div id="verse" style=" margin-top: 20px;min-height: 300px">
                 <h3 style="margin-top: 60px;margin-bottom: -30px"></h3>
                 <!--verse-->
-                <p id="show1" style="max-height:255px;overflow: hidden;line-height: 15pt">
+                <p id="show1" style="max-height:255px;overflow: hidden;line-height: 15pt;background-color: rgba(82, 82, 82, 0.29)">
 
 
 
@@ -163,9 +164,8 @@
 
                 </div>
             </div>
-            <div class="row">
-                <h1 style="">Bình Luận</h1>
-                <div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://batch121.aptech-vietnam.net/amthambenem.html" data-numposts="5"></div>
+            <div id="comment">
+
             </div>
 
         </div>
@@ -205,9 +205,50 @@
         $("#mynav").load("templates/nav.html");
         $("#lquan").load("templates/BXH/baihat.html");
         $("#myfooter").load("templates/footer.html");
-
+        $('ul.nav a[href="baiHat.html"]').parents().addClass('active');
+        $('ul.nav a').filter(function() {
+            return this.href == 'baiHat.html';
+        }).parents().addClass('active');
     });
 
+</script>
+
+<script>
+    $(document).ready(function(){
+        var getid=getUrlVars()['id'];
+        var a='', b='', c='',d='',e='',f='',g='',h='',m='',n='';
+        $.each(detailbaihat,function(index,item){
+            if(item.id==getid){
+                a+='<H3 style="padding-top: 10px;color: white">'+item.tenbaihat+' - '+item.trinhbay+'</H3><br>'
+                a+='<H4 style="margin-top: -20px;color: white" >Sáng tác: <a href="#">'+item.trinhbay+'</a></H4><br>'
+                a+='<h6 style="margin-top: -15px;color: white">Thể Loại: <a href="#">'+item.theloai+'</a></h6>'
+                b+=item.hinhnen;
+                c+='<audio loop style="width:100%;background-color:black;"id ="a1" src="'+item.url+'" preload="none"controls></audio>';
+                d+='Bài hát: '+item.tenbaihat+' - '+item.trinhbay;
+                e+=item.verse;
+                f+='<a href="#"><button  id="'+item.id+'"type="button" class="btn btn-default addUserlist" data-name="'+item.tenbaihat+'"data-src="'+item.url+' "data-singer="'+item.trinhbay+'"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>'
+                f+='<a href="'+item.url+'" download="'+item.tenbaihat+'"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>'
+                f+='<a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>'
+                g+='Album '+item.trinhbay;
+                h+='MV '+item.trinhbay;
+                m+=item.tenbaihat+'-'+item.trinhbay;
+                n+='    <h1 style="">Bình Luận</h1>'
+                n+='<div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://batch121.aptech-vietnam.net/'+item.id+'" data-numposts="5"></div>'
+            }
+
+
+        });
+        $('#anhdaidien').attr('src',b);
+        $('#play-song').html(c);
+        $('#playframe').html(a);
+        $('#verse > h3').text(d);
+        $('#show1').html(e);
+        $('#download').html(f);
+        $('#Albumlq').text(g);
+        $('#MVlp').text(h);
+        $('#tieude').text(m);
+        $('#comment').html(n);
+    });
 </script>
 <script>
     var playlistofUser=[];
@@ -246,38 +287,6 @@
 
             localStorage["play-list-of-User"]=JSON.stringify(playlistofUser);
         });
-    });
-</script>
-<script>
-    $(document).ready(function(){
-        var getid=getUrlVars()['id'];
-        var a='', b='', c='',d='',e='',f='',g='',h='';
-        $.each(detailbaihat,function(index,item){
-            if(item.id==getid){
-                a+='<H3 style="padding-top: 10px;color: white">'+item.tenbaihat+' - '+item.trinhbay+'</H3><br>'
-                a+='<H4 style="margin-top: -20px;color: white" >Sáng tác: <a href="#">'+item.trinhbay+'</a></H4><br>'
-                a+='<h6 style="margin-top: -15px;color: white">Thể Loại: <a href="#">'+item.theloai+'</a></h6>'
-                b+=item.hinhanh;
-                c+='<audio style="width:100%;background-color:black;"id ="a1" src="'+item.url+'" preload="none"controls></audio>';
-                d+='Bài hát: '+item.tenbaihat+' - '+item.trinhbay;
-                e+=item.verse;
-                f+='<a href="#"><button  id="'+item.id+'"type="button" class="btn btn-default addUserlist" data-name="'+item.tenbaihat+'"data-src="'+item.url+' "data-singer="'+item.trinhbay+'"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>'
-                f+='<a href="'+item.url+'" download="'+item.tenbaihat+'"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>'
-                f+='<a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>'
-                g+='Album '+item.trinhbay;
-                h+='MV '+item.trinhbay
-            }
-
-
-        });
-        $('#anhdaidien').attr('src',b);
-        $('#play-song').html(c);
-        $('#playframe').html(a);
-        $('#verse > h3').text(d);
-        $('#show1').html(e);
-        $('#download').html(f);
-        $('#Albumlq').text(g);
-        $('#MVlp').text(h);
     });
 </script>
 

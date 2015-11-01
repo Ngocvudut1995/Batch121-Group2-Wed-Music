@@ -1,3 +1,9 @@
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+    background-color: rgb(190, 190, 190);
+}
 .mega-dropdown{
     width: 600px;
     border: white thin solid;
@@ -177,3 +183,25 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     padding: 2px;
 }
+.namesong-bxh{
+    white-space: nowrap;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    line-height: 18px;
+}
+.namesong-bxh > a {
+    color: #646464;
+    font-size: 11pt;
+    
+}
+
+.namesong-bxh > a:hover{
+    color: red;;
+   font-size: 110%;
+}
+.namesong-bxh > a:focus{
+    text-decoration: none;
+}
+

@@ -27,11 +27,11 @@
     <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <header id="myheader">
 </header>
 
-<nav id="mynav"></nav>
+<nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
 <div id="fb-root"></div>
 
 <div id="fb-root"></div>
@@ -44,11 +44,14 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="container">
     <div class="row">
-        <div class="col-xs-12 col-md-10">
-            <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="768" height="360" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
+        <div class="col-md-10" style="margin-top: 30px">
+        <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="100%" height="360" poster="MY_VIDEO_POSTER.jpg" data-setup="{}">
 
-            </video>
-            <div class="btn-group col-xs-6" style="margin-top: 5px; margin-bottom: 20px;float: left">
+        </video>
+        </div>
+        <div class="col-xs-12 col-md-10">
+
+            <div class="btn-group col-xs-6" style="margin-top: 20px; margin-bottom: 20px;float: left">
                 <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
                 <a href="#" ><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
 
@@ -89,7 +92,7 @@
 
                 </div>
             </div>
-            <div  class="col-lg-4 hidden-sm">
+            <div  class="col-lg-4 hidden-xs">
                 <div id="videoLQ1" >
                     <div id="videoLQ" style="max-height:1000px;overflow: hidden">
 
@@ -115,7 +118,7 @@
             s+='<div class="col-lg-3 col-xs-6 "style= "height: 250px; margin-bottom: 20px">'
             s+='    <div class="col-lg-12 col-xs-12 move">'
             s+='        <img class=""style="width:100%; height:150px" src="'+item.img+'">'
-            s+='            <div class="mark col-lg-12 col-md-12">'
+            s+='            <div class="mark col-lg-12 col-xs-12">'
             s+='                    <a  class="col-lg-12 col-xs-12"href="'+item.url+'"style=" text-align: center;position: inherit;font-size: 40pt;height: 100%;left:0"> <span  style="top: 33%;left: 0;" class="glyphicon glyphicon-play-circle"></span> </a>'
             s+= '           </div>'
             s+='    </div>'

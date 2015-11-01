@@ -106,7 +106,7 @@
         var html = "";
         var t=1;
         // vòng lặp: duyệt qua từng phần tử trong mảng products
-        $.each (baihathanquoc, function(index, item) {
+        $.each (bxhhanquoc, function(index, item) {
             var s = "";
             if(t==1){
                 s+='<tr>';
@@ -116,13 +116,13 @@
                 s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
                 s+='         <div style="width: 350px;height: 120px;margin-left: 30px">';
 
-                s+='         <a style="float: left" href="images/BXH/Han Quoc/bigbang.jpg"><img class="img-bxh" src="'+ item.img+'"></a>';
+                s+='         <a style="float: left" href="'+item.detail+'"><img class="img-bxh" src="'+ item.hinhnen+'"></a>';
                 s+='         <table style="float:left;margin-left: 20px; margin-top: 10px;">';
                 s+='                 <tr>';
-                s+='                      <td ><a title="'+item.title+'" href="#">'+item.title+'</a></td>';
+                s+='                      <td ><a title="'+item.tenbaihat+'" href="#">'+item.tenbaihat+'</a></td>';
                 s+='                 </tr>';
                 s+='                 <tr>';
-                s+='                      <td><a title="'+item.name+'" href="#">'+item.name+'</a></td>';
+                s+='                      <td><a title="'+item.trinhbay+'" href="#">'+item.trinhbay+'</a></td>';
                 s+='                 </tr>';
                 s+='                 <tr>';
                 s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
@@ -137,11 +137,11 @@
                 s+='         <div style="width: 350px;height: 10px;margin-left: 30px">';
                 s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
                 s+='                 <tr>';
-                s+='                      <td class="namesong" width="40%"><a title="'+item.title+'"href="#">'+item.title+'</a></td>';
+                s+='                      <td class="namesong" width="40%"><a title="'+item.tenbaihat+'"href="'+item.detail+'">'+item.tenbaihat+'</a></td>';
                 s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
                 s+='                 </tr>';
                 s+='                 <tr>';
-                s+='                      <td class="namesong"><a title="'+item.name+'"href="#">'+item.name+'</a></td>';
+                s+='                      <td class="namesong"><a title="'+item.trinhbay+'"href="#">'+item.trinhbay+'</a></td>';
 
 
                 s+='                 </tr>';

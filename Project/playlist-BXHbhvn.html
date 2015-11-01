@@ -28,9 +28,10 @@
     <link rel="stylesheet" href="social-button/social-buttons.css">
     <script src="js/jquery.slimscroll.min.js"></script>
     <script src="data/playlist.js"></script>
+    <script src="data/bxhhanquoc.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 <div id="fb-root"></div>
 
 <div id="fb-root"></div>
@@ -44,7 +45,7 @@
 <header id="myheader">
 
 </header>
-<nav id="mynav"></nav>
+<nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
 <div class="container"style="margin-top: 30px">
     <div class="row">
         <div class="col-lg-8 col-xs-12" style="">
@@ -52,7 +53,7 @@
                 <img style="float: left;margin-right: 30px" src="images/BXH/bxhvn.jpg">
 
                 <div style="margin-left: 100px; margin-top: 10px;">
-                    <H3 style="padding-top: 10px">Bảng Xếp Hạng Bài Hát- <a href="#">Tuần 4-Tháng 10</a></H3><br>
+                    <H3 style="padding-top: 10px">Bảng Xếp Hạng Bài Hát Việt Nam- <a href="#">Tuần 4-Tháng 10</a></H3><br>
                     <H4 style="margin-top: -20px">Phát Hành: <a href="#">2015</a></H4><br>
                 </div>
 
@@ -65,15 +66,17 @@
             </div>
 
             <div style="">
-                <div  class="btn-group-justified" style="background-color: rgb(0, 0, 0);margin-bottom:0px;padding-bottom: 10px">
+                <div  class="btn-group-justified" style="background-color: rgb(0, 0, 0);margin-bottom:0px;padding-bottom: 10px;white-space: nowrap">
+
                     <input id="seek"style="width: 100%;margin-top: -5px;margin-bottom: 5px" type="range" max="100">
-                    <button class="btn-success myButton"id="prev"style="margin-left: 40px;float: left">  <span class="glyphicon glyphicon-step-backward" style="font-size: 15pt;float: left"></span></button>
+                    <button class="btn-success myButton"id="prev"style="margin-left: 20px;float: left">  <span class="glyphicon glyphicon-step-backward" style="font-size: 15pt;float: left"></span></button>
                     <button class="btn-success myButton"id="play"style="float: left">  <span class="glyphicon glyphicon-play play" style="float: left;font-size: 15pt"></span></button>
                     <button class="btn-success myButton" id="pause"style="float: left">  <span class="glyphicon glyphicon-pause pause" style="float: left;font-size: 15pt"></span></button>
                      <button class="btn-success myButton"id="next"style="float: left">  <span class="glyphicon glyphicon-step-forward" style="float: left;font-size: 15pt"></span></button>
                      <button class="btn-success myButton"id="muteon"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-up"style="float:left;font-size: 15pt;"></span> </button>
                     <button class="btn-success myButton"id="muteoff"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-off"style="float:left;font-size: 15pt;"></span> </button>
-                     <input class="hidden-xs" id='vol'style="float: left;width: 200px;margin-top: 10px;margin-left: 20px" type="range"value="100" max="100">
+                     <input class="" id='vol'style="float: left;width: 20%;margin-top: 10px;margin-left: 20px" type="range"value="100" max="100">
+                    <div style="margin-top: 10px"><em id="currenttime"style="color: white;margin-left: 20px"></em><em style="color: white">/</em><em id="time" class="hidden-xs" style="color: white;"></em></div>
                 </div>
                     <!--Khung PlayList-->
                 <div class="scroll"style="height: 300px; border: 2px solid rgba(0, 0, 0, 0.19);-moz-border-radius-bottomleft: 10px; clear: both;position: relative">
@@ -116,7 +119,7 @@
 
             <div id="" style=" margin-top: 20px;min-height: 300px">
                 <h3  class="tieude"style="margin-top: 60px;margin-bottom: -30px"></h3>
-                <p id="show1" style="max-height:255px;overflow: hidden;line-height: 15pt">
+                <p id="show1" style="max-height:255px;overflow: hidden;line-height: 15pt;background-color: rgba(82, 82, 82, 0.29)">
 
 
                 </p>
@@ -176,6 +179,34 @@
 
 
 
+    $(document).ready(function(){
+        var btn = {
+            play  : $('#play'),
+            pause  : $('#pause'),
+            prev : $('#prev'),
+            next  : $('#next'),
+            stop  : $('#stop'),
+            muteon  : $('#muteon'),
+            muteoff :$('#muteoff'),
+            vol	: 	$('#vol')
+        }
+        ul_playlist = $('.playlist');
+
+        create_playlist(playlist, ul_playlist);
+
+        song 	= new Audio();
+        song.type= 'audio/mpeg';
+        song.volume = btn.vol.val()/100;
+
+
+        i = ul_playlist.find('.active').data('idx');
+
+        songPlayIndex(i,playlist,song);
+
+        control_player(song, btn, playlist, ul_playlist);
+
+
+    });
     $(document).ready(function(){
         $('#rg').hide();
         $('#xt').click(function(){

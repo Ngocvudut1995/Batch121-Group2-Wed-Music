@@ -1,33 +1,5 @@
 
 
-$(document).ready(function(){
-    var btn = {
-        play  : $('#play'),
-        pause  : $('#pause'),
-        prev : $('#prev'),
-        next  : $('#next'),
-        stop  : $('#stop'),
-        muteon  : $('#muteon'),
-        muteoff :$('#muteoff'),
-        vol	: 	$('#vol')
-    }
-    ul_playlist = $('.playlist');
-
-        create_playlist(playlist, ul_playlist);
-
-        song 	= new Audio();
-        song.type= 'audio/mpeg';
-        song.volume = btn.vol.val()/100;
-
-
-        i = ul_playlist.find('.active').data('idx');
-
-        songPlayIndex(i,playlist,song);
-
-        control_player(song, btn, playlist, ul_playlist);
-
-
-});
 function create_playlist(list,ele) {
     html = '';
     var t = 1;
@@ -35,8 +7,13 @@ function create_playlist(list,ele) {
         var s = "";
 
 
-        s += '<li class="list-group-item" data-idx="' + index + '">'
-        s += '     <p style="margin-left: 15px"><span>' + t + '</span> ' + val.tenbaihat + '</p>';
+        s += '<li class="list-group-item"style="height:48px" data-idx="' + index + '">'
+        s += '    <div class="col-md-7 col-xs-7 " style="margin-left: 0px;position: absolute"> <p class="namesong-bxh"style="width: 100%;height: 100%"><span>' + t + '</span>.   <a class="playsong"href="#"style="height: 100%;color: black">'+ val.tenbaihat+'</a> - <a href="#">'+val.trinhbay+'</a></p></div>';
+        s+='        <div class="col-md-4 col-xs-5 namesong-bxh"style="float: right;">'
+        s+='            <a href=""><span class="glyphicon glyphicon-download-alt"style="float: right;margin-left: 20px"></span></a>'
+        s+='        <a href=""><span class="glyphicon glyphicon-heart"style="float: right;margin-left: 20px"></span></a>'
+        s+='        <a href="#"  ><span class="glyphicon glyphicon-film"style="float: right"></span></a>'
+        s+='    </div>'
         s += '</li>'
         t++;
         html += s;
@@ -67,10 +44,11 @@ function create_playlist(list,ele) {
 function songPlayIndex(i,l,s) {
     var str='url("'+l[i].hinhanh+'")';
    $('.hinhanh').css('background-image',str);
-   $('.baihat').text(l[i].tenbaihat);
-   $('.trinhbay').text(l[i].trinhbay);
+   $('.baihat').html('<a href="'+l[i].detail+'">'+l[i].tenbaihat+'</a>');
+   $('.trinhbay').html('<a href="#">'+l[i].trinhbay+'</a>');
     $('.tieude').text('Bài Hát: '+l[i].tenbaihat+' - '+l[i].trinhbay);
     $('#show1').html(l[i].verse);
     s.src = l[i].url;
     s.play();
+
 }

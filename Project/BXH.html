@@ -18,15 +18,16 @@
     <script src="js/facebook.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="data/user.js"></script>
+    <script src="data/bxhhanquoc.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <header id="myheader">
 
 
 </header>
-<nav id="mynav">
+<nav id="mynav"data-spy="affix" data-offset-top="130">
 
 
 </nav>
@@ -74,7 +75,10 @@
                 </ul>
             </div>
         </div>
-        <div  id ="BXHbaihat"class="col-lg-4 hidden-xs " style=""></div>
+        <div class="col-lg-4 hidden-xs">
+            <div  id ="BXHbaihat"style=""></div>
+            <div  id ="BXHvideo" style=""></div>
+         </div>
     </div>
 </div>
 <footer id="myfooter"></footer>
@@ -84,6 +88,7 @@
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
         $("#BXHbaihat").load("templates/BXH/baihat.html");
+        $("#BXHvideo").load("templates/BXH/video.html");
         $("#myfooter").load("templates/footer.html");
     });
     $(document).ready(function(){
@@ -98,20 +103,24 @@
                 var s = "";
 
                 s+=' <li class="list-group-item ">';
-                s+='         <span class="sodb">'+t+'</span>';
-                s+='         <div style="width: 400px;height: 90px;margin-left: 30px">';
 
-                s+='         <a style="float: left" href="'+item.url+'"><img src="'+ item.imgSrc+'"></a>';
-                s+='         <table style="float:left;margin-left: 20px; margin-top: 10px;">';
+                s+='         <div class="col-md-7 col-xs-9" style="height: 90px;margin-left: 0px">';
+                s+='         <span class="sodb"style="margin-left: -5px;text-align: center;margin-right: 30px;position: absolute">'+t+'</span>';
+                s+='         <a style="float: left;position: absolute;margin-left: 20px;" href="'+item.url+'"><img src="'+ item.imgSrc+'"></a>';
+                s+='         <table style="float: left;margin-left: 130px;margin-top: 10px;position: absolute;">';
                 s+='                 <tr>';
-                s+='                      <td><a href="'+item.url+'">'+item.title+'</a></td>';
+                s+='                      <td class="namesong"><a href="'+item.url+'">'+item.title+'</a></td>';
                 s+='                 <tr>';
-                s+='                      <td><a href="#">'+item.name+'</a></td>';
+                s+='                      <td class="namesong"><a href="#">'+item.name+'</a></td>';
                 s+='                 <tr>';
                 s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
                 s+='         </tr>';
-                s+='</table>';
-                s+='</div>';
+                s+='        </table>';
+                s+='    </div>';
+                s+='    <div class="col-md-4 col-xs-3"style=" margin-top: 30px;float: right;">'
+                s+='            <a href=""><span class="glyphicon glyphicon-download-alt"style="float: right;margin-left: 20px"></span></a>'
+                s+='        <a href=""><span class="glyphicon glyphicon-heart"style="float: right"></span></a>'
+                s+='    </div>'
                 s+='</li>';
 
 

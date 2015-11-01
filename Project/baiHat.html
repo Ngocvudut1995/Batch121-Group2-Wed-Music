@@ -18,15 +18,16 @@
     <script src="data/productsBXH.js"></script>
     <script src="js/sweetalert.min.js"></script>
     <script src="data/user.js"></script>
+    <script src="data/bxhhanquoc.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 <header id="myheader">
 
 </header>
-<nav id="mynav">
+<nav id="mynav"data-spy="affix" data-offset-top="130">
 
 </nav>
 <div class="container">
@@ -135,7 +136,7 @@
             s+='         <div class="col-xs-12">';
             s+='         <table  class="table table-hover "style="width: 100%;margin-bottom: 5px">';
             s+='                 <tr>';
-            s+='                      <td width="62%"><a href="#" style="color: #00001e;text-align: center">'+item.Music+''+item.name+'</a></td>';
+            s+='                      <td width="62%"><a href="#" style="color: #00001e;text-align: center">'+item.Music+'</a>-<a href="#">'+item.name+'</a></td>';
             s+='                      <td  width="20%" style=" text-align:center"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.choise+'</h6></td>';
             s+='                       <td widtth="6%" style="text-align:center"><a href="#"> <span class="glyphicon glyphicon-play"></span></a></td>'
             s+='                       <td widtth="6%" style=""><a href="#"><span class="glyphicon glyphicon-plus"></span></a></td>'

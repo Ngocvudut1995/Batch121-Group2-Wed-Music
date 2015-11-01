@@ -66,25 +66,31 @@
             <li class="col-xs-4 ">
                 <ul class="container-fluid">
 
-                    <li><a href="#">Chủ Đề</a></li>
-                    <li><a href="#">BXH</a></li>
-                    <li><a href="#">Nghệ Sĩ</a></li>
+                    <li><a href="#">Playlist Mới</a></li>
+                    <li><a href="#">Tiền Chién</a></li>
+                    <li><a href="#">Trữ Tình</a></li>
+                    <li><a href="#">Thiếu Nhi</a></li>
+                    <li><a href="#">Nhạc Phim Hay</a></li>
                 </ul>
             </li>
             <li class="col-xs-4 ">
                 <ul class="container-fluid">
 
-                    <li><a href="#">Chủ Đề</a></li>
-                    <li><a href="#">BXH</a></li>
-                    <li><a href="#">Nghệ Sĩ</a></li>
+                    <li><a href="#">Rap Việt</a></li>
+                    <li><a href="#">Hàn Quốc</a></li>
+                    <li><a href="#">Hoa Ngữ</a></li>
+                    <li><a href="#">Không Lời</a></li>
+                    <li><a href="#">Rock Việt</a></li>
                 </ul>
             </li>
             <li class="col-xs-4 ">
                 <ul class="container-fluid">
 
-                    <li><a href="#">Chủ Đề</a></li>
-                    <li><a href="#">BXH</a></li>
-                    <li><a href="#">Nghệ Sĩ</a></li>
+                    <li><a href="#">Âu Mỹ</a></li>
+                    <li><a href="#">Nhạc Nhật</a></li>
+                    <li><a href="#">Nhạc Trẻ</a></li>
+                    <li><a href="#">Nhạc Trịnh</a></li>
+                    <li><a href="#">Thể Loại Khác</a></li>
                 </ul>
             </li>
 
@@ -149,9 +155,9 @@
         var url = window.location;
 
 
-        $('ul.nav a[href="'+ url +'"]').parent().addClass('active');
-        $('ul.nav a').filter(function() {
+        $('ul.nav a[href="'+ url +'"]').parents().addClass('active');
+       $('ul.nav a').filter(function() {
             return this.href == url;
-        }).parent().addClass('active');
+        }).parents().addClass('active');
     });
 </script>
