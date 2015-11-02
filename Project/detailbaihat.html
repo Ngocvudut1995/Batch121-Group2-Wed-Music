@@ -226,7 +226,7 @@
                 c+='<audio loop style="width:100%;background-color:black;"id ="a1" src="'+item.url+'" preload="none"controls></audio>';
                 d+='Bài hát: '+item.tenbaihat+' - '+item.trinhbay;
                 e+=item.verse;
-                f+='<a href="#"><button  id="'+item.id+'"type="button" class="btn btn-default addUserlist" data-name="'+item.tenbaihat+'"data-src="'+item.url+' "data-singer="'+item.trinhbay+'"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>'
+                f+='<a href="#"><button  id="'+item.id+'"type="button" class="btn btn-default addUserlist" data-name="'+item.tenbaihat+'"data-src="'+item.hinhanh+' "data-singer="'+item.trinhbay+'"data-url="'+item.url+'"data-verse="'+item.verse+'"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>'
                 f+='<a href="'+item.url+'" download="'+item.tenbaihat+'"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>'
                 f+='<a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>'
                 g+='Album '+item.trinhbay;
@@ -251,30 +251,53 @@
     });
 </script>
 <script>
-    var playlistofUser=[];
+    var playlistofUser =[];
+    var playlistafter=[];
+    var playlistbefore=[];
     $(document).ready(function(){
         // Kiểm tra nếu đã có localStorage["shopping-cart-items"] hay chưa?
         if (localStorage["play-list-of-User"] != null) {
-            playlistofUser = JSON.parse(localStorage["play-list-of-User"].toString());
+            playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
         }
         $(".addUserlist").click(function(){
             var button=$(this);
             var id=button.attr("id");
             var namesong=button.attr("data-name");
             var singer=button.attr('data-singer');
-            var src=button.attr('data-src');
+            var url=button.attr('data-url');
+            var hinhanh=button.attr('data-src');
+            var verse=button.attr('data-verse');
             var item={
                 id:id,
-                namesong:namesong,
-                singer:singer,
-                src:src
+                tenbaihat:namesong,
+                trinhbay:singer,
+                url:url,
+                hinhanh:hinhanh,
+                verse:verse
             };
             var exists = false;
             if (playlistofUser.length > 0) {
                 $.each(playlistofUser, function (index, value) {
-                    // Nếu mặt hàng đã tồn tại trong giỏ hàng thì chỉ cần tăng số lượng mặt hàng đó trong giỏ hàng.
+                    // Nếu mặt hàng đã tồn tại
+                    var t=index;
+
+                 //   var i=t;
                     if (value.id == item.id) {
-                        swal("Thông báo","Bạn Đã Thêm Bài Hát Này.","success");
+                        playlistbefore=playlistofUser.slice(0,t);
+                        playlistafter=playlistofUser.slice(t+1,playlistofUser.length);
+                        playlistofUser=playlistbefore.concat(playlistafter);
+                   //  while(playlistofUser[i]!=null){
+                     //       i++;
+                      //       playlistofUser[i-1]=playlistofUser[i];
+
+
+
+                       // localStorage["play-list-of-User"] = JSON.stringify(playlistofUser);
+                       // playlistofUser=[];
+                     //   $.each(playlistofUser, function(t,value){
+                        //    playlistofUser[t]=playlistofUser[t+1];
+                     //   });
+                        swal("Thông báo","Bạn Đã Hủy Thêm Bài Hát Này.","success");
                         exists = true;
                         return false;
                     }

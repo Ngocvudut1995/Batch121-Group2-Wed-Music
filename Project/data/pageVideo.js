@@ -46,11 +46,11 @@ divVideo1.push({src:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/8/5/8510b
 divVideo1.push({src:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/7/f/7fffb663120dd173020ed4b9bc223583_1433842088.jpg',name:'Best Song Ever (Live At The Summertime Ball 2015)',title:' One Direction'});
 
 var mvIndex1 =[];
-mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/e/9/e983d7a3680535ca364ae236ecf7408e_1427432684.jpg', title:'Âm thầm bên em',name:'Sơn Tùng',url:'detailvideo.html?id=8'});
-mvIndex1.push({img:'http://v2.cdn.nhac.vn/kv0puCNE4oNNfn7YhOpK/1446168765/v1/videos/img/s2/0/0/30/31144.jpg',title:'Không yêu cũng đừng làm bạn',name:'Khắc Việt',url:'detailvideo.html?id=2'});
-mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/b/1/b1c839bd85e6081614cf770278b8f782_1387164001.jpg',title:'Em của ngày hôm qua ',name:'Sơn Tùng',url:'detailvideo.html?id=3'});
-mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/d/3/d3987e294552bfd40eeb770946a8db2d_1375685055.jpg',title:"Đừng về trễ",name:'Sơn Tùng',url:'detailvideo.html?id=4'});
-mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/7/7/7782ee1c8f5dde1ce7055a0b648eaeea_1373378726.jpg', title:'The Minions.',name:'banana',url:'detailvideo.html?id=5'});
-mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/a/b/abac174e3b0f6fb9f430dc8a9287319e_1438745458.jpg', title:'Ấn Nút Nhớ…Thả Giấc Mơ',name:'Sơn Tùng',url:'detailvideo.html?id=6'});
-mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/c/9/c934b64ce7174caf557f89821749f9a5_1428028455.jpg', title:'Không Phải Dạng Vừa Đâu',name:'Sơn Tùng',url:'detailvideo.html?id=1'});
-mvIndex1.push({img:'http://st.nhacso.net/images/video/2015/04/24/1348055438/14298085294_776_190x110.jpg',title:'Yêu không nghỉ phép',name:'Issac',url:'detailvideo.html?id=7'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/e/9/e983d7a3680535ca364ae236ecf7408e_1427432684.jpg', title:'Âm thầm bên em',name:'Sơn Tùng',url:'detailvideo.html?id=vn8'});
+mvIndex1.push({img:'http://v2.cdn.nhac.vn/kv0puCNE4oNNfn7YhOpK/1446168765/v1/videos/img/s2/0/0/30/31144.jpg',title:'Không yêu cũng đừng làm bạn',name:'Khắc Việt',url:'detailvideo.html?id=vn2'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/b/1/b1c839bd85e6081614cf770278b8f782_1387164001.jpg',title:'Em của ngày hôm qua ',name:'Sơn Tùng',url:'detailvideo.html?id=vn3'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_240/covers/d/3/d3987e294552bfd40eeb770946a8db2d_1375685055.jpg',title:"Đừng về trễ",name:'Sơn Tùng',url:'detailvideo.html?id=vn4'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/7/7/7782ee1c8f5dde1ce7055a0b648eaeea_1373378726.jpg', title:'The Minions.',name:'banana',url:'detailvideo.html?id=vn5'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/a/b/abac174e3b0f6fb9f430dc8a9287319e_1438745458.jpg', title:'Ấn Nút Nhớ…Thả Giấc Mơ',name:'Sơn Tùng',url:'detailvideo.html?id=vn6'});
+mvIndex1.push({img:'http://image.mp3.zdn.vn/thumb/240_135/thumb_video/c/9/c934b64ce7174caf557f89821749f9a5_1428028455.jpg', title:'Không Phải Dạng Vừa Đâu',name:'Sơn Tùng',url:'detailvideo.html?id=vn1'});
+mvIndex1.push({img:'http://st.nhacso.net/images/video/2015/04/24/1348055438/14298085294_776_190x110.jpg',title:'Yêu không nghỉ phép',name:'Issac',url:'detailvideo.html?id=vn7'});

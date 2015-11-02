@@ -22,7 +22,17 @@
 
             </ul>
             <ul id="user"class="nav navbar-nav navbar-right">
-                <li><a id="dangnhap"href=""></a></li>
+                <div class="dropdown ">
+                    <button class="btn btn-default dropdown-toggle namesong"type="button" data-toggle="dropdown"><p id="dangnhap" >Dropdown Example</p>
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+
+                        <li><a href="userPage.html">My Playlist</a></li>
+                        <li><a href="#"id="signout">Sign Out</a></li>
+
+                    </ul>
+                </div>
+
 
             </ul>
             <div class=" hidden-md col-xs-12 col-md-7 col-lg-7" style="    margin-top: 10px;">
@@ -47,7 +57,7 @@
     $(document).ready(function(){
         $('#login').show();
         $('#user').hide();
-        if(username!=null){
+        if(username.length>2){
             $('#login').hide();
             $('#user').show();
         }
@@ -58,6 +68,12 @@
 
     $(document).ready(function(){
         $('#dangnhap').html('<p style="font-size: 18pt">'+username+'</p>');
+        $('#signout').click(function(){
+            username='';
+            localStorage["username"] = JSON.stringify(username);
+            window.location.href=window.location;
+
+        });
     });
 
 </script>

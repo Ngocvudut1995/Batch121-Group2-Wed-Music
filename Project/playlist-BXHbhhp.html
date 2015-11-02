@@ -66,16 +66,18 @@
             </div>
 
             <div style="">
-                <div  class="btn-group-justified" style="background-color: rgb(0, 0, 0);margin-bottom:0px;padding-bottom: 10px">
+                <div  class="btn-group-justified" style="background-color: rgb(0, 0, 0);margin-bottom:0px;padding-bottom: 10px;white-space: nowrap">
+
                     <input id="seek"style="width: 100%;margin-top: -5px;margin-bottom: 5px" type="range" max="100">
-                    <button class="btn-success myButton"id="prev"style="margin-left: 40px;float: left">  <span class="glyphicon glyphicon-step-backward" style="font-size: 15pt;float: left"></span></button>
-                    <button class="btn-success myButton"id="play"style="float: left">  <span class="glyphicon glyphicon-play play" style="float: left;font-size: 15pt"></span></button>
-                    <button class="btn-success myButton" id="pause"style="float: left">  <span class="glyphicon glyphicon-pause pause" style="float: left;font-size: 15pt"></span></button>
-                    <button class="btn-success myButton"id="next"style="float: left">  <span class="glyphicon glyphicon-step-forward" style="float: left;font-size: 15pt"></span></button>
-                    <button class="btn-success myButton"id="muteon"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-up"style="float:left;font-size: 15pt;"></span> </button>
-                    <button class="btn-success myButton"id="muteoff"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-off"style="float:left;font-size: 15pt;"></span> </button>
-                    <input class="hidden-xs" id='vol'style="float: left;width: 200px;margin-top: 10px;margin-left: 20px" type="range"value="100" max="100">
-                    <div style="margin-top: 10px"><em id="currenttime"style="color: white;margin-left: 20px">sdsd</em><em style="color: white">/</em><em id="time" style="color: white;">sdsd</em></div>
+
+                    <a class="control"id="prev"style="margin-left: 20px;float: left">  <span class="glyphicon glyphicon-step-backward" style="font-size: 11pt;float: left;margin-top: 6px"></span></a>
+                    <a class="control"id="play"style="float: left">  <span class="glyphicon glyphicon-play play" style="float: left;font-size: 18pt"></span></a>
+                    <a class="control" id="pause"style="float: left">  <span class="glyphicon glyphicon-pause pause" style="float: left;font-size: 18pt"></span></a>
+                    <a class="control"id="next"style="float: left">  <span class="glyphicon glyphicon-step-forward" style="float: left;font-size: 11pt;margin-top: 6px"></span></a>
+                    <a class="control"id="muteon"class="mute"style="float: left"><span class="glyphicon glyphicon-volume-up"style="float:left;font-size: 11pt;margin: 6px 10px 6px 30px;"></span> </a>
+                    <a class="control"id="muteoff"class="mute"style="float: left;margin: 6px 10px 6px 30px;"><span class="glyphicon glyphicon-volume-off"style="float:left;font-size: 11pt;"></span> </a>
+                    <input class="" id='vol'style="float: left;width: 20%;margin-top: 10px;margin-left: -5px" type="range"value="100" max="100">
+                    <div style="margin-top: 10px"><em id="currenttime"style="color: white;margin-left: 20px"></em><em style="color: white">/</em><em id="time" class="hidden-xs" style="color: white;"></em></div>
                 </div>
                 <!--Khung PlayList-->
                 <div class="scroll"style="height: 300px; border: 2px solid rgba(0, 0, 0, 0.19);-moz-border-radius-bottomleft: 10px; clear: both;position: relative">

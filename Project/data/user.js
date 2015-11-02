@@ -4,7 +4,7 @@
 var user = []; // Khai bao 1 mang rong.
 
 
-user.push({username: 'vu',password: '12345'});
+user.push({username: 'vudang',password: '12345'});
 function login(u,p){
     var success=false;
     $.each(user,function(index,item){

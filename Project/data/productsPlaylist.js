@@ -52,8 +52,6 @@ caKhucHotIndex.push({Music:'Strong',name:'Justin Bieber, Selena Gomez',choise:'4
 caKhucHotIndex.push({Music:'Wake Up ',name:'The Vamps',choise:'61.022', url:'detailbaihat.html'});
 caKhucHotIndex.push({Music:'Locked Away',name:'Adam Levine, R.City',choise:'1.455.730', url:'detailbaihat.html'});
 caKhucHotIndex.push({Music:'Confident',name:'Demi Lovato',choise:'156.845', url:'detailbaihat.html'});
-
-
 var tintucIndex=[];
 tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Tố Ny gợi cảm trong sản phẩm đầu tay',content:'Học trò Mr. Đàm tại Giọng hát Việt 2015 ra mắt mini album "Simple" với hình ảnh gợi cảm.'});
 tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Hom nay troi dep'});
