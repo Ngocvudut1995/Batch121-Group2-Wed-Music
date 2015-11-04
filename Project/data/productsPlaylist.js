@@ -11,14 +11,14 @@ playlistIndex.push({img:'images/Playlist/nhatTue.jpg',title:'Mật Ngữ 12 Chò
 playlistIndex.push({img:'images/Playlist/baoanh.jpg',title:'Safe And Sound',name:'Bảo Anh',url:'playlist-BXHbhvn.html'});
 playlistIndex.push({img:'images/Playlist/perfect.jpg',title:'Perfect (EP)',name:' One Direction',url:'playlist-BXHbhvn.html'});
 var mvIndex =[];
-mvIndex.push({img:'images/Playlist/tony.jpg',title:'Simple',name:'Tố Ny',url:"video.html"});
-mvIndex.push({img:'images/Playlist/buctuong.jpg',title:'Ngày Khác',name:'Bức Tường Band',url:"video.html"});
-mvIndex.push({img:'images/Playlist/unghoangphuc.jpg',title:'Căn Gác Trống ',name:'Ưng Hoàng Phúc',url:"video.html"});
-mvIndex.push({img:'images/PlayList/duykhanh.jpg',title:'Vợ Tuyệt Vời Nhất',name:'Vũ Duy Khánh',url:"video.html"});
-mvIndex.push({img:'images/Playlist/index/issac.jpg', title:'Yêu Không Nghỉ Phép.',name:'Issac',url:"video.html"});
-mvIndex.push({img:'images/Playlist/index/bxh6.jpg', title:'MV về ....',name:'Issac',url:"video.html"});
-mvIndex.push({img:'images/Playlist/index/download.jpg', title:'Chào ngày Mới',name:'Hoàng Yến Chi BI',url:"video.html"});
-mvIndex.push({img:'images/Playlist/khacviet.jpg', title:'Không yêu cũng đừng làm bạn',name:'Khắc Việt',url:"video.html"});
+mvIndex.push({img:'images/Playlist/tony.jpg',title:'Không Cần Nói (Giọng Hát Việt 2015 - Chung Kết)',name:'Tố Ny',url:"detailvideo.html?id=vn10"});
+mvIndex.push({img:'images/Playlist/buctuong.jpg',title:'Hoa Ban Trắng',name:'Bức Tường Band',url:"detailvideo.html?id=vn11"});
+mvIndex.push({img:'images/Playlist/unghoangphuc.jpg',title:'Căn Gác Trống ',name:'Ưng Hoàng Phúc',url:"detailvideo.html?id=vn12"});
+mvIndex.push({img:'images/PlayList/duykhanh.jpg',title:'Vợ Tuyệt Vời Nhất',name:'Vũ Duy Khánh',url:"detailvideo.html?id=vn13"});
+mvIndex.push({img:'images/Playlist/index/issac.jpg', title:'Yêu Không Nghỉ Phép.',name:'Issac',url:"detailvideo.html?id=vn14"});
+mvIndex.push({img:'images/Playlist/index/bxh6.jpg', title:'Tắt Đèn',name:'Issac,Only C',url:"detailvideo.html?id=vn15"});
+mvIndex.push({img:'images/Playlist/index/download.jpg', title:'Chào ngày Mới',name:'Hoàng Yến Chi BI',url:"detailvideo.html?id=vn16"});
+mvIndex.push({img:'images/Playlist/khacviet.jpg', title:'Không yêu cũng đừng làm bạn',name:'Khắc Việt',url:"detailvideo.html?id=vn2"});
 
 
 var caKhucHotIndex=[];
