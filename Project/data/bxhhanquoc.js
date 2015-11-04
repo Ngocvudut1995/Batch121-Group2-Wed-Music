@@ -3,6 +3,7 @@
  */
 var  bxhhanquoc=[] ;
 bxhhanquoc.push({
+    id:'hq1',
     detail:'detailbaihat.html?id=hq1',
     "tenbaihat" : "I",
     luotnghe:"567833",
@@ -13,6 +14,7 @@ bxhhanquoc.push({
     "verse":"<br><br>Bicceul ssotneun sky<br>Geu arae seon ai (I)<br>Kkumkkudeusi fly<br>My life it a beauty<br><br>Eodiseo manhi deureobon iyagi<br>Miun oriwa baekjo,<br>Tto nalgi jeonui nabi<br>Saramdeureun molla,<br>Neoui nalgaereul mot bwa<br>Nega mannan segyeraneun geon<br>Janinhaljido molla<br><br>But strong girl,<br>You know you were born to fly<br>Nega heullin nunmul,<br>Nega neukkin gotongeun da<br>Deo nopi naraoreul nareul wihan<br>Junbiil ppun butterfly,<br>Everybody’t gonna see it soon<br><br>Bicceul ssotneun sky<br>Geu arae seon ai (I)<br>Kkumkkudeusi fly<br>My life is a beauty<br><br>Ijeossdeon kkum, nae mam tto geuryeonae<br>Umcheuryeossdeon sigan modu moa da samkyeonae<br>Jageun gieok hana dulssik nal kkaewoga<br>Sesang gadeuk chaeul mankeum nareul pyeolchyeoga<br><br>Gilgo gin bameul jina<br>Dasi trip gireul tteonabollae<br>Why not? I sesange<br>Nae mameul kkaewo juneun hanmadi<br><br>Honjayeossdeon yesterday,<br>Sel su eopsneun siseone<br>Tteoreojineun nunmullo<br>Harureul tto gyeondigo<br>Aseulhaessdeon yesterday,<br>Ssodajideon maldeure<br>Heundeullineun nareul tto gamssago<br><br>Bicceul ssotneun sky<br>Geu arae seon ai (I)<br>Kkumkkudeusi fly<br>My life is a beauty<br>My life is a beauty<br><br>Kkoccipeun jeomulgo<br>Himgyeowossdeon nan, jageun bicceul ttaraseo<br>Adeukhaessdeon nal, jeo meolli bonaego<br>Chanranhage naraga<br><br>Bicceul ssotneun sky<br>Saerowojin eyes (saerowojin eyes)<br>Jeo meolliro fly (fly high, fly high)<br>Nan namanui beauty<br><br>Nun gameun sungan<br>Siganeun meomchwoga<br>Nan dasi tteoolla"
 });
 bxhhanquoc.push( {
+    id:'hq2',
     detail:'detailbaihat.html?id=hq2',
     "tenbaihat" : "Kung Kung Kung (She Was Pretty OST)",
     luotnghe:"567833",
@@ -23,6 +25,7 @@ bxhhanquoc.push( {
     "verse":"<br><br>Achime nuneul tteumyeon jeil meonjeo saenggagina <br>Saenggagina ne eolguri saenggagina <br><br>Geoureul baraboni jeongmal jeongmal mossaenggyeossne <br>Mossaenggyeosseo neol gajgien mossaenggyeosseo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Daldalhan somsatangi ne mamcheoreom gureum gata <br>Gureum gata ne mamcheoreom gureum gata <br><br>Nae gaseum oenjjogeneun haru jongil nega isseo <br>Nega isseo jam jal ttaedo nega isseo wo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Naega kkok anajulge <br>Pyeongsaengeul da bachyeoseo <br>Neomaneul saranghalge wo <br><br>Kungkungkung daeneun gaseumi malhae <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br>Eum eum eum pyeongsaeng neol saranghalge"
 });
 bxhhanquoc.push( {
+    id:'hq3',
     detail:'detailbaihat.html?id=hq3',
     "tenbaihat" : "My Type",
     luotnghe:"567833",
@@ -33,6 +36,7 @@ bxhhanquoc.push( {
     "verse":"<br> <br>Achime nuneul tteumyeon jeil meonjeo saenggagina <br>Saenggagina ne eolguri saenggagina <br><br>Geoureul baraboni jeongmal jeongmal mossaenggyeossne <br>Mossaenggyeosseo neol gajgien mossaenggyeosseo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Daldalhan somsatangi ne mamcheoreom gureum gata <br>Gureum gata ne mamcheoreom gureum gata <br><br>Nae gaseum oenjjogeneun haru jongil nega isseo <br>Nega isseo jam jal ttaedo nega isseo wo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Naega kkok anajulge <br>Pyeongsaengeul da bachyeoseo <br>Neomaneul saranghalge wo <br><br>Kungkungkung daeneun gaseumi malhae <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br>Eum eum eum pyeongsaeng neol saranghalge"
 });
 bxhhanquoc.push( {
+    id:'hq4',
     detail:'detailbaihat.html?id=hq4',
     "tenbaihat" : "If You",
     luotnghe:"567833",
@@ -43,6 +47,7 @@ bxhhanquoc.push( {
     "verse":"<br> <br>Achime nuneul tteumyeon jeil meonjeo saenggagina <br>Saenggagina ne eolguri saenggagina <br><br>Geoureul baraboni jeongmal jeongmal mossaenggyeossne <br>Mossaenggyeosseo neol gajgien mossaenggyeosseo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Daldalhan somsatangi ne mamcheoreom gureum gata <br>Gureum gata ne mamcheoreom gureum gata <br><br>Nae gaseum oenjjogeneun haru jongil nega isseo <br>Nega isseo jam jal ttaedo nega isseo wo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Naega kkok anajulge <br>Pyeongsaengeul da bachyeoseo <br>Neomaneul saranghalge wo <br><br>Kungkungkung daeneun gaseumi malhae <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br>Eum eum eum pyeongsaeng neol saranghalge"
 });
 bxhhanquoc.push( {
+    id:'hq5',
     detail:'detailbaihat.html?id=hq5',
     "tenbaihat" : "Reset (Who Are You - School 2015 OST)",
     luotnghe:"567833",
@@ -53,6 +58,7 @@ bxhhanquoc.push( {
     verse:'<br> <br>Achime nuneul tteumyeon jeil meonjeo saenggagina <br>Saenggagina ne eolguri saenggagina <br><br>Geoureul baraboni jeongmal jeongmal mossaenggyeossne <br>Mossaenggyeosseo neol gajgien mossaenggyeosseo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Daldalhan somsatangi ne mamcheoreom gureum gata <br>Gureum gata ne mamcheoreom gureum gata <br><br>Nae gaseum oenjjogeneun haru jongil nega isseo <br>Nega isseo jam jal ttaedo nega isseo wo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Naega kkok anajulge <br>Pyeongsaengeul da bachyeoseo <br>Neomaneul saranghalge wo <br><br>Kungkungkung daeneun gaseumi malhae <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br>Eum eum eum pyeongsaeng neol saranghalge'
 });
 bxhhanquoc.push( {
+    id:'hq6',
     detail:'detailbaihat.html?id=hq6',
     "tenbaihat" : "Sober",
     "trinhbay" : "BigBang",
@@ -63,6 +69,7 @@ bxhhanquoc.push( {
     verse:'<br> <br>Achime nuneul tteumyeon jeil meonjeo saenggagina <br>Saenggagina ne eolguri saenggagina <br><br>Geoureul baraboni jeongmal jeongmal mossaenggyeossne <br>Mossaenggyeosseo neol gajgien mossaenggyeosseo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Daldalhan somsatangi ne mamcheoreom gureum gata <br>Gureum gata ne mamcheoreom gureum gata <br><br>Nae gaseum oenjjogeneun haru jongil nega isseo <br>Nega isseo jam jal ttaedo nega isseo wo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Naega kkok anajulge <br>Pyeongsaengeul da bachyeoseo <br>Neomaneul saranghalge wo <br><br>Kungkungkung daeneun gaseumi malhae <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br>Eum eum eum pyeongsaeng neol saranghalge<br>'
 });
 bxhhanquoc.push( {
+    id:'hq7',
     detail:'detailbaihat.html?id=hq7',
     "tenbaihat" : "You Think",
     luotnghe:"567833",
@@ -73,6 +80,7 @@ bxhhanquoc.push( {
     verse:'<br> <br>Anh trông theo đó, đây<br>Nhưng sao chẳng thấy<br>Những dấu son còn tươi trên môi hồng em từ ngày em đi<br>Khi bao nhiêu khó, khăn<br>Bên anh nhiều lắm<br>Em nói em sẽ về đây khi mùa đông tàn<br>Anh nhớ em khi cơn mưa dài lạnh lùng chưa tan<br>Anh nhớ em khi em ôm chầm vào lòng anh khóc oà<br>Anh nhớ em khi trên vai mình còn nhiều âu lo<br>Anh nhớ em, khi trăng vừa lên, ban đêm dài hơn ban ngày<br><br>Cuz I Know...<br>Tim em bao la, mặc kệ đợi chờ người ta<br>Cho đi bao nhiêu, nhận về khói sương thật nhiều<br>Nơi đây bao xa, để tìm lại mình ngày qua<br>Oh no uh oh…oh uh oh lời em hứa sẽ trở về...<br>Give me ur Heart…Give me ur Love<br>Mùa đông bên anh sao thật dài, còn em đang đi đâu miệt mài<br>Give me ur Heart…Give me ur Love<br>Mùa đông thương anh ôm mệt nhoài, vì em đi đâu anh chờ hoài<br><br>Căn phòng vẫn vậy <br>Chẳng gì ngoài những hối tiếc , nỗi nhớ em và bass<br>Ở 1 nơi nào đó anh không hay , em liệu bây giờ đây ??<br>Vẫn còn nghe những bài hát này hay đang say trong vòng tay... <br>Thật cô đơn khi anh luôn nghĩ về em sớm tối<br>Nhớ mắt môi <br>Lạc vào em , anh nhớ cả những chiều tan về đưa đón lối <br>Và nhớ mùa tuyết rơi <br>Anh chẳng muốn tìm về quá khứ nữa , cứ để nó đẹp và ngủ yên thôi <br>Chỉ là những tấm hình , khói thuốc , chai rượu cạn dần và 2 giờ đêm trôi…<br><br>Cuz I Know...<br>Tim em bao la, mặc kệ đợi chờ người ta<br>Cho đi bao nhiêu, nhận về khói sương thật nhiều<br>Nơi đây bao xa, để tìm lại mình ngày qua<br>Oh no uh oh…oh uh oh lời em hứa sẽ trở về...<br>Give me ur Heart…Give me ur Love<br>Mùa đông bên anh sao thật dài, còn em đang đi đâu miệt mài<br>Give me ur Heart…Give me ur Love<br>Mùa đông thương anh ôm mệt nhoài, vì em đi đâu anh chờ hoài<br><br>Ooh Ooh<br>Sao không như lời em nói khi hơi ấm đang đầy vơi<br>Ngày dài qua…<br>Anh chưa bao giờ đi hết con đường trắng mưa buồn rơi yea<br>And Ooh Ooh<br>Cho đi những điều mãi mãi anh đổi lấy những tàn phai này<br>Còn gì đâu nào? Buông xuôi hy vọng tàn úa bên mùa đông vô tình trôi<br><br>Cuz I know…i know know, i know know<br>Tim em bao la, mặc kệ đợi chờ người ta<br>Cho đi bao nhiêu<br>Bao nhiêu chỉ là sương khói thôi<br>Cuz I know, i know ngày qua uh oh. oh uh oh<br>Lời em hứa sẽ trở về đây<br>Give me ur Heart…Give me ur Love<br>Mùa đông sao bên anh thật dài, còn em đang đi đâu miệt mài<br>Give me ur Heart…Give me ur Love<br>Mùa đông thương anh ôm mệt nhoài, no no no no em đi mãi không trở về…<br><br>Hoa Sữa rơi vây đầy quanh trên đường nơi anh thường đi với em<br>Hoa Sữa mang anh gần em khi ngày qua đợi chờ gió đem hương về<br>Hoa Sữa rơi anh nhặt lên đưa vào tay em đặt trên mái tóc em…<br>Hoa Sữa ơi sao để bên em dài lâu đây anh đếm cánh hoa này...'
 });
 bxhhanquoc.push( {
+    id:'hq8',
     detail:'detailbaihat.html?id=hq8',
     "tenbaihat" : "A Million Pieces",
     luotnghe:"567833",

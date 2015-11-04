@@ -46,91 +46,6 @@
 a:hover{
     text-decoration: none;
 }
-input[type=range] {
-    -webkit-appearance: none;
-    width: 100%;
-    margin: 2.15px 0;
-}
-input[type=range]:focus {
-    outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 6.7px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    background: #138c20;
-    border-radius: 1.3px;
-    border: 0.2px solid #0b0101;
-}
-input[type=range]::-webkit-slider-thumb {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    border: 1.4px solid #000000;
-    height: 11px;
-    width: 6px;
-    border-radius: 3px;
-    background: #ffffff;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -2.35px;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #16a225;
-}
-input[type=range]::-moz-range-track {
-    width: 100%;
-    height: 6.7px;
-    cursor: pointer;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    background: #138c20;
-    border-radius: 1.3px;
-    border: 0.2px solid #0b0101;
-}
-input[type=range]::-moz-range-thumb {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    border: 1.4px solid #000000;
-    height: 11px;
-    width: 6px;
-    border-radius: 3px;
-    background: #ffffff;
-    cursor: pointer;
-}
-input[type=range]::-ms-track {
-    width: 100%;
-    height: 6.7px;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
-    color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-    background: #10761b;
-    border: 0.2px solid #0b0101;
-    border-radius: 2.6px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-fill-upper {
-    background: #138c20;
-    border: 0.2px solid #0b0101;
-    border-radius: 2.6px;
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-thumb {
-    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-    border: 1.4px solid #000000;
-    height: 11px;
-    width: 6px;
-    border-radius: 3px;
-    background: #ffffff;
-    cursor: pointer;
-    height: 6.7px;
-}
-input[type=range]:focus::-ms-fill-lower {
-    background: #138c20;
-}
-input[type=range]:focus::-ms-fill-upper {
-    background: #16a225;
-}
 
 .icon{
     height: 27px;
@@ -206,15 +121,82 @@ input[type=range]:focus::-ms-fill-upper {
     text-decoration: none;
 }
 
-.control{
+.controls{
     color: white;
 
 
     height: 100%;
 }
-.control > span{
+.controls > span{
     font-size: 11pt;
 }
-.control:hover{
+.controls:hover{
     color:#138c20 ;
 }
+
+.clearfix {
+    *zoom: 1; }
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+    line-height: 0; }
+
+.clearfix:after {
+    clear: both; }
+.control {
+    padding: 5px;
+}
+.control input[type="range"] {
+    -webkit-appearance: none;
+    display: block;
+    height: 10px;
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 0; }
+.control input[type="range"]:focus {
+    outline: none; }
+.control input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0; }
+.control .time {
+    height: 10px;
+    margin-bottom: 15px;
+    background-color: #cccccc;
+    position: relative; }
+.control .time .fill {
+    width: 0%;
+    background-color: #247234;
+    height: 100%;
+    transition: width 0.3s; }
+.control div.clearfix {
+    text-align: center; }
+
+.control div.clearfix .volume {
+    float: right;
+    width: 40%;
+    margin-top: 12px;
+    background-color: #fff;
+    position: relative;
+    height: 5px; }
+.control div.clearfix .volume #vol-fill {
+    width: 50%;
+    background-color: #2BB942;
+    height: 100%; }
+.control div.clearfix .volume input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+
+    background-color: #000; }
+
+/* FIX
+------------------------------------------------------*/
+.-moz- input[type="range"] {
+    opacity: 0; }
+
+.-ms- input[type="range"] {
+    opacity: 0; }

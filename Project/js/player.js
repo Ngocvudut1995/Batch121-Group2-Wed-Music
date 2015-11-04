@@ -32,7 +32,7 @@ function control_player(song,button,list,ul) {
 	});
 	button.vol.change(function(e) {
 		song.volume = ($(this).val())/100;
-		//$('#vol-fill').css('width', $(this).val() + '%');
+		$('#vol-fill').css('width', $(this).val() + '%');
 		if(song.volume==0){
 			$('#muteoff').show();
 			$('#muteon').hide();
@@ -52,17 +52,27 @@ function control_player(song,button,list,ul) {
 		per = (song.currentTime/song.duration)*100;
 
 		if(per == 100){
+			$('.fill').css({'width': '0%'});
 			i = ul.find('li.active').removeClass('active').next().addClass('active').data('idx');
 			if(i>=list.length){ i=0;return }
 			songPlayIndex(i,list,song);
 		}else{
 		//	var t=round(song.currentTime);
+			$('.fill').css({'width': per + '%'});
 			$('#currenttime').text(secondsToTime(song.currentTime));
 			$('#time').text(secondsToTime(song.duration));
 			$('#seek').val(per);
 			$('#seek').attr('value', per);
 
 		}
+	/*	if(per == 100){
+			$('.fill').css({'width': '0%'});
+			$('#seek').attr('value',0);
+			song.play();
+		}else{
+			$('.fill').css({'width': per + '%'});
+			$('#seek').attr('value', per);
+		}*/
 	});
 
 	$('#seek').click(function(event) {
