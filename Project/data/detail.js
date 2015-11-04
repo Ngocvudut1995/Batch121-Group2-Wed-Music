@@ -106,28 +106,35 @@ detailbaihat.push( {
 });
 detailbaihat.push( {
  'id':'vn11',
- "tenbaihat" : "Làm Vợ Anh Nhé",
- "trinhbay" : "Chi Dân",
+ "tenbaihat" : "Vợ Tuyệt Vời Nhất",
+ "trinhbay" : "Vũ Duy Khánh",
  theloai:'Nhạc Trẻ',
- "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNS8yOC83LzYvNzYxZGZhM2ZkZWUyYmQ0NDU5NWEzZjBjZGVhMzNmOWIubXAzfDEz",
- "hinhnen": "http://image.mp3.zdn.vn/cover3_artist/0/3/0357aec2ead5576edf3e7bb4b8f9df11_1412234079.jpg"
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xOS9iL2QvYmQwYjNkZWJjM2ZlMjEzMDZmMjdkZTVmMTYwMWNhMGUubXAzfDEz",
+ "hinhnen": "http://image.mp3.zdn.vn/thumb/165_165/avatars/f/6/f6158eeb665ae614cccd5fdf014b25bd_1445189402.jpg",
+ hinhanh:'',
+ verse:'<br><br>Nhìn em cạnh bên anh ngủ ngoan lòng anh quá nỗi nhẹ nhàng thoáng chốc anh quên đi bao phiền ưu<br>Nhắm mắt lại và mong sao em có thể hiểu, từ lúc em bên cạnh anh thấy cuộc sống ổn hơn nhiều<br>Nhiều lần giận hờn nhau đôi chúng ta từng phải nói chia tay mà, và cớ sao em vẫn luôn là người thứ tha<br>Anh cảm ơn trời đã trao anh người con gái tuyệt vời, chỉ muốn bên em và yêu em đến hết cuộc đời<br><br>Người tuyệt vời nhất là em chẳng ai khác ngoài em<br>Và lý do anh cho là em luôn luôn tuệt vời nhất<br>Vì em từng biết lắng nghe biết chịu đựng biết sẻ chia<br>Anh biết cả đời này anh ko gặp ai tốt hơn em<br>Cảm ơn em đã vì anh suốt quãng đường vừa qua<br>Và thứ tha cho anh nhiều lần anh dối trá<br>Anh hiểu rằng anh rất may mắn khi được em ở bên cạnh<br>Muốn thấy nụ cười nở trên môi hạnh phúc chỉ thế thôi là em !'
 });
+
 detailbaihat.push( {
  'id':'vn12',
- "tenbaihat" : "Không Phải Dạng Vừa Đâu",
- "trinhbay" : "Sơn Tùng-MTP",
+ "tenbaihat" : "Vì Tôi Còn Sống",
+ "trinhbay" : "Tiên Tiên",
  theloai:'Nhạc Trẻ',
- "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wMS8xOS8yL2EvMmE4NWQ5ODM5Nzg3NmE4YzQzNGU3YTIyM2RiYTAwMzQubXAzfDEz",
- "hinhnen": "http://image.mp3.zdn.vn/cover3_artist/9/b/9bed6cb23537b7b8ad122c818fcbe531_1440399316.jpg"
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yMy82L2YvNmYzZDQwNDE5NGYwNjgwMTFjM2IwZDNmYzA4ZjlmMjUubXAzfDEz",
+ "hinhnen": "http://image.mp3.zdn.vn/thumb/165_165/avatars/f/a/fa1c00dde7779e35feacfb946d30c531_1445830447.jpg",
+ hinhanh:'',
+ verse:'<br><br>Nhìn em cạnh bên anh ngủ ngoan lòng anh quá nỗi nhẹ nhàng thoáng chốc anh quên đi bao phiền ưu<br>Nhắm mắt lại và mong sao em có thể hiểu, từ lúc em bên cạnh anh thấy cuộc sống ổn hơn nhiều<br>Nhiều lần giận hờn nhau đôi chúng ta từng phải nói chia tay mà, và cớ sao em vẫn luôn là người thứ tha<br>Anh cảm ơn trời đã trao anh người con gái tuyệt vời, chỉ muốn bên em và yêu em đến hết cuộc đời<br><br>Người tuyệt vời nhất là em chẳng ai khác ngoài em<br>Và lý do anh cho là em luôn luôn tuệt vời nhất<br>Vì em từng biết lắng nghe biết chịu đựng biết sẻ chia<br>Anh biết cả đời này anh ko gặp ai tốt hơn em<br>Cảm ơn em đã vì anh suốt quãng đường vừa qua<br>Và thứ tha cho anh nhiều lần anh dối trá<br>Anh hiểu rằng anh rất may mắn khi được em ở bên cạnh<br>Muốn thấy nụ cười nở trên môi hạnh phúc chỉ thế thôi là em !'
 });
 
 detailbaihat.push( {
  'id':'vn13',
- "tenbaihat" : "Say You Do",
- "trinhbay" : "Tiên Tiên",
+ "tenbaihat" : "Vợ Tuyệt Vời Nhất",
+ "trinhbay" : "Vũ Duy Khánh",
  theloai:'Nhạc Trẻ',
- "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNC8yNS8xLzYvMTY3ZmM1ZDYyNzE2NmU3NTVlNzQ1ZTlmNTk0MWY0MGUubXAzfDEz",
- "hinhnen": "http://image.mp3.zdn.vn/cover3_artist/d/6/d6176f228340eab19b53eabbbcd198d6_1427256000.jpg"
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xOS9iL2QvYmQwYjNkZWJjM2ZlMjEzMDZmMjdkZTVmMTYwMWNhMGUubXAzfDEz",
+ "hinhnen": "http://image.mp3.zdn.vn/thumb/165_165/avatars/f/6/f6158eeb665ae614cccd5fdf014b25bd_1445189402.jpg",
+ hinhanh:'',
+ verse:'<br><br>Nhìn em cạnh bên anh ngủ ngoan lòng anh quá nỗi nhẹ nhàng thoáng chốc anh quên đi bao phiền ưu<br>Nhắm mắt lại và mong sao em có thể hiểu, từ lúc em bên cạnh anh thấy cuộc sống ổn hơn nhiều<br>Nhiều lần giận hờn nhau đôi chúng ta từng phải nói chia tay mà, và cớ sao em vẫn luôn là người thứ tha<br>Anh cảm ơn trời đã trao anh người con gái tuyệt vời, chỉ muốn bên em và yêu em đến hết cuộc đời<br><br>Người tuyệt vời nhất là em chẳng ai khác ngoài em<br>Và lý do anh cho là em luôn luôn tuệt vời nhất<br>Vì em từng biết lắng nghe biết chịu đựng biết sẻ chia<br>Anh biết cả đời này anh ko gặp ai tốt hơn em<br>Cảm ơn em đã vì anh suốt quãng đường vừa qua<br>Và thứ tha cho anh nhiều lần anh dối trá<br>Anh hiểu rằng anh rất may mắn khi được em ở bên cạnh<br>Muốn thấy nụ cười nở trên môi hạnh phúc chỉ thế thôi là em !'
 });
 
 
@@ -213,4 +220,182 @@ detailbaihat.push( { theloai:'Nhạc Hàn Quốc',
  "hinhnen": "http://avatar.nct.nixcdn.com/singer/avatar/2014/13/7E4149A9_863.jpg",
  hinhanh:"http://image.mp3.zdn.vn/cover3_artist/6/7/67626cc0a77d86fb094b0fab6acd7298_1415937103.jpg)",
  verse:'<br> <br>Achime nuneul tteumyeon jeil meonjeo saenggagina <br>Saenggagina ne eolguri saenggagina <br><br>Geoureul baraboni jeongmal jeongmal mossaenggyeossne <br>Mossaenggyeosseo neol gajgien mossaenggyeosseo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Daldalhan somsatangi ne mamcheoreom gureum gata <br>Gureum gata ne mamcheoreom gureum gata <br><br>Nae gaseum oenjjogeneun haru jongil nega isseo <br>Nega isseo jam jal ttaedo nega isseo wo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Naega kkok anajulge <br>Pyeongsaengeul da bachyeoseo <br>Neomaneul saranghalge wo <br><br>Kungkungkung daeneun gaseumi malhae <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br>Eum eum eum pyeongsaeng neol saranghalge'
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn21',
+ detail:'detailbaihat.html?id=vn21',
+ "tenbaihat" : "Em Đã Yêu",
+ "trinhbay" : "Thủy Tiên",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yNy85L2QvOWQ3YTgwZGE2YWNiOGIwNDE3MzI5OWJhMjMwZjYyOWUubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/5/4/540b9df25cc70ff49ffb61d77a2f487d_1411607276.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/0/0/0037fa44fb1ffa4a5ec148a4c14dccdf_1446539527.jpg',
+ "verse":"<br><br>Hoà âm phối khí: Hoaprox<br>EM ĐÃ YÊU<br><br>Hãy cho em được bên anh, được thấy ánh mắt anh cười.<br>Vào những buổi sang rạng ngời, một nụ hôn.<br>Hãy cho em được yêu anh, cảm giác ấy rất tuyệt vời.<br>Ngày anh bước đến bên đời cùng em.<br>Cho em quen những điều ngọt ngào, một ngày từ khi đôi ta chung bước đi.<br>Baby sao em cứ nhớ, một nụ cười, làm lý trí em không ngăn nổi trái tim mình.<br>Đk :<br>Em đã yêu, hơi ấm này, trái tim này thuộc về anh<br>Em đã yêu, ngay phút đầu, phút đôi mình vừa nhìn nhau. <br><br><br>Hãy cho em được bên anh, được thấy ánh mắt anh cười.<br>Vào những buổi sang rạng ngời, một nụ hôn.<br>Hãy cho em được yêu anh, cảm giác ấy rất tuyệt vời.<br>Ngày anh bước đến bên đời cùng em.<br>Cho em quen những điều ngọt ngào, một ngày từ khi đôi ta chung bước đi.<br>Baby sao em cứ nhớ, một nụ cười, làm lý trí em không ngăn nổi trái tim mình.<br>ĐK :<br><br>Em đã yêu, hơi ấm này, trái tim này thuộc về anh<br>Em đã yêu, ngay phút đầu, phút đôi mình vừa nhìn nhau. <br>"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn22',
+ detail:'detailbaihat.html?id=vn22',
+ "tenbaihat" : "LK Ngôi Nhà Hạnh Phúc-Chỉ Cần Anh Thôi",
+ "trinhbay" : "Thủy Tiên",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yOC9hLzEvYTFjMTZjMzI1OGM4Y2E4MDQ4YTk2YzBlZDYzNTUyMTUubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/5/4/540b9df25cc70ff49ffb61d77a2f487d_1411607276.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/0/0/0037fa44fb1ffa4a5ec148a4c14dccdf_1446539527.jpg',
+ "verse":"<br><br>Là vì em hạnh phúc khi có anh bện cạnh em...<br>Một nụ hôn thật khẽ lên đôi mắt, nét môi khi buồn<br>Những điều em thầm giấu trong trái tim đã lâu thật lâu<br>Dù ngày mai ra sao thì vẫn chỉ yêu người thôi...<br>Dẫu chỉ là giấc mơ em xin mờ hoài<br>Cuối con đường nắng lên chờ anh đến<br>Đến khi nào trên thế gian mặt trời ngừng sáng lối em đi về<br>Ánh mắt này, đôi tay này mãi thuộc về nhau<br>Chợt nhận ra,<br>Đã từ lâu lắm rồi ,<br>Kể từ khi chúng mình vừa nhìn thấy nhau <br>Con tim đã yêu đậm sâu <br>Và anh kể từ giây phút này mình cùng nhau hướng Về một mái ấm mãi về sau<br><br>Cảm ơn những điều đưa ta đến bên nhau<br>Cảm ơn từng lời nói qua mau<br>Giấc mơ mình cùng say đắm trao nhau<br>Nắm tay và đi hết cuộc đời <br>Ngày dài đêm trôi yêu nhau và bên nhau mãi mãi nhé<br>Dù chúng ta bạc hai mái đầu<br>Chỉ cần anh thôi bên em cùng nhau vượt qua bao sóng gió <br>Nắng mưa ta có sợ gì đâu, phải không anh?<br>Na na na na nà na na na na ná na na na"
+});
+
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn23',
+ detail:'detailbaihat.html?id=vn23',
+ "tenbaihat" : "Sài Gòn Bận Lắm",
+ "trinhbay" : "Thủy Tiên",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNi8yMi83L2UvN2U3NzdjMGYyNmVjYmFmZGYzNmYxZjg2NWUyODhkZTkubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/5/4/540b9df25cc70ff49ffb61d77a2f487d_1411607276.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/0/0/0037fa44fb1ffa4a5ec148a4c14dccdf_1446539527.jpg',
+ "verse":"<br><br>Đêm trắng, con đường vắng Mình em lang thang dưới ánh trăng Vài lần tự nhủ không được khóc thầm Người Sài Gòn bận lắm chẳng ai dỗ dành đâu Em biết tháng ngày sẽ dần trôi qua mau những chuyến xe Chỉ còn em thôi nơi này vẫn đợi Đặt tay lên tim hình anh vẫn đây Hạt mưa kia rơi để nối đất với trời Còn tình yêu thương sẽ nối em vào anh Dù rằng hình bóng ấy sao còn xa vời vợi Đoạn đường yêu thương ta đã bước em vẫn đợi Cuộc đời quá ngắn những nỗi nhớ quá dài Tình yêu trao anh mãi mãi không hề phai Từng năm tháng ấy trở lại như lúc ấy Lòng em sẽ rất vui khi được sống vì anh"
+});
+
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn24',
+ detail:'detailbaihat.html?id=vn24',
+ "tenbaihat" : "Xin Đừng Buông Tay",
+ "trinhbay" : "Thủy Tiên-Noo Phước Thịnh",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOC8wOC84LzIvODJlMTNkYzc3YjBlODkyNTc3M2M5YmJkNWY3MzgyMzkubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/8/f/8f0cc312396379e65293185fcbae8f8c_1411581362.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/0/0/0037fa44fb1ffa4a5ec148a4c14dccdf_1446539527.jpg',
+ "verse":"Bao đêm qua trong lòng e cứ ngỡ,ta bên nhau sẽ một đời mai sau<br><br>Nhưng anh nào hay rồi đến một ngày,ngày em bỏ rơi cuộc tình ta<br><br>Bao yêu thương xưa mà ta đã có,nay như mây trôi về nơi xa xôi<br><br>Ký ức còn đó mà em đâu rồi,bàn tay không còn hơi ấm...<br><br>Rồi bỗng đêm dài thức giấc em nhận ra quanh mình,chỉ thấy đong đầy nước mắt sau từng đêm hiu quạnh<br><br>Người đi xa rời thật sao,nhưng lòng em vẫn cố,níu yêu thương đã xa tầm tay với...<br><br>Rồi mai không còn ai sẽ bên cạnh em mỗi ngày,rồi mai không còn ai sẻ chia những lúc vui buồn<br><br>Làm sao trong đời em sống khi nụ cười đã mất,hỡi anh...Xin anh hãy đừng buông tay..."
+});
+//-------
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn31',
+ detail:'detailbaihat.html?id=vn31',
+ "tenbaihat" : "Chỉ Đắng Cay Ở Lại",
+ "trinhbay" : "Bảo Thy",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yOS9kLzgvZDg4NWIwY2EwOTg5YWUyODU5MjkyOTBjZTczNzM0NTkubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/8/9/89a419b811fafc608b0a27d8646ae74d_1418959570.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/8/7/87846ecbaadf25a0c93997563f049ab3_1446193639.jpg',
+ "verse":"<br><br>Em biết lấy gì để giữ lấy Anh<br>Ngoài bàn tay đón xiết bao yếu mềm<br>Em biết lấy gì để thoả nỗi lòng<br>Những tháng ngày chờ mong...<br><br>Đôi cánh chim trời mỏi mệt lắm rồi<br>Chẳng tìm ra lối đi cho chính mình<br>Em biết lấy gì để giữ lấy người<br>Khóc chỉ thêm buồn thôi...<br><br>Mà vì sao Anh không nói, không yêu em nữa rồi<br>Để cho em thôi cô đơn thôi chờ mong người<br>Chuyện này là ai có lỗi? Anh ơi Anh nói đi<br>Sao cứ phải hững hờ<br><br>Này người ơi Anh có biết bên anh em mỉm cười<br>Rồi sau đó nước mắt rớt nơi không bóng người<br>Một tình yêu không may mắn, khi cô đơn bước qua..<br>Chỉ đắng cay ở lại....<br><br>Vì sao anh không nói? Không yêu em nữa rồi<br>Để cho em thôi cô đơn thôi chờ mong..<br>Chuyện này là ai có lỗi, Anh ơi anh nói đi<br>Sao khiến em đau lòng...<br>Này người ơi Anh có biết bên anh em mỉm cười<br>Rồi sau đó nước mắt rớt nơi không bóng người<br>Một tình yêu không may mắn, khi cô đơn bước qua..<br>Chỉ đắng cay ở lại..."
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn32',
+ detail:'detailbaihat.html?id=vn33',
+ "tenbaihat" : "Mau Nước Mắt",
+ "trinhbay" : "Bảo Thy",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNS8yOS83L2IvN2IzOTUyNDhmOTYwY2VhYzUxZjc5YzgyOWUxMDRmZDcubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/8/9/89a419b811fafc608b0a27d8646ae74d_1418959570.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/8/7/87846ecbaadf25a0c93997563f049ab3_1446193639.jpg',
+ "verse":"<br><br>Em cần thời gian, để tim mình tĩnh lặng.<br>Để nhìn mọi thứ bớt đi màu tối xung quanh.<br>Nhắc đêm hãy mưa nhiều hơn để che lấp đi<br>Những nghĩ suy cứ muốn vang thành tiếng khóc.<br>Em mở quyển sách, dõi theo câu chuyện buồn.<br>Tạm rời xa đi nỗi đau giằng xé của mình.<br>Em nghĩ rằng mình còn vui hơn câu chuyện đó, mà sao nước mắt cứ mãi rơi hoài xuống đây.<br> <br>ĐK:<br><br>Dặn lòng quên đi quên đi đêm xưa anh vẫn rất gần, vẫn là câu chuyện dõi theo bên em.<br>Khi em rơi nước mắt, buông nhẹ tiếng nấc vì chuyện buồn người ta viết nên<br>Anh đã lau đi lau đi những giọt lệ ướt ấy mà, dỗ dành cả ngày để em vui hơn.<br>Nhưng mà giờ em khóc, em nhoè mắt ngẩn ngơ tìm anh, mà chẳng thấy đâu, àh ta đã chia tay mất rồi.<br><br>Em chọn cho anh, lối đi không nặng nề.<br>Em chọn cho em, những gì đẹp nhất giữ lại.<br>Nếu lỡ mai sau gặp nhau, anh có mỉm cười ?<br>Có thể đừng vờ như không trông thấy em ?<br><br>Biết mình yếu đuối, thế nên em lạnh lùng.<br>Nhẹ nhàng xa anh, chẳng để níu kéo mỏi mệt.<br>Em chỉ để dành nước mắt khóc một mình thôi,<br>Chỉ sợ có lúc yếu đuối làm phiền đến anh.<br> <br> (ĐK)<br> <br>Tìm đâu thế gian có được chân tình như sách viết ra<br>Cả đời chỉ dành để yêu một người.<br>Khi nào ngủ yên giấc, em mong mơ thấy một chuyện tình mình vẫn có nhau.<br>Ngày mai đến sẽ tiếp tục đi đoạn đường của chính mình<br>Nước mắt chỉ còn để đêm rơi thôi.<br>Em khép lại quyển sách, cất giữ trong đó những kỷ niệm<br>Và những giấc mơ, mà ta đã có bấy lâu."
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn33',
+ detail:'detailbaihat.html?id=vn33',
+ "tenbaihat" : "Đêm Cô Đơn",
+ "trinhbay" : "Bảo Thy",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOS8xNC85LzYvOTZhMDVkYWE1MWY3NWI1ODVlZjEyN2FlMWJkMGI3N2MubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/8/9/89a419b811fafc608b0a27d8646ae74d_1418959570.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/8/7/87846ecbaadf25a0c93997563f049ab3_1446193639.jpg',
+ "verse":"<br><br>Anh, giờ phút đêm nay đang ở đâu ?<br><br>Hay bước chân chung vui cùng ai ?<br><br>Lặng lẽ ra đi không một lời<br><br>Để lại đây bao nỗi cô đơn.<br><br><br><br>Em, dù bấy lâu ta luôn gần nhau<br><br>Nhưng trái tim kia không hề yêu<br><br>Giờ mình anh lang thang dưới ánh trăng khuya<br><br>Con tim buốt giá quạnh hiu.<br><br><br><br>Ôi đêm nay với bao kỷ niệm<br><br>Bao chơi vơi đắm chìm vô vọng<br><br>Thì đâu ai có biết lòng đau<br><br>Ôi bao nhiêu ái ân mặn nồng<br><br>Giờ này đã trôi đi rất xa<br><br>Nhưng mình anh vẫn,<br><br>Mình anh vẫn thầm chờ mong<br><br>Dù đã biết tình chia lìa.<br><br><br><br><br><br>Anh, dù bấy lâu ta luôn gần nhau<br><br>Nhưng trái tim kia không hề yêu<br><br>Giờ mình anh lang thang dưới ánh trăng khuya<br><br>Con tim buốt giá quạnh hiu<br><br><br><br>Ôi đêm nay với bao kỷ niệm<br><br>Bao chơi vơi đắm chìm vô vọng<br><br>Thì đâu ai có biết lòng đau<br><br>Ôi bao nhiêu ái ân mặn nồng<br><br>Giờ này đã trôi đi rất xa<br><br>Nhưng mình anh vẫn,<br><br>Mình anh vẫn thầm chờ mong<br><br>Dù đã biết tình chia lìa.<br><br><br><br>Khi em quay bước ra đi<br><br>Một mình em cô đơn buồn tênh...<br><br>Bao nhiêu mong ước trao nhau<br><br>Giờ tan theo mây bay<br><br>Lệ rơi xé nát cõi lòng anh.<br><br><br><br><br><br>Ôi bao nhiêu ái ân mặn nồng<br><br>Giờ này đã trôi đi rất xa<br><br>Nhưng mình anh vẫn,<br><br>Mình anh vẫn thầm chờ mong<br><br>Dù đã biết tình chia lìa.<br><br>"
+});
+//-------
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn41',
+ detail:'detailbaihat.html?id=vn41',
+ "tenbaihat" : "Vì Tôi Còn Sống",
+ "trinhbay" : "Tiên Tiên",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yMy82L2YvNmYzZDQwNDE5NGYwNjgwMTFjM2IwZDNmYzA4ZjlmMjUubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/d/6/d6176f228340eab19b53eabbbcd198d6_1427256000.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/e/0/e073a906079d0c190cda3a14e956a83b_1445618229.jpg',
+ "verse":"<br><br>Ver1:<br>Khi xưa ngây thơ dại khờ tôi hay chê bai mình ngu si.<br>Rằng không biết làm gì, không biết cần chi, không biết mình là ai..<br><br>Bao năm bon chen ngoài đời soi gương nhìn vẫn thế.<br>Đầu vẫn rối bù xù, thân bé ú nu, ú nu.. ú ù.<br>Chorus:<br>Cứ sai đi vì cuộc đời cho phép.<br>Cứ yêu đi dù rằng mình ngu si.<br>Ai lừa ai, ai hờn ai, ai giận ai, ai thù ai.. cho qua đi.<br>Cứ đam mê dù nhiều người cười chê.<br>Và cứ vui lên, vì ta không.. cô đơn.<br>Vì tôi còn sống.<br>Vì tôi còn hát lên.<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>Ver2:<br>Mai đây khi tôi dần dần quên đi mình là ai.<br>Nhờ ai đó gần bên, ai đó hát lên những bài ca tôi viết.<br><br>---<br>Bao năm bon chen ngoài đời soi gương nhìn vẫn thế.<br>Đầu vẫn rối bù xù, thân bé ú nu, ú nu.. ú ù.<br>Chorus:<br>Cứ sai đi vì cuộc đời cho phép.<br>Cứ yêu đi dù rằng mình ngu si.<br>Ai lừa ai, ai hờn ai, ai giận ai, ai thù ai.. cho qua đi.<br>Cứ đam mê dù nhiều người cười chê.<br>Và cứ vui lên, vì ta không.. cô đơn.<br>Vì tôi còn sống.<br>Vì tôi còn hát lên.<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>---<br>Ver2:<br>Mai đây khi tôi dần dần quên đi mình là ai.<br>Nhờ ai đó gần bên, ai đó hát lên những bài ca tôi viết.<br><br>Chorus:<br>Cứ sai đi vì cuộc đời cho phép.<br>Cứ yêu đi dù rằng mình ngu si.<br>Ai lừa ai, ai hờn ai, ai giận ai, ai thù ai.. cho qua đi.<br>Cứ đam mê dù nhiều người cười chê.<br>Và cứ vui lên, vì ta không.. cô đơn.<br>Vì tôi còn sống.<br>Vì tôi còn hát lên.<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>--<br>Vì tôi còn sống.<br>Vì tôi còn nhớ mình là ai..<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>VÌ TÔI CÒN SỐNG."
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn42',
+ detail:'detailbaihat.html?id=vn42',
+ "tenbaihat" : "My EveryThing",
+ "trinhbay" : "Tiên Tiên",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wMi8wOC83L2EvN2FmZmE4OWNlOTJiOTY0ODk1NTk0OThkNTFlMTBhZDgubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/d/6/d6176f228340eab19b53eabbbcd198d6_1427256000.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/e/0/e073a906079d0c190cda3a14e956a83b_1445618229.jpg',
+ "verse":"<br><br>Em đang hát về người yêu dấu ơi, có nghe chăng.<br>Em đem tiếng cười bờ môi ấy.. xa chốn đây.<br><br>Những giây phút ghì chặt tay nhau.<br>Những câu nói thì thầm bên tai bấy lâu.<br>Mùi hương thân quen còn in trên vạt áo.<br><br>Em sẽ nói anh nghe anh nghe về đại dương xanh.<br>Em sẽ hát anh nghe anh nghe bản tình ca em với anh.<br>Ta sẽ nắm tay nhau đi chung trên từng con phố quen.. Yeah ih yeah ha..<br><br>Lalalalala<br>You are MY EVERYTHING.<br>Ah ih ahh la lalala<br>You're enough 'n the best to me. x 2<br>----<br><br>Em luôn ước mình được ôm lấy anh, mỗi sớm mai.<br>Trao anh những lời ngọt ngào thiết tha Oh my boy <br><br>Những tia nắng vàng sau cơn mưa.<br>Những con phố hằng ngày đi xa đón đưa.<br>Mùi hương thân quen còn in trên vạt áo.<br><br>Em sẽ nói anh nghe anh nghe về đại dương xanh.<br>Em sẽ hát anh nghe anh nghe bản tình ca em với anh.<br>Ta sẽ nắm tay nhau đi chung trên từng con phố quen.. Yeah ih yeah ha..<br><br>Lalalalala<br>You are MY EVERYTHING.<br>Ah ih ahh la lalala<br>You're enough 'n the best to me.<br>----<br>Brige:<br>Sometimes you make me cry, but I dont wanna say goodbye.<br><br>Lalalalala<br>You are MY EVERYTHING.<br>Ah ih ahh la lalala<br>You're enough 'n the best to me.<br>"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn43',
+ detail:'detailbaihat.html?id=vn43',
+ "tenbaihat" : "Say You Do",
+ "trinhbay" : "Tiên Tiên",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNC8yNS8xLzYvMTY3ZmM1ZDYyNzE2NmU3NTVlNzQ1ZTlmNTk0MWY0MGUubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/d/6/d6176f228340eab19b53eabbbcd198d6_1427256000.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/e/0/e073a906079d0c190cda3a14e956a83b_1445618229.jpg',
+ "verse":"<br><br>Ta gặp nhau 1 chiều thu tháng 10, vì nụ cười ấy cho em nhớ mong từng ngày.<br>Đêm về nghe lòng thương anh mất rồi, ngại vì mình con gái.. phải làm sao?! Trời ơi.. Trời ơii !!!<br><br>Chorus:<br>Lỡ buông lời yêu anh, sợ anh xa lánh. Biết sao giờ vì chỉ thấy nắng trong tim mình.<br>SAY YOU DO, SAY YOU DO !!!<br><br>Lỡ mai mình yêu nhau, đừng cho em ngóng những trưa hẹn dù trời nắng hay mwa trên đầu.<br>SAY YOU DO, SAY YOU DO !!!<br><br>Brige:<br>Em nằm mơ nói tiếng yêu anh.<br>Vì mai là thức giấc sẽ không dám cho anh 1 ngàn tiếng ca.<br>Em yêu anh, em yêu anh, yeah yeah yeahhhhh"
+});
+//------------
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn52',
+ detail:'detailbaihat.html?id=vn52',
+ "tenbaihat" : "Những Ngôi Nhà Nhỏ Trên Thảo Nguyên",
+ "trinhbay" : "Trung Quân Idol",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxMS8wNy8yNS84LzQvODRmNzU1NDVlYjI2ZGEwNDQ3Y2MzMjQ3YWU5Y2JlZGUubXAzfDI=",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/7/f/7ff95c29926fec4e3a5b0f388ca3bab4_1437809309.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/e/0/e073a906079d0c190cda3a14e956a83b_1445618229.jpg',
+ "verse":"<br><br>Ver1:<br>Khi xưa ngây thơ dại khờ tôi hay chê bai mình ngu si.<br>Rằng không biết làm gì, không biết cần chi, không biết mình là ai..<br><br>Bao năm bon chen ngoài đời soi gương nhìn vẫn thế.<br>Đầu vẫn rối bù xù, thân bé ú nu, ú nu.. ú ù.<br>Chorus:<br>Cứ sai đi vì cuộc đời cho phép.<br>Cứ yêu đi dù rằng mình ngu si.<br>Ai lừa ai, ai hờn ai, ai giận ai, ai thù ai.. cho qua đi.<br>Cứ đam mê dù nhiều người cười chê.<br>Và cứ vui lên, vì ta không.. cô đơn.<br>Vì tôi còn sống.<br>Vì tôi còn hát lên.<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>Ver2:<br>Mai đây khi tôi dần dần quên đi mình là ai.<br>Nhờ ai đó gần bên, ai đó hát lên những bài ca tôi viết.<br><br>---<br>Bao năm bon chen ngoài đời soi gương nhìn vẫn thế.<br>Đầu vẫn rối bù xù, thân bé ú nu, ú nu.. ú ù.<br>Chorus:<br>Cứ sai đi vì cuộc đời cho phép.<br>Cứ yêu đi dù rằng mình ngu si.<br>Ai lừa ai, ai hờn ai, ai giận ai, ai thù ai.. cho qua đi.<br>Cứ đam mê dù nhiều người cười chê.<br>Và cứ vui lên, vì ta không.. cô đơn.<br>Vì tôi còn sống.<br>Vì tôi còn hát lên.<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>---<br>Ver2:<br>Mai đây khi tôi dần dần quên đi mình là ai.<br>Nhờ ai đó gần bên, ai đó hát lên những bài ca tôi viết.<br><br>Chorus:<br>Cứ sai đi vì cuộc đời cho phép.<br>Cứ yêu đi dù rằng mình ngu si.<br>Ai lừa ai, ai hờn ai, ai giận ai, ai thù ai.. cho qua đi.<br>Cứ đam mê dù nhiều người cười chê.<br>Và cứ vui lên, vì ta không.. cô đơn.<br>Vì tôi còn sống.<br>Vì tôi còn hát lên.<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>--<br>Vì tôi còn sống.<br>Vì tôi còn nhớ mình là ai..<br>Vì tôi còn viết lên bao điều trong lòng tôi.<br>VÌ TÔI CÒN SỐNG."
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn51',
+ detail:'detailbaihat.html?id=vn51',
+ "tenbaihat" : "Trái Đất Tròn Không Gì Là Không Thể",
+ "trinhbay" : "Trung Quân Idol",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8zMS81L2IvNWJmZDlhZjQ5NDMzNzkzOGRiNmYzNTkzYzQyOWYzOTYubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/7/f/7ff95c29926fec4e3a5b0f388ca3bab4_1437809309.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/e/0/e073a906079d0c190cda3a14e956a83b_1445618229.jpg',
+ "verse":"<br><br>Trái đất tròn không gì là không thế<br>Ngày bên em trời đất thật tròn, vùi đầu anh ngủ sâu trong vòng tay êm ái<br>Ngày yêu em trời đất thật dài, dù anh đi mãi nhưng chẳng thấy mệt nhoài<br>Ngày lê thê đời cứ vụng về, mà sao tim anh đang thèm yêu đến thế<br>Đời thênh thang mà cứ vội vàng, tìm đến giây phút em khiến ta ngỡ ngàng<br>Đời cứ như vòng tròn mình kiếm nhau mõi mòn<br>Chẳng biết đâu khi quay lưng ta đã chợt tìm thấy<br>Đừng bước đi vội vàng, đừng cách xa dễ dàng<br>Trái đất vẫn cứ xoay vòng không gì là<br><br>DK:<br><br>Không thể tìm lại, không thể gặp lại<br>Không thế có nhau dù ta chưa từng biết<br>Ngày vẫn cứ rộn ràng, người đến nhẹ nhàng<br>Vì tình yêu vẫn đang ở đây giữa thế gian<br>Dù phải xa cách một thời, hay cả một đời<br>Thì ta vẫn yêu chẳng cần gì hối tiếc<br>Tìm nhau giữa dòng người, chợt thấy nụ cười<br>Vì tình yêu vẫn đang ở đây khắp thế gian"
+});
+//----------------
+
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn61',
+ detail:'detailbaihat.html?id=vn61',
+ "tenbaihat" : "Love Me Like Your Facebook (Single)",
+ "trinhbay" : "Phạm Hồng Phước ft. CAM",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMS8wMy9jL2MvY2M5YTViMTI1MGFlOGI1MTQzYjUyZjQwNzAxNzIxMGMubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/e/a/ea9f5824a80c3c9e17270d421fbd4d59_1446521555.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/b/4/b42c66070c015e90ddd8837a63017620_1446519151.jpg',
+ "verse":"<br><br>20 likes, 2 shares, 30 ngày rồi đó<br>3 album không ai nghe, công lao cố ngồi mò<br>Nhưng mà tiếc là, đâu ai còn thiết tha, <br>Ngực ai vừa lướt qua, *woot*<br>mông bên dưới thập thò<br>like like like, khoan thai và chậm rãi<br>cặp mi nối thì vác lên, để mắt nâu môi trầm lại<br>qua rồi, thời thư giấy và bút, khá là xa xôi<br>đau đớn nhất đời người thời này là “mất nick insta rồi”<br>Cuộc đời này ngắn lắm<br>Khi yêu thương ai, thương thích cứ điên cuồng lên đi nào<br>Làm người yêu nhau không?!<br>Sao e cứ mãi suy nghĩ, lặng thinh bao điều<br><br>Thích ai thì cứ nói ra nhanh nào<br>Cớ sao lại cứ nhấn like hoài thôi<br>Nếu không thì cứ nhắn tin thật rằng<br>Hi darling, i hashtag you into my heart<br><br>Love you like my facebook<br>Love you like my facebook<br>Love me like your facebook<br>Love Love me like your facebook<br><br>hey, online mãi không thấy phiền sao?<br>Vòng ba như biệt thự, còn hộ khẩu, cứ điền vào<br>Nói đừng có buồn, dối đừng có chuồn<br>Nhìn facebook nhiều hơn mặt anh, ngay cả lúc này luôn<br>chuyện ai em đều biết trước<br>anh tăm tia cô nàng nào, 5 giây sau, là lên đường<br>thông thường á, đầy thằng khờ viết lên trên tường là<br>“Mỹ Linh à anh yêu em”, người Việt mà họ Tưởng à?<br>Lướt lướt lướt lướt, tin nhắn nằm đầy ra<br>Làm người yêu của em anh chỉ lấn cấn một điều là<br>Cell phone trong LV, wifi không lệ phí<br>Dừng xe, đứng giữa phố em selfie"
+});
+//-------------
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn71',
+ detail:'detailbaihat.html?id=vn71',
+ "tenbaihat" : "Tim Em Thắt Lại ",
+ "trinhbay" : "Wendy Thảo",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yNy9kLzEvZDE3MTE3ZWM4ZGU0NDc0NDVkNWJiNjg5YTA2ZTI2MDUubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/c/1/c1f679d7897dd835d5eb04f940741cdc_1445929597.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/d/8/d83c527ee407c883be235f05a47ac377_1445930149.jpg',
+ "verse":"<br><br>20 likes, 2 shares, 30 ngày rồi đó<br>3 album không ai nghe, công lao cố ngồi mò<br>Nhưng mà tiếc là, đâu ai còn thiết tha, <br>Ngực ai vừa lướt qua, *woot*<br>mông bên dưới thập thò<br>like like like, khoan thai và chậm rãi<br>cặp mi nối thì vác lên, để mắt nâu môi trầm lại<br>qua rồi, thời thư giấy và bút, khá là xa xôi<br>đau đớn nhất đời người thời này là “mất nick insta rồi”<br>Cuộc đời này ngắn lắm<br>Khi yêu thương ai, thương thích cứ điên cuồng lên đi nào<br>Làm người yêu nhau không?!<br>Sao e cứ mãi suy nghĩ, lặng thinh bao điều<br><br>Thích ai thì cứ nói ra nhanh nào<br>Cớ sao lại cứ nhấn like hoài thôi<br>Nếu không thì cứ nhắn tin thật rằng<br>Hi darling, i hashtag you into my heart<br><br>Love you like my facebook<br>Love you like my facebook<br>Love me like your facebook<br>Love Love me like your facebook<br><br>hey, online mãi không thấy phiền sao?<br>Vòng ba như biệt thự, còn hộ khẩu, cứ điền vào<br>Nói đừng có buồn, dối đừng có chuồn<br>Nhìn facebook nhiều hơn mặt anh, ngay cả lúc này luôn<br>chuyện ai em đều biết trước<br>anh tăm tia cô nàng nào, 5 giây sau, là lên đường<br>thông thường á, đầy thằng khờ viết lên trên tường là<br>“Mỹ Linh à anh yêu em”, người Việt mà họ Tưởng à?<br>Lướt lướt lướt lướt, tin nhắn nằm đầy ra<br>Làm người yêu của em anh chỉ lấn cấn một điều là<br>Cell phone trong LV, wifi không lệ phí<br>Dừng xe, đứng giữa phố em selfie"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn82',
+ detail:'detailbaihat.html?id=vn81',
+ "tenbaihat" : "Another You",
+ "trinhbay" : "Armin van Buuren",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNC8yMS9mL2MvZmMzZTliMzM0MzBjMzdmMjE1ZmM0NGU5ZGZlZDNkODQubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/1/e/1e460a7f94eb26a2fd0f354abe1d0f49_1434950583.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/d/1/d170e3fda75ec7afe19b1e01df3fce8a_1446088534.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn91',
+ detail:'detailbaihat.html?id=vn91',
+ "tenbaihat" : "Con Gái Có Quyền Điệu",
+ "trinhbay" : "Hari Won",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yOC80LzkvNDk4YWMzZjU2NDUxM2Y1MWE1ZjNlNDMwNDk4YzllOTUubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/1/e/1ea49f00f05ad0fff61a7a2c9110a1c1_1434335852.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/4/8/48b2cc29c2eae6f25a08f2ae396f66cc_1446023811.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn92',
+ detail:'detailbaihat.html?id=vn92',
+ "tenbaihat" : "Lovely Active Sexy",
+ "trinhbay" : "Hari Won",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNi8xNS85LzgvOThlMThjZDk2OWYwYzNmM2VhMGU3YzYwYjM0NDBkMjgubXAzfDEz",
+ "hinhanh": "http://image.mp3.zdn.vn/cover3_artist/1/e/1ea49f00f05ad0fff61a7a2c9110a1c1_1434335852.jpg",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/4/8/48b2cc29c2eae6f25a08f2ae396f66cc_1446023811.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
 });

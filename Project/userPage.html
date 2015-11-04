@@ -202,7 +202,7 @@
     var playlistbefore=[];
 
     $(document).ready(function(){
-        if (localStorage["play-list-of-User"].length>=5) {
+        if (localStorage["play-list-of-User"].length>=5&&localStorage["play-list-of-User"]!=null) {
             playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
         }
         var btn = {
@@ -216,7 +216,7 @@
             vol	: 	$('.volume input')
         }
         var playlist = [];
-        if (localStorage["play-list-of-User"].length>=5) {
+        if (localStorage["play-list-of-User"].length>=5&&localStorage["play-list-of-User"]!=null) {
 
             //alert(playlist);
             playlist = JSON.parse(localStorage["play-list-of-User"].toString());
@@ -342,7 +342,8 @@
     });
 </script>
 <script>
-    var username=localStorage.getItem('username');
 
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
 </script>
 </html>

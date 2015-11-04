@@ -35,7 +35,7 @@
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-<div id="fb-root"></div>
+
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -314,7 +314,8 @@
 </script>
 
 <script>
-    var username=localStorage.getItem('username');
 
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
 </script>
 </html>

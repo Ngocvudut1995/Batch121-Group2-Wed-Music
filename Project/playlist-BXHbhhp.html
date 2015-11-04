@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <title>BXH Bài Hát Hàn Quốc</title>
+    <meta property="og:title"
+          content="BXH Bài Hát Hàn Quốc" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- Them Phan Audio-->
@@ -294,7 +296,7 @@
                 verse:verse
             };
             var exists = false;
-            if (playlistofUser.length > 0) {
+            if (playlistofUser.length > 0||playlistofUser!=null) {
                 $.each(playlistofUser, function (index, value) {
                     // Nếu mặt hàng đã tồn tại
                     var t=index;
@@ -330,7 +332,8 @@
     });
 </script>
 <script>
-    var username=localStorage.getItem('username');
 
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
 </script>
 </html>

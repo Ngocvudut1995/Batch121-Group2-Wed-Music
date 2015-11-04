@@ -53,19 +53,11 @@
     </nav>
 
 </div>
-<script>
-    $(document).ready(function(){
-        $('#login').show();
-        $('#user').hide();
-        if(username.length>2){
-            $('#login').hide();
-            $('#user').show();
-        }
-    });
-</script>
-<script>
-    var username=localStorage.getItem('username');
 
+<script>
+
+    if(localStorage['username']!=null)
+         var username=localStorage.getItem('username');
     $(document).ready(function(){
         $('#dangnhap').html('<p style="font-size: 18pt">'+username+'</p>');
         $('#signout').click(function(){
@@ -74,7 +66,7 @@
             localStorage["username"] = JSON.stringify(username);
 
 
-                window.location.href='index.html';
+            window.location.href='index.html';
 
 
 
@@ -83,4 +75,15 @@
     });
 
 </script>
+<script>
+    $(document).ready(function(){
+        $('#login').show();
+        $('#user').hide();
+        if(username!=null&&username.length>=4){
+            $('#login').hide();
+            $('#user').show();
+        }
+    });
+</script>
+
 

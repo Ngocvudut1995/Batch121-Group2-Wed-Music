@@ -64,6 +64,7 @@
         $("#mynav").load("templates/nav.html");
         $("#videoLQ").load("templates/video/videoLQ.html");
         $("#myfooter").load("templates/footer.html");
+       // localStorage.setItem("username",'t');
     });
     $("#button").click(function(){
         var u = $("#username").val();
@@ -88,8 +89,9 @@
     });
 </script>
 <script>
-    var username=localStorage.getItem('username');
 
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
 </script>
 </body>
 </html>

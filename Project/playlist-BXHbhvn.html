@@ -331,7 +331,8 @@
     });
 </script>
 <script>
-    var username=localStorage.getItem('username');
 
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
 </script>
 </html>

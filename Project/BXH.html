@@ -19,6 +19,10 @@
     <script src="js/sweetalert.min.js"></script>
     <script src="data/user.js"></script>
     <script src="data/bxhhanquoc.js"></script>
+    <script src="data/playlist.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+
     <link rel="stylesheet" href="social-button/social-buttons.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -83,7 +87,9 @@
 </div>
 <footer id="myfooter"></footer>
 <script >
-
+    var playlistofUser =[];
+    var playlistafter=[];
+    var playlistbefore=[];
     $(document).ready(function(){
         $("#myheader").load("templates/header.html");
         $("#mynav").load("templates/nav.html");
@@ -91,63 +97,134 @@
         $("#BXHvideo").load("templates/BXH/video.html");
         $("#myfooter").load("templates/footer.html");
     });
-    $(document).ready(function(){
-            loadProducts();
-        });
-
-        function loadProducts() {
-            var html = "";
-            var t=1;
-            // vòng lặp: duyệt qua từng phần tử trong mảng products
-            $.each (baihatvn, function(index, item) {
-                var s = "";
-
-                s+=' <li class="list-group-item ">';
-
-                s+='         <div class="col-md-7 col-xs-9" style="height: 90px;margin-left: 0px">';
-                s+='         <span class="sodb"style="margin-left: -5px;text-align: center;margin-right: 30px;position: absolute">'+t+'</span>';
-                s+='         <a style="float: left;position: absolute;margin-left: 20px;" href="'+item.url+'"><img src="'+ item.imgSrc+'"></a>';
-                s+='         <table style="float: left;margin-left: 130px;margin-top: 10px;position: absolute;">';
-                s+='                 <tr>';
-                s+='                      <td class="namesong"><a href="'+item.url+'">'+item.title+'</a></td>';
-                s+='                 <tr>';
-                s+='                      <td class="namesong"><a href="#">'+item.name+'</a></td>';
-                s+='                 <tr>';
-                s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
-                s+='         </tr>';
-                s+='        </table>';
-                s+='    </div>';
-                s+='    <div class="col-md-4 col-xs-3"style=" margin-top: 30px;float: right;">'
-                s+='            <a href="'+item.url+'" download=""><span class="glyphicon glyphicon-download-alt"style="float: right;margin-left: 20px"></span></a>'
-                s+='        <a href=""><span class="glyphicon glyphicon-heart"style="float: right"></span></a>'
-                s+='    </div>'
-                s+='</li>';
-
-
-                t++;
-                html += s;
-            });
-
-            // Bỏ chuỗi html vào bên trong thẻ divProducts
-            $("#BXH").html(html);
-    }
     $(document).ready(function() {
-
-        $("#BXH > li").bind('mouseenter', function () {
-            $(this).css('background-color','#C8C8C8');
-
-
-
-
-        }).bind('mouseleave', function () {
-            $(this).css('background-color','white');
-
-        });
+        if (localStorage["play-list-of-User"] != null) {
+            playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
+        }
+        loadProducts();
     });
+    function loadProducts() {
+        var html = "";
+        var t = 1;
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each(playlist, function (index, val) {
+            var s = "";
+            var d=0;
+            s += ' <li class="list-group-item ">';
+
+            s += '         <div class="col-md-7 col-xs-9" style="height: 90px;margin-left: 0px">';
+            s += '         <span class="sodb"style="margin-left: -5px;text-align: center;margin-right: 30px;position: absolute">' + t + '</span>';
+            s += '         <a style="float: left;position: absolute;margin-left: 20px;" href="' + val.url + '"><img src="' + val.hinhnen + '"></a>';
+            s += '         <table style="float: left;margin-left: 130px;margin-top: 10px;position: absolute;">';
+            s += '                 <tr>';
+            s += '                      <td class="namesong"><a href="' + val.detail + '">' + val.tenbaihat + '</a></td>';
+            s += '                 <tr>';
+            s += '                      <td class="namesong"><a href="#">' + val.trinhbay + '</a></td>';
+            s += '                 <tr>';
+            s += '                      <td><h6><span class="glyphicon glyphicon-headphones"></span>' + val.luotnghe + '</h6></td>';
+            s += '         </tr>';
+            s += '        </table>';
+            s += '    </div>';
+            s += '    <div class="col-md-4 col-xs-3"style=" margin-top: 30px;float: right;">'
+
+            s += '            <a href="' + val.url + '"><span class="glyphicon glyphicon-download-alt"style="float: right;margin-left: 20px"></span></a>'
+            $.each(playlistofUser, function (index2, item) {
+                if (val.id == item.id) {
+                    s += '        <a class="addmylist" id="' + val.id + '" href="#add" title="Bạn đã thích bài hát này" data-name="' + val.tenbaihat + '" data-src="' + val.hinhanh + '" data-singer="' + val.trinhbay + '" data-url="' + val.url + '" data-verse="' + val.verse + '" ><span class="glyphicon glyphicon-heart"style="float: right;margin-left: 20px;color: red;"></span></a>'
+                    d = 1;
+                    return false;
+                }
+
+            });
+            if (d == 0) {
+                s += '        <a class="addmylist" id="' + val.id + '" href="#add" title="Thêm vào playlist của bạn" data-name="' + val.tenbaihat + '" data-src="' + val.hinhanh + '" data-singer="' + val.trinhbay + '" data-url="' + val.url + '" data-verse="' + val.verse + '" ><span class="glyphicon glyphicon-heart"style="float: right;margin-left: 20px;color: #646464;"></span></a>'
+            }
+            s += '    </div>'
+            s += '</li>';
+
+
+            t++;
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#BXH").html(html);
+    }
+
+    $(document).ready(function () {
+
+            $("#BXH > li").bind('mouseenter', function () {
+                $(this).css('background-color', '#C8C8C8');
+
+
+            }).bind('mouseleave', function () {
+                $(this).css('background-color', 'white');
+
+            });
+        });
+
 </script>
 <script>
-    var username=localStorage.getItem('username');
+$(document).ready(function(){
 
+    $(".addmylist").click(function(){
+        var button=$(this);
+        var id=button.attr("id");
+        var namesong=button.attr("data-name");
+        var singer=button.attr('data-singer');
+        var url=button.attr('data-url');
+        var hinhanh=button.attr('data-src');
+        var verse=button.attr('data-verse');
+        var item={
+            id:id,
+            tenbaihat:namesong,
+            trinhbay:singer,
+            url:url,
+            hinhanh:hinhanh,
+            verse:verse
+        };
+        var exists = false;
+        if (playlistofUser.length > 0) {
+            $.each(playlistofUser, function (index, value) {
+                // Nếu mặt hàng đã tồn tại
+                var t=index;
+
+                //   var i=t;
+                if (value.id == item.id) {
+                    playlistbefore=playlistofUser.slice(0,t);
+                    playlistafter=playlistofUser.slice(t+1,playlistofUser.length);
+                    playlistofUser=playlistbefore.concat(playlistafter);
+
+
+
+
+                    swal("Thông báo","Bạn Đã Hủy Thêm Bài Hát Này.","success");
+
+                    exists = true;
+                    return false;
+                }
+            });
+            $(this).find('span').css('color','#646464');
+        }
+        if(exists==false){
+            playlistofUser.push(item);
+            swal("Thông báo", "Bạn Đã Thêm Thành Công", "success");
+
+            $(this).find('span').css('color','red');
+
+        }
+
+
+        localStorage["play-list-of-User"]=JSON.stringify(playlistofUser);
+    });
+});
+
+
+</script>
+<script>
+
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
 </script>
 </body>
 </html>

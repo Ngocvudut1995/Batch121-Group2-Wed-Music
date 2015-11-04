@@ -191,7 +191,7 @@ a:hover{
     width: 10px;
     height: 10px;
 
-    background-color: #000; }
+    background-color: rgb(0, 0, 0); }
 
 /* FIX
 ------------------------------------------------------*/
@@ -200,3 +200,6 @@ a:hover{
 
 .-ms- input[type="range"] {
     opacity: 0; }
+audio::-webkit-slider-thumb{
+    background-color: #138c20;
+}
