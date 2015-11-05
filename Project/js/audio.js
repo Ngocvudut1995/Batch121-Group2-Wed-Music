@@ -20,7 +20,7 @@ function create_playlist(list,ele,mylist) {
 
         });
         if(d==0){
-            s+='        <a class="addmylist" id="'+val.id+'" href="#add" title="Thêm vào playlist của bạn" data-name="'+val.tenbaihat+'" data-src="'+val.hinhanh+'" data-singer="'+val.trinhbay+'" data-url="'+val.url+'" data-verse="'+val.verse+'" ><span class="glyphicon glyphicon-heart"style="float: right;margin-left: 20px;color: #646464;"></span></a>'
+            s+='        <a class="addmylist" id="'+val.id+'" href="#add" title="Thêm vào playlist của bạn" data-name="'+val.tenbaihat+'" data-src="'+val.hinhanh+'" data-singer="'+val.trinhbay+'" data-url="'+val.url+'" data-verse="'+val.verse+'" ><span class="glyphicon glyphicon-heart"style="float: right;margin-left: 20px;color: #000000;"></span></a>'
         }
 
 

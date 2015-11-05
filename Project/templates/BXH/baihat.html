@@ -11,7 +11,7 @@
                     <ul class="nav nav-pills">
                         <li id="bxhvn" class="active"><a data-toggle="pill" href="#vn">Việt Nam</a></li>
                         <li id="bxhhq"><a data-toggle="pill" href="#hanquoc">Hàn Quốc</a></li>
-                        <li><a data-toggle="pill" href="#menu2">Âu Mỹ</a></li>
+                        <li id="bxhaumy"><a data-toggle="pill" href="#aumy">Âu Mỹ</a></li>
 
                     </ul>
                 </div>
@@ -32,7 +32,11 @@
                     <tbody  id="BXHbaihat-hanquoc" ></tbody>
                 </table>
             </div>
-
+             <div  class="tab-pane fade"id="aumy">
+                <table class="table table-hover " style="width: 380px;">
+                    <tbody  id="BXHbaihat-aumy" ></tbody>
+                </table>
+            </div>
         </div>
 
 </div>
@@ -159,6 +163,67 @@
         // Bỏ chuỗi html vào bên trong thẻ divProducts
         $("#BXHbaihat-hanquoc").html(html);
     }
+    $(document).ready(function(){
+        loadProducts2();
+    });
+
+    function loadProducts2() {
+        var html = "";
+        var t=1;
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each (bxhaumy, function(index, item) {
+            var s = "";
+            if(t==1){
+                s+='<tr>';
+
+                s+='<td>';
+
+                s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
+                s+='         <div style="width: 350px;height: 120px;margin-left: 30px">';
+
+                s+='         <a style="float: left" href="'+item.detail+'"><img class="img-bxh" src="'+ item.hinhnen+'"></a>';
+                s+='         <table style="float:left;margin-left: 20px; margin-top: 10px;">';
+                s+='                 <tr>';
+                s+='                      <td ><a title="'+item.tenbaihat+'" href="'+item.detail+'">'+item.tenbaihat+'</a></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td><a title="'+item.trinhbay+'" href="#">'+item.trinhbay+'</a></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
+                s+='                </tr>';
+
+                s+='        </table>';}
+            else {
+                s+='<tr>';
+                s+='<td>';
+
+                s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';
+                s+='         <div style="width: 350px;height: 10px;margin-left: 30px">';
+                s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
+                s+='                 <tr>';
+                s+='                      <td class="namesong" width="40%"><a title="'+item.tenbaihat+'"href="'+item.detail+'">'+item.tenbaihat+'</a></td>';
+                s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
+                s+='                 </tr>';
+                s+='                 <tr>';
+                s+='                      <td class="namesong"><a title="'+item.trinhbay+'"href="#">'+item.trinhbay+'</a></td>';
+
+
+                s+='                 </tr>';
+                s+='        </table>';
+            }
+            s+='</div>';
+
+            s+='</td>';
+            s+='</tr>';
+            if(t==11) return false;
+            t++;
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#BXHbaihat-aumy").html(html);
+    }
 </script>
 <script>
     $(document).ready(function(){
@@ -167,6 +232,8 @@
             $('#playBXH').attr('href','playlist-BXHbhhp.html');});
         $('#bxhvn').click(function(){
             $('#playBXH').attr('href','playlist-BXHbhvn.html');});
+        $('#bxhaumy').click(function(){
+            $('#playBXH').attr('href','playlist-BXHbhaumy.html');});
 
     });
 </script>

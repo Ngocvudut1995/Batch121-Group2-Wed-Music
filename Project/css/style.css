@@ -108,7 +108,7 @@ a:hover{
     line-height: 18px;
 }
 .namesong-bxh > a {
-    color: #646464;
+    color: #000000;
     font-size: 11pt;
     
 }
@@ -204,5 +204,29 @@ audio::-webkit-slider-thumb{
     background-color: #138c20;
 }
 a{
-    color:#2BB942;
+    color: #000000;
+    font-weight: 400;
+
+}
+a:hover{
+     color: #138c20;
+ }
+a:focus{
+    color: #138c20;
+}
+h1 a,h2 a,h3 a,h4 a{
+    color: #138c20;
+}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
+    color: #1fe934;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #138c20;
+}
+#show1{
+    text-align:justify;
+    padding-left: 70px;
 }
