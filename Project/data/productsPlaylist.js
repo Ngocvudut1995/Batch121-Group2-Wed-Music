@@ -35,13 +35,13 @@ caKhucHotIndex.push({Music:'What Do You Mean',name:'Justin Bieber',choise:'1.457
 
 caKhucHotIndex.push({Music:'On My Mind',name:'Ellie Goulding',choise:'289.609', url:'detailbaihat.html?id=au7'});
 caKhucHotIndex.push({Music:'Mad World',name:'Hardwell, Jake Reese',choise:'6.656', url:'detailbaihat.html?id=au8'});
-caKhucHotIndex.push({Music:'Tội Cho Cô Gái Đó',name:'Khắc Việt',choise:'2.918.788', url:'detailbaihat.html'});
-caKhucHotIndex.push({Music:'Dưới Những Cơn Mưa ',name:'Mr.Siro',choise:'860.660', url:'detailbaihat.html'});
-caKhucHotIndex.push({Music:'Cám Ơn Người Đã Rời Xa Tôi ',name:'Phạm Hồng Phước, Suni Hạ Linh',choise:'387.541', url:'detailbaihat.html'});
-caKhucHotIndex.push({Music:'Anh Vẫn Yêu Em Như Ngày Đầu Tiên ',name:'Cao Thái Sơn',choise:'1.887.553', url:'detailbaihat.html'});
-caKhucHotIndex.push({Music:'Để Lại Cho Em ',name:'Bảo Uyên',choise:'725.274', url:'detailbaihat.html'});
-caKhucHotIndex.push({Music:'Giá Như ',name:'Noo Phước Thịnh',choise:'2.601.312', url:'detailbaihat.html'});
-caKhucHotIndex.push({Music:'Bitch Better Have My Money',name:'Karmin',choise:'40.436', url:'detailbaihat.html'});
+caKhucHotIndex.push({Music:'Tội Cho Cô Gái Đó',name:'Khắc Việt',choise:'2.918.788', url:'detailbaihat.html?id=vn3'});
+caKhucHotIndex.push({Music:'Dưới Những Cơn Mưa ',name:'Mr.Siro',choise:'860.660', url:'detailbaihat.html?id=vn95'});
+caKhucHotIndex.push({Music:'Cám Ơn Người Đã Rời Xa Tôi ',name:'Phạm Hồng Phước, Suni Hạ Linh',choise:'387.541', url:'detailbaihat.html?id=vn96'});
+caKhucHotIndex.push({Music:'Anh Vẫn Yêu Em Như Ngày Đầu Tiên ',name:'Cao Thái Sơn',choise:'1.887.553', url:'detailbaihat.html?id=vn97'});
+caKhucHotIndex.push({Music:'Để Lại Cho Em ',name:'Bảo Uyên',choise:'725.274', url:'detailbaihat.html?id=vn98'});
+caKhucHotIndex.push({Music:'Giá Như ',name:'Noo Phước Thịnh',choise:'2.601.312', url:'detailbaihat.html?id=vn99'});
+caKhucHotIndex.push({Music:'Bitch Better Have My Money',name:'Karmin',choise:'40.436', url:'detailbaihat.html?id=au9'});
 
 caKhucHotIndex.push({Music:'Không Yêu Cũng Đừng Làm Bạn',name:'Khắc việt',choise:'99.205', url:'detailbaihat.html?id=vn93'});
 caKhucHotIndex.push({Music:'Đâu Ai Đợi Mình ',name:'Trịnh Thăng Bình',choise:'99.205', url:'detailbaihat.html?id=vn94'});

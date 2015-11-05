@@ -417,15 +417,45 @@ detailbaihat.push( { theloai:'Nhạc VN',
      "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
 });
 detailbaihat.push( { theloai:'Nhạc VN',
- id:'vn94',
- "tenbaihat" : "Đâu Ai Đợi Mình",
- "trinhbay" : "Trịnh Thăng Bình",
- "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xNy9jLzYvYzYwMmE4ZTNhMDdlNGIwZWNjZDRhODA0NTk4MzVhYWUubXAzfDEz",
- hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/0/c/0c2b0067691ef5521afcebe2887028dc_1441878764.jpg',
+ id:'vn95',
+ "tenbaihat" : "Dưới Những Cơn Mưa",
+ "trinhbay" : "Mr.Siro",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOS8zMC9jLzAvYzA3YmJiMmI2OTgyNTY2ODI1MDZkYjE5ODliOGViNzQubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/9/0/90c61a8453cba8a9f8c2ca0c137fbade_1444583321.jpg',
  "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
 });
-
-
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn96',
+ "tenbaihat" : "Cám Ơn Người Đã Rời Xa Tôi ",
+ "trinhbay" : "Phạm Hồng Phước, Suni Hạ Linh",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xMi85L2YvOWY5MDk5M2VlOTYzZWNhNmM0MjA1MmZhMGZlNWIyY2UubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/d/c/dcf0c0937f717a28c4673c5aa4c6eb23_1444632063.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn97',
+ "tenbaihat" : "Anh Vẫn Yêu Em Như Ngày Đầu Tiên ",
+ "trinhbay" : "Cao Thái Sơn",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOS8xOC80LzEvNDFmMTRhNjNhZmZmMzlkZTMyYTMwMGMwYWVmYTJlMzcubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/1/a/1ad9fce12689c85e5a6bae2a6a9acdd0_1446619594.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn98',
+ "tenbaihat" : "Để Lại Cho Em ",
+ "trinhbay" : "Bảo Uyên",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOS8zMC85L2QvOWRlMzVkYTI2ODU4YjQ3NzAzYzdmZTQ0NzUwMTdlMWYubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/0/c/0c2b0067691ef5521afcebe2887028dc_1443589843.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn99',
+ "tenbaihat" : "Giá Như",
+ "trinhbay" : "Noo Phước Thịnh",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOC8wNi9hL2IvYWI3MWVjNjI4MDNmMWE0NDc3MzBlYjA5ZmQ0ZGQ2MzcubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/5/a/5af9979043d263e4a8f179a02752aff4_1433153302.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
 
 
 
@@ -492,5 +522,13 @@ detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
  "trinhbay" : "Hardwell, Jake Reese",
  "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xMy82L2UvNmUzZTNjOWM4NGY1ODVlMTJmZDU3M2MwZmM0OTljNGUubXAzfDEz",
  hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/5/8/58be903ecef8bc1017f3edd9e4569b83_1436178699.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+ id:'au9',
+ "tenbaihat" : "Bitch Better Have My Money",
+ "trinhbay" : "Karmin",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wNy8yMi83LzMvNzNlYjY3OWU1YmU3NTQ3YTFhYzA2ZjRmNzEyMjM2OTkubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/1/a/1ac811c77e7eec6d5862f4760954b1b5_1326250069.jpg',
  "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
 });
