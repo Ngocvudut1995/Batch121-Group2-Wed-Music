@@ -399,3 +399,98 @@ detailbaihat.push( { theloai:'Nhạc VN',
  hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/covers/4/8/48b2cc29c2eae6f25a08f2ae396f66cc_1446023811.jpg',
  "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
 });
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn93',
+ "tenbaihat" : "Không Yêu Cũng Đừng Làm Bạn",
+ "trinhbay" : "khắc Việt",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yMC9hL2MvYWM5NjY1ZWZmZWI0ZWIyNzA1NTI5ZTgyOTg5NWJmYzQubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/6/2/623344181b13ed1ebfdd8e5a7bf13d93_1434945994.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
+
+detailbaihat.push( { theloai:'Nhạc VN',
+     id:'vn94',
+     "tenbaihat" : "Đâu Ai Đợi Mình",
+     "trinhbay" : "Trịnh Thăng Bình",
+     "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xNy9jLzYvYzYwMmE4ZTNhMDdlNGIwZWNjZDRhODA0NTk4MzVhYWUubXAzfDEz",
+     hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/0/c/0c2b0067691ef5521afcebe2887028dc_1441878764.jpg',
+     "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
+detailbaihat.push( { theloai:'Nhạc VN',
+ id:'vn94',
+ "tenbaihat" : "Đâu Ai Đợi Mình",
+ "trinhbay" : "Trịnh Thăng Bình",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xNy9jLzYvYzYwMmE4ZTNhMDdlNGIwZWNjZDRhODA0NTk4MzVhYWUubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/0/c/0c2b0067691ef5521afcebe2887028dc_1441878764.jpg',
+ "verse":"<br><br>Cứ mỗi sáng thức giấc tôi soi gương chính mình<br>Thấy trong gương kia một bóng hình ôi quá xinh<br>I am a lovely girl!!<br>Khẽ tay vuốt cong đôi mi mơ mộng <br>Chút son tô thêm môi thắm hồng tươi xinh <br>Làn tóc ánh lên màu nắng lung linh<br><br>Phố quen ngày ngày đón chờ <br>Biết bao nhiêu con tim thẫn thờ, chân cứng đờ<br>I am a lovely Girl!<br>Trái tim vẫn im không nghe rung động<br>Dẫu kia nhiều chàng đẹp trai, này giả nai <br>Là con gái em đẹp kém chi ai<br><br>Hát vang tiếng lòng giữa khung trời mơ mộng<br>Q Q Q .... Là con gái luôn được yêu<br>Sắc hồng xinh ngời thắm trên môi mỉm cười<br>Q Q Q ... Là con gái có quyền điệu<br>Chu Ru Du Ru - Kyo To Na Ko<br>Q Q Q .... Là con gái luôn được yêu<br>Chu Ru Du Ru - Kyo To Na Ko <br>Q Q Q ... Là con gái có quyền điệu"
+});
+
+
+
+
+
+
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+ id:'au1',
+ "tenbaihat" : "Perfect",
+ "trinhbay" : "One Direction",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8yNi9iLzgvYjg4OGVhNzBkNjU1NzQ2NjU0ZTY0Y2M2MDg3YjM0ZWUubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/9/6/968012d6d0c8961f0bf2e6052449baad_1445502452.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Âu Mỹ',
+ id:'au2',
+ "tenbaihat" : "Strong",
+ "trinhbay" : "Justin Bieber, Selena Gomez",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxMy8xMi8xMS82LzkvNjkzYmQ1ZDRlNTY2MDU3Zjc4Nzg5YzdiM2RmNmNkZTAubXAzfDI=",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/f/b/fbb663f9a0cb8fd91403e620f1597c91_1358153138.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+     id:'au3',
+     "tenbaihat" : "Wake Up",
+     "trinhbay" : "The Vamps",
+     "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8wNy8zLzEvMzFjMzMwYTliOWIzN2JhZWFlN2VlM2UyMDQ4MjRhNDIubXAzfDEz",
+     hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/9/6/968012d6d0c8961f0bf2e6052449baad_1445502452.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+ id:'au4',
+ "tenbaihat" : "Locked Away",
+ "trinhbay" : "Adam Levine, R.City",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOC8wNC85L2MvOWMwZjg2MDhhZTA5MzE3OTVkMWQ0MGYzMWRjNWFhYTYubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/f/b/fb18d4a54ebb06cf219df419f5d7ceff_1438689689.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+ id:'au5',
+ "tenbaihat" : "Confident",
+ "trinhbay" : "Demi Lovato",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xNi82L2YvNmYyZTM1OTYwOGY3Nzg0NTY2MmM1YWI2OGMwMDUwZTUubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/c/a/cae276faa573f2610a30a0dc51704850_1444977022.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+ id:'au6',
+ "tenbaihat" : "What Do You Mean",
+ "trinhbay" : "Justin Bieber",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOC8yOC9hLzcvYTc2ZTc1NjgyMzYyM2Q5M2FmMjI4NTM2MDA5YmVlZDEubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/d/5/d54a42b2f8ecc1ed29f7d1388ddc9bfe_1440761203.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+ id:'au7',
+ "tenbaihat" : "On My Mind",
+ "trinhbay" : "Ellie Goulding",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOS8yOS83LzUvNzVkZGY3NzA2Y2Q3NWVjYmI2ZjkxMDVhMDg0YzA0NjAubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/d/1/d121e70471630c754a95888a38e8d2b9_1442572824.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
+detailbaihat.push( { theloai:'Nhạc Âu Mỹ',
+ id:'au8',
+ "tenbaihat" : "Mad World",
+ "trinhbay" : "Hardwell, Jake Reese",
+ "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8xMC8xMy82L2UvNmUzZTNjOWM4NGY1ODVlMTJmZDU3M2MwZmM0OTljNGUubXAzfDEz",
+ hinhnen:'http://image.mp3.zdn.vn/thumb/165_165/avatars/5/8/58be903ecef8bc1017f3edd9e4569b83_1436178699.jpg',
+ "verse":"<br><br>I'm not saying I'm not sorry<br>Just looking for another you<br>It's not getting any better, better,<br>But what I can I do?<br>When there's something wrong,<br>When we keep holding on to the best days?<br>I'm not saying I'm not sorry<br>Just looking for another you!<br>Looking for another you!<br>Just looking for another you! another you!<br>Just looking for another you!<br><br>I don't know any other way to show<br>It's not getting any better<br>I think we both know there's something wrong,<br>But we keep holding on to the best days<br>I'm not saying I'm not sorry<br>Just looking for !<br>I'm just looking for another<br>I'm just looking for another you<br>I'm just looking for another<br>I'm just looking for another you.<br>Just for another you!"
+});
