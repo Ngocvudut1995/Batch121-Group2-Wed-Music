@@ -48,8 +48,9 @@ caKhucHotIndex.push({Music:'Đâu Ai Đợi Mình ',name:'Trịnh Thăng Bình',
 caKhucHotIndex.push({Music:'Vì Tôi Còn Sống',name:'Tiên Tiên',choise:'87.309', url:'detailbaihat.html?id=vn12'});
 
 var tintucIndex=[];
-tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Tố Ny gợi cảm trong sản phẩm đầu tay',content:'Học trò Mr. Đàm tại Giọng hát Việt 2015 ra mắt mini album "Simple" với hình ảnh gợi cảm.'});
-tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Hom nay troi dep'});
-tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Hom nay troi dep'});
-tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Hom nay troi dep'});
+tintucIndex.push({img:'http://img.v3.news.zdn.vn/w660/Uploaded/jobunwj/2015_11_06/taylorswifttellsfanshermomhascancer.jpg',title:'Mỹ nhân làng pop mạnh mẽ vượt qua bệnh tật',content:'Họ đã vượt qua bệnh tật và tích cực trong các hoạt động tuyên truyền nâng cao kiến thức, gây quỹ vì sức...'});
+tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Bạn gái cũ của Justin Bieber trong MV Baby mang bầu'});
+tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Bức Tường - câu chuyện về những kẻ truyền lửa đơn độc'});
+tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'Sao thần tượng Hàn bị tố nói xấu thầy cũ'});
+tintucIndex.push({img:'images/Tin Tuc/index/tony.jpg',title:'EXO hợp tác cùng đoàn phim Star Wars'});
 

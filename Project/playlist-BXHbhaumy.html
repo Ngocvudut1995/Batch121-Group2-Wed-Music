@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>BXH Bài Hát Âu Mỹ</title>
+    <link rel="Shortcut Icon" href="images/Logo/favicon%20(4).ico" type="image/x-icon" />
     <meta property="og:title"
           content="BXH Bài Hát Âu Mỹ" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -199,8 +200,8 @@
 <script>
 
     var playlistofUser =[];
-    var playlistafter=[];
-    var playlistbefore=[];
+  //  var playlistafter=[];
+   // var playlistbefore=[];
     $(document).ready(function(){
         if (localStorage["play-list-of-User"] != null) {
             playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
@@ -304,11 +305,12 @@
 
                     //   var i=t;
                     if (value.id == item.id) {
-                        playlistbefore=playlistofUser.slice(0,t);
-                        playlistafter=playlistofUser.slice(t+1,playlistofUser.length);
-                        playlistofUser=playlistbefore.concat(playlistafter);
+                       // playlistbefore=playlistofUser.slice(0,t);
+                      //  playlistafter=playlistofUser.slice(t+1,playlistofUser.length);
+                     //   playlistofUser=playlistbefore.concat(playlistafter);
 
-
+                        //ham splice xoa phan tu index +1, 1 phan tu sau pt index +1
+                        playlistofUser=playlistofUser.splice(index+1,1);
 
 
                         swal("Thông báo","Bạn Đã Hủy Thêm Bài Hát Này.","success");

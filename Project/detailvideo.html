@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Detail video</title>
+    <link rel="Shortcut Icon" href="images/Logo/favicon%20(4).ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- Latest compiled and minified CSS -->
@@ -24,6 +25,7 @@
     <script src="data/playlist.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
     <link rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
     <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 
@@ -53,7 +55,7 @@
         <div class="col-xs-12 col-md-10">
 
             <div class="btn-group col-xs-6" style="margin-top: 20px; margin-bottom: 20px;float: left">
-                <a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
+                <a><button type="button" class="btn btn-defaul" id="addUserlist"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
                 <a href="#" ><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
 
             </div>
@@ -181,6 +183,12 @@
         }).bind('mouseleave',function(){
             $(this).find('.mark').hide();
         });
+        $("#addUserlist").click(function(){
+
+            swal("Thông báo","Xin lỗi! Chức Năng Này Đang Trong Quá Trình Hoàn Thiện.","error");
+
+
+        });
     });
     </script>
     <script>
@@ -207,6 +215,7 @@
     });
 
 </script>
+
 <script>
 
     if(localStorage['username']!=null)
