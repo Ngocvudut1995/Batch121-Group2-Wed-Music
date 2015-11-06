@@ -261,56 +261,59 @@
         if (localStorage["play-list-of-User"] != null) {
             playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
         }
-        $(".addUserlist").click(function(){
-            var button=$(this);
-            var id=button.attr("id");
-            var namesong=button.attr("data-name");
-            var singer=button.attr('data-singer');
-            var url=button.attr('data-url');
-            var hinhanh=button.attr('data-src');
-            var verse=button.attr('data-verse');
-            var item={
-                id:id,
-                tenbaihat:namesong,
-                trinhbay:singer,
-                url:url,
-                hinhanh:hinhanh,
-                verse:verse
-            };
-            var exists = false;
-            if (playlistofUser.length > 0) {
-                $.each(playlistofUser, function (index, value) {
-                    // Nếu mặt hàng đã tồn tại
-                    var t=index;
+        $(".addmylist").click(function(){
+            if(localStorage["username"].length>=4&&localStorage["username"]!=null) {
+                var button = $(this);
+                var id = button.attr("id");
+                var namesong = button.attr("data-name");
+                var singer = button.attr('data-singer');
+                var url = button.attr('data-url');
+                var hinhanh = button.attr('data-src');
+                var verse = button.attr('data-verse');
+                var item = {
+                    id: id,
+                    tenbaihat: namesong,
+                    trinhbay: singer,
+                    url: url,
+                    hinhanh: hinhanh,
+                    verse: verse
+                };
+                var exists = false;
+                if (playlistofUser.length > 0) {
+                    $.each(playlistofUser, function (index, value) {
+                        // Nếu mặt hàng đã tồn tại
+                        var t = index;
 
-                 //   var i=t;
-                    if (value.id == item.id) {
-                        playlistbefore=playlistofUser.slice(0,t);
-                        playlistafter=playlistofUser.slice(t+1,playlistofUser.length);
-                        playlistofUser=playlistbefore.concat(playlistafter);
-                   //  while(playlistofUser[i]!=null){
-                     //       i++;
-                      //       playlistofUser[i-1]=playlistofUser[i];
+                        //   var i=t;
+                        if (value.id == item.id) {
+                            // playlistbefore=playlistofUser.slice(0,t);
+                            //     playlistafter=playlistofUser.slice(t+1,playlistofUser.length);
+                            //      playlistofUser=playlistbefore.concat(playlistafter);
+
+                            //ham splice xoa phan tu index +1, 1 phan tu sau pt index +1
+                            playlistofUser = playlistofUser.splice(index + 1, 1);
 
 
+                            swal("Thông báo", "Bạn Đã Hủy Thêm Bài Hát Này.", "success");
 
-                       // localStorage["play-list-of-User"] = JSON.stringify(playlistofUser);
-                       // playlistofUser=[];
-                     //   $.each(playlistofUser, function(t,value){
-                        //    playlistofUser[t]=playlistofUser[t+1];
-                     //   });
-                        swal("Thông báo","Bạn Đã Hủy Thêm Bài Hát Này.","success");
-                        exists = true;
-                        return false;
-                    }
-                });
+                            exists = true;
+                            return false;
+                        }
+                    });
+                    $(this).find('span').css('color', '#646464');
+                }
+                if (exists == false) {
+                    playlistofUser.push(item);
+                    swal("Thông báo", "Bạn Đã Thêm Thành Công", "success");
+
+                    $(this).find('span').css('color', 'red');
+
+                }
+
+
+                localStorage["play-list-of-User"] = JSON.stringify(playlistofUser);
             }
-            if(exists==false){
-                playlistofUser.push(item);
-                swal("Thông báo", "Bạn Đã Thêm Thành Công", "success");
-            }
-
-            localStorage["play-list-of-User"]=JSON.stringify(playlistofUser);
+            else  swal("Thông báo", "Bạn Phải Đăng Nhập Mới Sử Dụng Chức Năng Này", "error");
         });
     });
 </script>

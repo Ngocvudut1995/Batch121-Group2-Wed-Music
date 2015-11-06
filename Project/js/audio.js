@@ -10,7 +10,7 @@ function create_playlist(list,ele,mylist) {
         s += '<li class="list-group-item"style="height:48px" data-idx="' + index + '">'
         s += '    <div class="col-md-7 col-xs-7 " style="margin-left: 0px;position: absolute"> <p class="namesong-bxh"style="width: 100%;height: 100%"><span>' + t + '</span>.   <a class="playsong"href="#"style="height: 100%;color: black">'+ val.tenbaihat+'</a> - <a href="#">'+val.trinhbay+'</a></p></div>';
         s+='        <div class="col-md-4 col-xs-5 namesong-bxh"style="float: right;">'
-        s+='            <a href="'+val.url+'"><span class="glyphicon glyphicon-download-alt"style="float: right;margin-left: 20px"></span></a>'
+        s+='            <a href="'+val.url+'"download><span class="glyphicon glyphicon-download-alt"style="float: right;margin-left: 20px"></span></a>'
         $.each(mylist,function(index2,item){
             if(val.id==item.id){
                 s+='        <a class="addmylist" id="'+val.id+'" href="#add" title="Bạn đã thích bài hát này" data-name="'+val.tenbaihat+'" data-src="'+val.hinhanh+'" data-singer="'+val.trinhbay+'" data-url="'+val.url+'" data-verse="'+val.verse+'" ><span class="glyphicon glyphicon-heart"style="float: right;margin-left: 20px;color: red;"></span></a>'

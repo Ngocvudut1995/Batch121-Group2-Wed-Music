@@ -7,7 +7,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"style="padding: 0px;margin-right: 20px"><img style="width: 148px;height: 100%" src="images/Logo/logo3.png"></a>
+            <a class="navbar-brand" href="index.html"style="padding: 0px;margin-right: 20px"><img style="width: 148px;height: 100%" src="images/Logo/logo3.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -17,7 +17,7 @@
             </ul>
 
             <ul id="login"class="nav navbar-nav navbar-right">
-                <li><a href="dangnhap.html"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
+                <li class="nho"><a href="javascript:"><span class="glyphicon glyphicon-log-in"></span> Đăng Nhập</a></li>
                 <li><a href="dangki.html"><span class="glyphicon glyphicon-user"></span> Đăng Kí</a></li>
 
             </ul>
@@ -52,7 +52,41 @@
 
     </nav>
 
+
+
+    </div>
+<div class="khungdn"style="width: 100%">
+    <div class="col-lg-4"></div>
+    <div class="dangnhap col-lg-4 col-xs-12">
+
+
+        <div class="col-md-12"style="margin: auto">
+            <h3>Đăng Kí Tài Khoản</h3>
+            <form  class="form-horizontal" role="form">
+
+                <div class="form-group">
+                    <label>User:</label>
+                    <input id="username"name="username" type="text" class="form-control" placeholder="Tên Đăng Nhập">
+                </div>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input id="password"type="password" class="form-control" id="pw" placeholder="Mật Khẩu"required>
+                </div>
+
+
+                <button id="button" type="submit" class="btn btn-success"style="margin-top: 5px;margin-left: 33%;">Đăng Nhập</button>
+                <button id="cancel"type="reset" class="btn btn-success" style="margin-top: 5px">Cancel</button>
+            </form>
+            <br><br>
+        </div>
+    </div>
 </div>
+<div class="den"style="background-color: rgba(53, 53, 53, 0.82); position: absolute; width: 100%; height:1000px">
+
+
+
+</div>
+
 
 <script>
 
@@ -65,13 +99,35 @@
             username='';
             localStorage["username"] = JSON.stringify(username);
 
+          //  var url1 =window.location;
 
-            window.location.href='index.html';
+            window.location.href= 'index.html';
 
 
 
 
         });
+    });
+    $("#button").click(function(){
+        var u = $("#username").val();
+
+        var p = $("#password").val();
+        // Gọi hàm login ở file users.js
+
+        var result = login(u, p);
+        if (result === true) {
+            swal("Thông báo", "Đăng nhập thành công", "success");
+            // LUU VAO SESSION / LOCAL STORAGE
+            // Session Storage
+            localStorage.setItem("username", u);
+            window.location.href = "index.html";
+        }
+        else {
+            swal("Thông báo", "Đăng nhập không thành công", "error");
+        }
+
+        // không làm gì nữa
+        return false;
     });
 
 </script>
@@ -83,6 +139,20 @@
             $('#login').hide();
             $('#user').show();
         }
+            $('.khungdn').hide();
+            $('.nho').click(function () {
+                $('.den').toggleClass('hienlen1');
+                $('.khungdn').show();
+            });
+        $('#cancel').click(function(){
+            $('.den').toggleClass('hienlen1');
+            $('.khungdn').hide();
+        });
+        $('.den').click(function () {
+            $('.den').toggleClass('hienlen1');
+            $('.khungdn').hide();
+        });
+
     });
 </script>
 

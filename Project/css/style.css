@@ -233,3 +233,41 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
 .mega-dropdown li{
     margin: 10px 0px;
 }
+.nho{
+    z-index: 16;
+}
+.den{
+    top: 0;
+    position: absolute;
+    -webkit-transition: all ease 0.4s;
+    z-index: 16;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+}
+.hienlen1{
+    opacity: 1;
+    visibility: visible;
+}
+.hienlen2{
+    opacity: 1;
+    visibility: visible;
+}
+.dangnhap{
+    position: relative;
+
+    -webkit-transition: all ease 0.4s;
+    z-index: 20;
+    height: 330px;
+
+
+    border: solid 3px green;
+    background-color: white;
+}
+.khungdn{
+    margin-top: 10%;
+    position: absolute;
+    -webkit-transition: all ease 0.4s;
+
+    z-index: 18;
+}
