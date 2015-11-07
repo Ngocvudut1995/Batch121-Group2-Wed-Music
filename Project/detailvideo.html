@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Detail video</title>
+    <title id="tieude">Detail video</title>
     <link rel="Shortcut Icon" href="images/Logo/favicon%20(4).ico" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -29,6 +29,7 @@
     <link href="http://vjs.zencdn.net/4.11/video-js.css" rel="stylesheet">
     <script src="http://vjs.zencdn.net/4.11/video.js"></script>
 
+
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <header id="myheader">
@@ -37,7 +38,7 @@
 <nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
 <div id="fb-root"></div>
 
-<div id="fb-root"></div>
+
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -48,9 +49,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10" style="margin-top: 30px">
-        <video id="MY_VIDEO_1" class="video-js vjs-default-skin" controls preload="auto" width="100%" height="420" poster="MY_VIDEO_POSTER.jpg" data-setup="{}" autoplay>
-
+        <video id="MY_VIDEO_1" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="100%" height="420" poster="MY_VIDEO_POSTER.jpg" data-setup='{}' autoplay>
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video
+            </p>
         </video>
+
+
         </div>
         <div class="col-xs-12 col-md-10">
 
@@ -194,7 +199,7 @@
     <script>
     $(document).ready(function(){
         var getid=getUrlVars()['id'];
-        var a='', b='', c='',d='',ten='';
+        var a='', b='', c='',d='',ten='',e='';
         $.each(detailvideo,function(index,item){
             if(item.id==getid){
                 a+='        <source src="'+item.url+'" type="video/mp4">'
@@ -202,6 +207,7 @@
                 c+='         <h3 style="text-align: left"><a href="#">'+item.tenbaihat+'<br></a> </h3> <h5><a href="#"style="text-align: left">'+item.trinhbay+'</a> </h5>'
                 d+=         item.verse;
                 ten+='      <a href="#" >MV của '+item.trinhbay+'</a>'
+                e+=item.tenbaihat+'-'+item.trinhbay;
             }
 
 
@@ -210,6 +216,7 @@
         $('#hinh').html(b);
         $('#tenMV').html(c);
         $('#show1').html(d);
+        $('#tieude').text(e);
         $('#MVof').html(ten);
 
     });
