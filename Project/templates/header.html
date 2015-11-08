@@ -101,7 +101,8 @@
 
           //  var url1 =window.location;
 
-            window.location.href= 'index.html';
+            $('#login').show();
+            $('#user').hide();
 
 
 
@@ -120,7 +121,12 @@
             // LUU VAO SESSION / LOCAL STORAGE
             // Session Storage
             localStorage.setItem("username", u);
-            window.location.href = "index.html";
+            username=localStorage.getItem('username');
+            $('#dangnhap').html('<p style="font-size: 18pt">'+username+'</p>');
+            $('.den').toggleClass('hienlen1');
+            $('.khungdn').hide();
+            $('#login').hide();
+            $('#user').show();
         }
         else {
             swal("Thông báo", "Đăng nhập không thành công", "error");
