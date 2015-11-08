@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Trang Chủ TVTusic</title>
+    <link rel="Shortcut Icon" href="images/Logo/favicon%20(4).ico" type="image/x-icon" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <script src="data/productsBXH.js"></script>
+    <script src="data/productsPlaylist.js"></script>
+    <script src="js/facebook.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+    <script src="data/user.js"></script>
+    <script src="data/bxhhanquoc.js"></script>
+    <script src="data/playlist.js"></script>
+    <script src="data/detail.js"></script>
+    <link rel="stylesheet" href="social-button/social-buttons.css">
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=434498566754391";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<header id="myheader">
+
+</header>
+<nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
+
+
+<hr/>
+<div class="container">
+    <h1>Kết Quả Tìm Kiếm</h1>
+    <div id="BXH"></div>
+</div>
+<footer id="myFooter" style="clear: both;">
+
+</footer>
+
+
+
+
+
+</body>
+<script>
+    var search =[];
+    $(document).ready(function() {
+        if (localStorage["search"] != null) {
+           search = JSON.parse(localStorage["search"]);
+        }
+        loadProducts();
+
+    });
+    function loadProducts() {
+        var html = "";
+        var t = 1;
+        // vòng lặp: duyệt qua từng phần tử trong mảng products
+        $.each(search, function (index, val) {
+            var s = "";
+            var d=0;
+            s += ' <li class="list-group-item ">';
+
+            s += '         <div class="col-md-7 col-xs-7" style="height: 90px;margin-left: 0px">';
+            s += '         <span class="sodb"style="margin-left: -5px;text-align: center;margin-right: 30px;position: absolute">' + t + '</span>';
+            s += '         <a style="float: left;position: absolute;margin-left: 20px;" href="' + val.url + '"><img src="' + val.hinhnen + '"></a>';
+            s += '         <table style="float: left;margin-left: 130px;margin-top: 10px;position: absolute;">';
+            s += '                 <tr>';
+            s += '                      <td class="namesong"><a title="'+val.tenbaihat+'"href="' + val.detail + '">' + val.tenbaihat + '</a></td>';
+            s += '                 <tr>';
+            s += '                      <td class="namesong"><a href="#">' + val.trinhbay + '</a></td>';
+            s += '                 <tr>';
+            s += '                      <td><h6><span class="glyphicon glyphicon-headphones"></span>' + val.luotnghe + '</h6></td>';
+            s += '         </tr>';
+            s += '        </table>';
+            s += '    </div>';
+            s += '    <div class="col-md-5 col-xs-5"style=" margin-top: 30px;float: right;">'
+
+            s += '            <a href="' + val.url + '" download><span class="glyphicon glyphicon-download-alt"style="float: right;margin-left: 20px"></span></a>'
+
+
+            s += '        <a class="addmylist" id="' + val.id + '" href="#add" title="Thêm vào playlist của bạn" data-name="' + val.tenbaihat + '" data-src="' + val.hinhanh + '" data-singer="' + val.trinhbay + '" data-url="' + val.url + '" data-verse="' + val.verse + '" ><span class="glyphicon glyphicon-heart"style="float: right;margin-left: 20px;color: #000000;"></span></a>'
+
+            s += '    </div>'
+            s += '</li>';
+
+
+            t++;
+            html += s;
+        });
+
+        // Bỏ chuỗi html vào bên trong thẻ divProducts
+        $("#BXH").html(html);
+    }
+    $(document).ready(function(){
+        $("#myheader").load("templates/header.html");
+        $("#mynav").load("templates/nav.html");
+
+        $("#BXHbaihat").load("templates/BXH/baihat.html");
+        $("#BXHvideo").load("templates/BXH/video.html");
+        $("#BXHalbum").load("templates/BXH/playlist.html");
+        $("#myFooter").load("templates/footer.html");
+    });
+
+</script>
+<script>
+
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
+</script>

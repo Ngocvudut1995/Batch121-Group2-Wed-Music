@@ -22,6 +22,7 @@
     <script src="data/user.js"></script>
     <script src="data/bxhhanquoc.js"></script>
     <script src="data/playlist.js"></script>
+    <script src="data/detail.js"></script>
     <link rel="stylesheet" href="social-button/social-buttons.css">
 
 </head>
@@ -232,10 +233,10 @@
             s+='<div class="col-md-5 col-xs-12 "style="height: 20px; margin: 20px">';
             s+='         <table class="table table-hover"style="float:left;margin-left: 20px; margin-top: -5px; width: 350px">';
             s+='                 <tr>';
-            s+='                      <td class="namesong"width="40%"><a href="'+item.url+'">'+item.Music+'</a><br>' ;
-            s+='                        <a href="#">'+item.name+'</a>'
+            s+='                      <td class="namesong"width="40%"><a title="'+item.tenbaihat+'" href="'+item.detail+'">'+item.tenbaihat+'</a><br>' ;
+            s+='                        <a href="#">'+item.trinhbay+'</a>'
             s+=                      '</td>';
-            s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.choise+'</h6></td>';
+            s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
             s+='                 </tr>';
 
             s+='        </table>';
@@ -259,7 +260,7 @@
                 s+='    <a href="#"><img style="width: 150px;height: 150px;float: left; margin-right: 30px" src="'+item.img+'"></a> '
                 s+='     <table style="">'
                 s+='        <tr>'
-                s+='            <td><a style="font-size: 14pt" href="#">'+item.title+'</a></td>'
+                s+='            <td><a href style="font-size: 14pt" href="#">'+item.title+'</a></td>'
                 s+='    </tr>'
                 s+='        <tr>'
                 s+='            <td style="font-size: 8pt">'+item.content+'</td>'

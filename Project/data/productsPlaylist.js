@@ -22,30 +22,30 @@ mvIndex.push({img:'images/Playlist/khacviet.jpg', title:'Không yêu cũng đừ
 
 
 var caKhucHotIndex=[];
-caKhucHotIndex.push({Music:'Không Yêu Cũng Đừng Làm Bạn',name:'Khắc việt',choise:'99.205', url:'detailbaihat.html?id=vn93'});
-caKhucHotIndex.push({Music:'Đâu Ai Đợi Mình ',name:'Trịnh Thăng Bình',choise:'99.205', url:'detailbaihat.html?id=vn94'});
-caKhucHotIndex.push({Music:'Vì Tôi Còn Sống',name:'Tiên Tiên',choise:'87.309', url:'detailbaihat.html?id=vn12'});
-caKhucHotIndex.push({Music:'Vợ Người Ta',name:'Phan Mạnh Quỳnh',choise:'5.301.424', url:'detailbaihat.html?id=vn2'});
-caKhucHotIndex.push({Music:'Perfect',name:'One Direction',choise:'42.320', url:'detailbaihat.html?id=au1'});
-caKhucHotIndex.push({Music:'Strong',name:'Justin Bieber, Selena Gomez',choise:'48.488', url:'detailbaihat.html?id=au2'});
-caKhucHotIndex.push({Music:'Wake Up ',name:'The Vamps',choise:'61.022', url:'detailbaihat.html?id=au3'});
-caKhucHotIndex.push({Music:'Locked Away',name:'Adam Levine, R.City',choise:'1.455.730', url:'detailbaihat.html?id=au4'});
-caKhucHotIndex.push({Music:'Confident',name:'Demi Lovato',choise:'156.845', url:'detailbaihat.html?id=au5'});
-caKhucHotIndex.push({Music:'What Do You Mean',name:'Justin Bieber',choise:'1.457.166', url:'detailbaihat.html?id=au6'});
+caKhucHotIndex.push({tenbaihat:'Không Yêu Cũng Đừng Làm Bạn',trinhbay:'Khắc việt',luotnghe:'99.205', detail:'detailbaihat.html?id=vn93'});
+caKhucHotIndex.push({tenbaihat:'Đâu Ai Đợi Mình ',trinhgbay:'Trịnh Thăng Bình',luotnghe:'99.205', detail:'detailbaihat.html?id=vn94'});
+caKhucHotIndex.push({tenbaihat:'Vì Tôi Còn Sống',trinhbay:'Tiên Tiên',luotnghe:'87.309', detail:'detailbaihat.html?id=vn12'});
+caKhucHotIndex.push({tenbaihat:'Vợ Người Ta',trinhbay:'Phan Mạnh Quỳnh',luotnghe:'5.301.424', detail:'detailbaihat.html?id=vn2'});
+caKhucHotIndex.push({tenbaihat:'Perfect',trinhbay:'One Direction',luotnghe:'42.320', detail:'detailbaihat.html?id=au1'});
+caKhucHotIndex.push({tenbaihat:'Strong',trinhbay:'Justin Bieber, Selena Gomez',luotnghe:'48.488', detail:'detailbaihat.html?id=au2'});
+caKhucHotIndex.push({tenbaihat:'Wake Up ',trinhbay:'The Vamps',luotnghe:'61.022', detail:'detailbaihat.html?id=au3'});
+caKhucHotIndex.push({tenbaihat:'Locked Away',trinhbay:'Adam Levine, R.City',luotnghe:'1.455.730', detail:'detailbaihat.html?id=au4'});
+caKhucHotIndex.push({tenbaihat:'Confident',trinhbay:'Demi Lovato',luotnghe:'156.845', detail:'detailbaihat.html?id=au5'});
+caKhucHotIndex.push({tenbaihat:'What Do You Mean',trinhbay:'Justin Bieber',luotnghe:'1.457.166', detail:'detailbaihat.html?id=au6'});
 
-caKhucHotIndex.push({Music:'On My Mind',name:'Ellie Goulding',choise:'289.609', url:'detailbaihat.html?id=au7'});
-caKhucHotIndex.push({Music:'Mad World',name:'Hardwell, Jake Reese',choise:'6.656', url:'detailbaihat.html?id=au8'});
-caKhucHotIndex.push({Music:'Tội Cho Cô Gái Đó',name:'Khắc Việt',choise:'2.918.788', url:'detailbaihat.html?id=vn3'});
-caKhucHotIndex.push({Music:'Dưới Những Cơn Mưa ',name:'Mr.Siro',choise:'860.660', url:'detailbaihat.html?id=vn95'});
-caKhucHotIndex.push({Music:'Cám Ơn Người Đã Rời Xa Tôi ',name:'Phạm Hồng Phước, Suni Hạ Linh',choise:'387.541', url:'detailbaihat.html?id=vn96'});
-caKhucHotIndex.push({Music:'Anh Vẫn Yêu Em Như Ngày Đầu Tiên ',name:'Cao Thái Sơn',choise:'1.887.553', url:'detailbaihat.html?id=vn97'});
-caKhucHotIndex.push({Music:'Để Lại Cho Em ',name:'Bảo Uyên',choise:'725.274', url:'detailbaihat.html?id=vn98'});
-caKhucHotIndex.push({Music:'Giá Như ',name:'Noo Phước Thịnh',choise:'2.601.312', url:'detailbaihat.html?id=vn99'});
-caKhucHotIndex.push({Music:'Bitch Better Have My Money',name:'Karmin',choise:'40.436', url:'detailbaihat.html?id=au9'});
+caKhucHotIndex.push({tenbaihat:'On My Mind',trinhbay:'Ellie Goulding',luotnghe:'289.609', detail:'detailbaihat.html?id=au7'});
+caKhucHotIndex.push({tenbaihat:'Mad World',trinhbay:'Hardwell, Jake Reese',luotnghe:'6.656', detail:'detailbaihat.html?id=au8'});
+caKhucHotIndex.push({tenbaihat:'Tội Cho Cô Gái Đó',trinhbay:'Khắc Việt',luotnghe:'2.918.788', detail:'detailbaihat.html?id=vn3'});
+caKhucHotIndex.push({tenbaihat:'Dưới Những Cơn Mưa ',trinhbay:'Mr.Siro',luotnghe:'860.660', detail:'detailbaihat.html?id=vn95'});
+caKhucHotIndex.push({tenbaihat:'Cám Ơn Người Đã Rời Xa Tôi ',trinhbay:'Phạm Hồng Phước, Suni Hạ Linh',luotnghe:'387.541', detail:'detailbaihat.html?id=vn96'});
+caKhucHotIndex.push({tenbaihat:'Anh Vẫn Yêu Em Như Ngày Đầu Tiên ',trinhbay:'Cao Thái Sơn',luotnghe:'1.887.553', detail:'detailbaihat.html?id=vn97'});
+caKhucHotIndex.push({tenbaihat:'Để Lại Cho Em ',trinhbay:'Bảo Uyên',luotnghe:'725.274', detail:'detailbaihat.html?id=vn98'});
+caKhucHotIndex.push({tenbaihat:'Giá Như ',trinhbay:'Noo Phước Thịnh',luotnghe:'2.601.312', detail:'detailbaihat.html?id=vn99'});
+caKhucHotIndex.push({tenbaihat:'Bitch Better Have My Money',trinhbay:'Karmin',luotnghe:'40.436', detail:'detailbaihat.html?id=au9'});
 
-caKhucHotIndex.push({Music:'Không Yêu Cũng Đừng Làm Bạn',name:'Khắc việt',choise:'99.205', url:'detailbaihat.html?id=vn93'});
-caKhucHotIndex.push({Music:'Đâu Ai Đợi Mình ',name:'Trịnh Thăng Bình',choise:'99.205', url:'detailbaihat.html?id=vn94'});
-caKhucHotIndex.push({Music:'Vì Tôi Còn Sống',name:'Tiên Tiên',choise:'87.309', url:'detailbaihat.html?id=vn12'});
+caKhucHotIndex.push({tenbaihat:'Không Yêu Cũng Đừng Làm Bạn',trinhbay:'Khắc việt',luotnghe:'99.205', detail:'detailbaihat.html?id=vn93'});
+caKhucHotIndex.push({tenbaihat:'Đâu Ai Đợi Mình ',trinhbay:'Trịnh Thăng Bình',luotnghe:'99.205', detail:'detailbaihat.html?id=vn94'});
+caKhucHotIndex.push({tenbaihat:'Vì Tôi Còn Sống',trinhbay:'Tiên Tiên',luotnghe:'87.309', detail:'detailbaihat.html?id=vn12'});
 
 var tintucIndex=[];
 tintucIndex.push({img:'http://img.v3.news.zdn.vn/w660/Uploaded/jobunwj/2015_11_06/taylorswifttellsfanshermomhascancer.jpg',title:'Mỹ nhân làng pop mạnh mẽ vượt qua bệnh tật',content:'Họ đã vượt qua bệnh tật và tích cực trong các hoạt động tuyên truyền nâng cao kiến thức, gây quỹ vì sức...'});
