@@ -192,7 +192,7 @@ detailvideo.push({
 });
 
 detailvideo.push({
-    'id': 'vn24',
+    'id': 'vn25',
     "tenbaihat": "Đưa Nhau Đi Trốn ",
     "trinhbay": "Đen , Linh Cáo",
     "url": "http://st02.freesocialmusic.com/mp4/2015/09/14/offical-mv-dua-nhau-di-tron-den-ft-linh-cao.mp4",

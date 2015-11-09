@@ -6,6 +6,7 @@ var user = []; // Khai bao 1 mang rong.
 
 user.push({username: 'VuDang',password: '12345'});
 user.push({username: 'LeTu',password: '12345'});
+user.push({username: 'admin',password: 'admin'});
 function login(u,p){
     var success=false;
     $.each(user,function(index,item){

@@ -39,15 +39,29 @@ videovn = []; // Khai bao 1 mang rong.
 
 
 videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Phan Mạnh Quỳnh', title: 'Vợ Người Ta',luotnghe:"567833",url:'detailvideo.html?id=vn17'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Ưng Đại Vệ,LiL Knight', title: 'Vẫn Mãi Trong Tim',luotnghe:"361833",url:'detailvideo.html?id=vn18'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Khắc Việt', title: 'Tội Cho Cô Gái Đó',luotnghe:"67833",url:'detailvideo.html?id=vn19'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Hồ Quang Hiếu', title: 'Chỉ Là Anh Đang Mơ',luotnghe:"57833",url:'detailvideo.html?id=vn20'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Tuấn Hưng', title: 'Anh Sẽ Không Đổi Thay',luotnghe:"45646",url:'detailvideo.html?id=vn21'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Ngô Kiến Huy', title: 'Đến Lúc Quên',luotnghe:"23897",url:'detailvideo.html?id=vn22'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Chi Dân', title: 'Làm Vợ Anh Nhé',luotnghe:"21456",url:'detailvideo.html?id=vn23'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Khắc Việt', title: 'Không yêu cũng đừng làm bạn',luotnghe:"19785",url:'detailvideo.html?id=vn2'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Tam Hổ Band', title: 'Hoa Vàng Trên Cỏ Xanh',luotnghe:"15883",url:'detailvideo.html?id=vn24'});
-videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Đen , Linh Cáo', title: 'Đưa Nhau Đi Trốn',luotnghe:"11233",url:'detailvideo.html?id=vn25'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/05/25/1432523641-1386152632474_500.jpg?w=226&mode=scale', name: 'Ưng Đại Vệ,LiL Knight', title: 'Vẫn Mãi Trong Tim',luotnghe:"361833",url:'detailvideo.html?id=vn18'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artists/2015/10/28/1446002221-khac-viet-1.jpg?w=226&mode=scale', name: 'Khắc Việt', title: 'Tội Cho Cô Gái Đó',luotnghe:"67833",url:'detailvideo.html?id=vn19'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/07/1428396796-_v5a5660_looi.jpg?w=226&mode=scale', name: 'Hồ Quang Hiếu', title: 'Chỉ Là Anh Đang Mơ',luotnghe:"57833",url:'detailvideo.html?id=vn20'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/16/1429156033-1-b9466.jpg?w=226&mode=scale', name: 'Tuấn Hưng', title: 'Anh Sẽ Không Đổi Thay',luotnghe:"45646",url:'detailvideo.html?id=vn21'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/16/1429168978-c.jpg?w=226&mode=scale', name: 'Ngô Kiến Huy', title: 'Đến Lúc Quên',luotnghe:"23897",url:'detailvideo.html?id=vn22'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2014/12/08/1418011237/14180112374_7065_200x265.jpg?w=226&mode=scale', name: 'Chi Dân', title: 'Làm Vợ Anh Nhé',luotnghe:"21456",url:'detailvideo.html?id=vn23'});
+videovn.push({imgSrc: 'http://v2.cdn.nhac.vn/kv0puCNE4oNNfn7YhOpK/1446168765/v1/videos/img/s2/0/0/30/31144.jpg', name: 'Khắc Việt', title: 'Không yêu cũng đừng làm bạn',luotnghe:"19785",url:'detailvideo.html?id=vn2'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/16/1429170451-url.jpg?w=226&mode=scale', name: 'Tam Hổ Band', title: 'Hoa Vàng Trên Cỏ Xanh',luotnghe:"15883",url:'detailvideo.html?id=vn24'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/09/15/1442302934-url.jpg?w=226&mode=scale', name: 'Đen , Linh Cáo', title: 'Đưa Nhau Đi Trốn',luotnghe:"11233",url:'detailvideo.html?id=vn25'});
+videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Phan Mạnh Quỳnh', title: 'Vợ Người Ta',luotnghe:"567833",url:'detailvideo.html?id=vn17'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/05/25/1432523641-1386152632474_500.jpg?w=226&mode=scale', name: 'Ưng Đại Vệ,LiL Knight', title: 'Vẫn Mãi Trong Tim',luotnghe:"361833",url:'detailvideo.html?id=vn18'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artists/2015/10/28/1446002221-khac-viet-1.jpg?w=226&mode=scale', name: 'Khắc Việt', title: 'Tội Cho Cô Gái Đó',luotnghe:"67833",url:'detailvideo.html?id=vn19'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/07/1428396796-_v5a5660_looi.jpg?w=226&mode=scale', name: 'Hồ Quang Hiếu', title: 'Chỉ Là Anh Đang Mơ',luotnghe:"57833",url:'detailvideo.html?id=vn20'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/16/1429156033-1-b9466.jpg?w=226&mode=scale', name: 'Tuấn Hưng', title: 'Anh Sẽ Không Đổi Thay',luotnghe:"45646",url:'detailvideo.html?id=vn21'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/16/1429168978-c.jpg?w=226&mode=scale', name: 'Ngô Kiến Huy', title: 'Đến Lúc Quên',luotnghe:"23897",url:'detailvideo.html?id=vn22'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2014/12/08/1418011237/14180112374_7065_200x265.jpg?w=226&mode=scale', name: 'Chi Dân', title: 'Làm Vợ Anh Nhé',luotnghe:"21456",url:'detailvideo.html?id=vn23'});
+videovn.push({imgSrc: 'images/BXH video/VN/Vonguoita.jpg', name: 'Phan Mạnh Quỳnh', title: 'Vợ Người Ta',luotnghe:"567833",url:'detailvideo.html?id=vn17'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/05/25/1432523641-1386152632474_500.jpg?w=226&mode=scale', name: 'Ưng Đại Vệ,LiL Knight', title: 'Vẫn Mãi Trong Tim',luotnghe:"361833",url:'detailvideo.html?id=vn18'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artists/2015/10/28/1446002221-khac-viet-1.jpg?w=226&mode=scale', name: 'Khắc Việt', title: 'Tội Cho Cô Gái Đó',luotnghe:"67833",url:'detailvideo.html?id=vn19'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/07/1428396796-_v5a5660_looi.jpg?w=226&mode=scale', name: 'Hồ Quang Hiếu', title: 'Chỉ Là Anh Đang Mơ',luotnghe:"57833",url:'detailvideo.html?id=vn20'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/16/1429156033-1-b9466.jpg?w=226&mode=scale', name: 'Tuấn Hưng', title: 'Anh Sẽ Không Đổi Thay',luotnghe:"45646",url:'detailvideo.html?id=vn21'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2015/04/16/1429168978-c.jpg?w=226&mode=scale', name: 'Ngô Kiến Huy', title: 'Đến Lúc Quên',luotnghe:"23897",url:'detailvideo.html?id=vn22'});
+videovn.push({imgSrc: 'http://st.cdn.nhacso.net/images/artist/2014/12/08/1418011237/14180112374_7065_200x265.jpg?w=226&mode=scale', name: 'Chi Dân', title: 'Làm Vợ Anh Nhé',luotnghe:"21456",url:'detailvideo.html?id=vn23'});
 
 var videohanquoc=[];
 videohanquoc.push({img:'images/BXH video/Han Quoc/bigbang.jpg',name:'Big Bang', title:'Let`s Not....',luotnghe:"567833",url:'detailvideo.html?id=vn1'});
@@ -63,6 +77,14 @@ videohanquoc.push({img:'images/BXH video/Han Quoc/bigbang.jpg',name:'Big Bang', 
 var albumvn=[];
 albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/8/7/87846ecbaadf25a0c93997563f049ab3_1446193639.jpg',name: 'Bảo Thy', title: 'Chỉ Đắng Cay Ở Lại',luotnghe:"567833",url:'playlist-chidangcayolai.html'});
 albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/e/0/e073a906079d0c190cda3a14e956a83b_1445618229.jpg',name: 'Tiên Tiên', title: 'Vì Tôi Còn Sống',luotnghe:"67833",url:'playlist-vitoiconsong.html'});
+albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/240_240/covers/5/f/5f163d6c48306a2f8776ce79c2e60bb2_1446313730.jpg',name: 'Trung Quân Idol', title: 'Trái Đất Tròn Không Gì Là Không Thể',luotnghe:"47833",url:'playlist-traidattron.htm'});
+albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/b/4/b42c66070c015e90ddd8837a63017620_1446519151.jpg',name: 'Phạm Hồng Phước ft. CAM', title: 'Love Me Like Your Facebook (Single)',luotnghe:"22833",url:'playlist-loveme.html'});
+albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/d/8/d83c527ee407c883be235f05a47ac377_1445930149.jpg',name: 'Wendy Thảo', title: 'Không Còn Nợ Nhau',luotnghe:"20033",url:'playlist-khongconnonhau.html'});
+albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/d/1/d170e3fda75ec7afe19b1e01df3fce8a_1446088534.jpg',name: 'Embrace', title: 'Armin van Buuren',luotnghe:"11833",url:'playlist-embrace.html'});
+albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/4/8/48b2cc29c2eae6f25a08f2ae396f66cc_1446023811.jpg',name: 'Hari Won', title: 'Con Gái Có Quyền Điệu ',luotnghe:"9833",url:'playlist-congaicoquyendieu.html'});
+albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/f/9/f9b6a78b4aa214cb7167ea818cf18aad_1446007945.jpg',name: 'Phương Linh', title: 'Giọt Buồn Để Lại (Single)',luotnghe:"7833",url:'playlist-vitoiconsong.html'});
+albumvn.push({imgSrc:'images/BXH album/VN/vonguoita.jpg',name: 'Phan Mạnh Quỳnh', title: 'Vợ Người Ta',luotnghe:"5633",url:"detailbaihat.html?id=vn2"});
+albumvn.push({imgSrc: 'images/Ca Si/trong-hieu.jpg', name: 'Trọng Hiếu', title: 'Con Đường Tôi',url:"detailbaihat.html?id=vn5",luotnghe:"5233"});
 albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/240_240/covers/5/f/5f163d6c48306a2f8776ce79c2e60bb2_1446313730.jpg',name: 'Trung Quân Idol', title: 'Trái Đất Tròn Không Gì Là Không Thể',luotnghe:"47833",url:'playlist-traidattron.htm'});
 albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/b/4/b42c66070c015e90ddd8837a63017620_1446519151.jpg',name: 'Phạm Hồng Phước ft. CAM', title: 'Love Me Like Your Facebook (Single)',luotnghe:"22833",url:'playlist-loveme.html'});
 albumvn.push({imgSrc:'http://image.mp3.zdn.vn/thumb/165_165/covers/d/8/d83c527ee407c883be235f05a47ac377_1445930149.jpg',name: 'Wendy Thảo', title: 'Không Còn Nợ Nhau',luotnghe:"20033",url:'playlist-khongconnonhau.html'});

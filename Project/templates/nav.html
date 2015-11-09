@@ -13,7 +13,13 @@
                 <ul class="dropdown-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="chude.html">Chủ Đề</a></li>
-                    <li><a href="BXH.html">BXH</a></li>
+                    <li><a>BXH</a>
+                        <ul class="dropdown" style="margin-left: 20px">
+                            <li><a href="BXH.html">Bài Hát</a></li>
+                            <li><a href="BXH-video.html">Video</a></li>
+                            <li><a href="BXH-album.html">Album</a></li>
+                        </ul>
+                    </li>
                     <li><a href="Nghesi.html">Nghệ Sĩ</a></li>
                     <li><a href="tintuc.html">Tin tức</a></li>
                 </ul>
@@ -193,9 +199,9 @@
                 <h4 style="margin-left: 15px">Việt Nam</h4>
                 <ul class="container-fluid">
 
-                    <li><a href="#">Bài Hát</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Album</a></li>
+                    <li><a href="playlist-BXHbhvn.html">Bài Hát</a></li>
+                    <li><a href="BXH-video.html">Video</a></li>
+                    <li><a href="BXH-album.html">Album</a></li>
 
                 </ul>
             </li>
@@ -203,9 +209,9 @@
                 <h4 style="margin-left: 15px">Hàn Quốc</h4>
                 <ul class="container-fluid">
 
-                    <li><a href="#">Bài Hát</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Album</a></li>
+                    <li><a href="playlist-BXHbhhp.html">Bài Hát</a></li>
+                    <li><a href="BXH-video.html">Video</a></li>
+                    <li><a href="BXH-album.html">Album</a></li>
 
                 </ul>
             </li>
@@ -213,9 +219,9 @@
                 <h4 style="margin-left: 15px">Âu Mỹ</h4>
                 <ul class="container-fluid">
 
-                    <li><a href="#">Bài Hát</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Album</a></li>
+                    <li><a href="playlist-BXHbhaumy.html">Bài Hát</a></li>
+                    <li><a href="BXH-video.html">Video</a></li>
+                    <li><a href="BXH-album.html">Album</a></li>
 
                 </ul>
             </li>
@@ -250,5 +256,24 @@
        $('ul.nav a').filter(function() {
             return this.href == url;
         }).parents().addClass('active');
+    });
+</script>
+<div id="btn-goto-top" style="-ms-border-radius: 30px;z-index:30 ; border-radius: 30px; position: fixed !important; right: 10px; bottom: 10px; display: none; cursor: pointer" class="scrollToTop btn btn-success btn-lg">
+    <span class="glyphicon glyphicon-arrow-up"></span>
+</div>
+
+<script>
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 200) {
+            $("#btn-goto-top").show(500);
+        }
+        else {
+            $("#btn-goto-top").hide(500);
+        }
+    });
+    //Click event to scroll to top
+    $('.scrollToTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
     });
 </script>

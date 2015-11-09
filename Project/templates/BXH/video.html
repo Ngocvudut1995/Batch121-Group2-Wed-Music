@@ -1,7 +1,7 @@
 <div>
     <h2>
         <a style="float: left;margin-left: 40px;"href="#">BXH Video</a>
-        <a href="#" style="margin-left: 20px"><span class="glyphicon glyphicon-play-circle"></span></a>
+        <a href="BXH-video.html" style="margin-left: 20px"><span class="glyphicon glyphicon-play-circle"></span></a>
     </h2>
     <table class="table table-hover " style="width: 350px;">
         <thead>
@@ -48,7 +48,7 @@
 
                 s+='<td>';
 
-                s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
+                s+='         <span style="color:red;margin-top: 45px" class="sodb">'+t+'</span>';
                 s+='         <div style="width: 300px;height: 120px;margin-left: 30px">';
 
                 s+='         <a style="float: left" href="'+item.url+'"><img class="img-bxh" src="'+ item.imgSrc+'"></a>';
@@ -60,7 +60,7 @@
                 s+='                      <td><a title="'+item.title+'"href="#">'+item.name+'</a></td>';
                 s+='                 </tr>';
                 s+='                 <tr>';
-                s+='                      <td><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
+                s+='                      <td><h6><span class="glyphicon glyphicon-eye-open"></span>'+item.luotnghe+'</h6></td>';
                 s+='                </tr>';
 
                 s+='        </table>';}
@@ -68,12 +68,19 @@
                 s+='<tr>';
                 s+='<td>';
 
-                s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';
+                if(t==2){
+                    s+='         <span style="margin-top: 8px;color: rgba(0, 128, 0, 0.73)" class="sodb">'+t+'</span>';
+                }
+
+                else if(t==3){
+                    s+='         <span style="margin-top: 8px;color:orange;" class="sodb">'+t+'</span>';
+                }
+                else {s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';}
                 s+='         <div style="width: 300px;height: 10px;margin-left: 30px">';
                 s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
                 s+='                 <tr>';
                 s+='                      <td class="namesong"width="40%"><a title="'+item.title+'" href="'+item.url+'">'+item.title+'</a></td>';
-                s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
+                s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-eye-open"></span>'+item.luotnghe+'</h6></td>';
                 s+='                 </tr>';
                 s+='                 <tr>';
                 s+='                      <td class="namesong"><a title="'+item.name+'"href="#">'+item.name+'</a></td>';

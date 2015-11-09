@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Trang Chủ TVTusic</title>
+    <link rel="Shortcut Icon" href="images/Logo/favicon%20(4).ico" type="image/x-icon" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery library -->
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <script src="data/productsBXH.js"></script>
+    <script src="data/productsPlaylist.js"></script>
+    <script src="js/facebook.js"></script>
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <script src="js/sweetalert.min.js"></script>
+    <script src="data/user.js"></script>
+    <script src="data/bxhhanquoc.js"></script>
+    <script src="data/playlist.js"></script>
+    <script src="data/detail.js"></script>
+    <link rel="stylesheet" href="social-button/social-buttons.css">
+
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=434498566754391";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<header id="myheader">
+
+</header>
+<nav id="mynav"data-spy="affix" data-offset-top="130"></nav>
+
+
+<hr/>
+<div class="container"style="">
+
+    <div class="col-lg-3 hidden-xs"></div>
+    <div class="col-xs-12 col-lg-6"style="text-align: inherit">
+        <h1>Giới Thiệu</h1>
+    <div>TVTusic là trang về các sản phẩm âm nhạc được xây dựng trên nền tảng mạng internet cho phép người dùng nghe nhạc, xem video clip, tải bài hát, video, tải các đoạn nhạc chờ thuộc bất cứ thể loại nào mà người dùng yêu thích. Ngoài ra, trang &nbsp;còn có các chức năng hỗ trợ người dùng đăng tải, chia sẻ các bài hát, video clip mà mình yêu thích lên trang mạng xã hội thông qua tài khoản cá nhân được người dùng đăng ký trên trang. Người dùng cũng có thể bình luận, thể hiện các quan điểm cá nhân trên các nội dung bài hát, video cụ thể.</div>
+    <div>Nội dung cung cấp trên TVTusic &nbsp;phải hoàn toàn là các sản phẩm âm nhạc bao gồm các bản thu âm và video clip của các bài hát, bản nhạc và các đoạn nhạc chờ (sau đây gọi chung là “bài hát”).TVTusic &nbsp;phân loại ra các chuyên mục nhỏ theo chủ đề rõ ràng để người dùng có thể dễ dàng tìm nghe, xem, tải về cũng như hỗ trợ người dùng đăng tải, chia sẻ các bài hát, video clip mà mình yêu thích lên các trang mạng xã hội.&nbsp;</div>
+    </div>
+</div>
+<footer id="myFooter" style="clear: both;">
+
+</footer>
+
+
+
+
+
+</body>
+<script>
+
+    $(document).ready(function(){
+        $("#myheader").load("templates/header.html");
+        $("#mynav").load("templates/nav.html");
+
+        $("#BXHbaihat").load("templates/BXH/baihat.html");
+        $("#BXHvideo").load("templates/BXH/video.html");
+        $("#BXHalbum").load("templates/BXH/playlist.html");
+        $("#myFooter").load("templates/footer.html");
+    });
+
+</script>
+<script>
+
+    if(localStorage['username']!=null)
+        var username=localStorage.getItem('username');
+</script>

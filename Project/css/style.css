@@ -27,6 +27,18 @@
     position: relative;
     left:5px;
     float: left;
+    color: #5d5d5d;
+    /*position: relative;*/
+    /*left: 5px;*/
+    /*float: left;*/
+    /*background-color: rgba(26, 124, 41, 0.88);*/
+    /*color: white;*/
+    /*height: 28px;*/
+    /*width: 26px;*/
+    /*border-radius: 58px;*/
+    /*padding: 10px;*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
 
 }
 #BXH img,#BXH-hanquoc  img, #BXH-aumy img{
@@ -74,7 +86,7 @@ a:hover{
 }
 .namesong{
     white-space: nowrap;
-    max-width: 172px;
+    max-width: 170px;
     overflow: hidden;
     text-overflow: ellipsis;
     box-sizing: border-box;
@@ -216,9 +228,11 @@ a:focus{
 }
 h1 a,h2 a,h3 a,h4 a{
     color: #138c20;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
     color: #1fe934;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
@@ -270,4 +284,7 @@ h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover{
     -webkit-transition: all ease 0.4s;
 
     z-index: 18;
+}
+*{
+    font-family: 'Roboto Condensed', sans-serif;
 }

@@ -56,7 +56,7 @@
 
             s+='<td>';
 
-            s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
+            s+='         <span style="color:red;margin-top: 45px;" class="sodb">'+t+'</span>';
             s+='         <div style="width: 300px;height: 120px;margin-left: 30px">';
 
             s+='         <a style="float: left" href="'+item.url+'"><img class="img-bxh" src="'+ item.imgSrc+'"></a>';
@@ -75,8 +75,15 @@
             else {
                 s+='<tr>';
                 s+='<td>';
+                if(t==2){
+                s+='         <span style="margin-top: 8px;color: rgba(0, 128, 0, 0.73)" class="sodb">'+t+'</span>';
+                 }
 
-                s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';
+                else if(t==3){
+                         s+='         <span style="margin-top: 8px;color:orange;" class="sodb">'+t+'</span>';
+                 }
+                else {s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';}
+
                 s+='         <div style="width: 300px;height: 10px;margin-left: 30px">';
                 s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
                 s+='                 <tr>';
@@ -117,7 +124,7 @@
 
                 s+='<td>';
 
-                s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
+                s+='         <span style="color:red;margin-top: 45px" class="sodb">'+t+'</span>';
                 s+='         <div style="width: 350px;height: 120px;margin-left: 30px">';
 
                 s+='         <a style="float: left" href="'+item.detail+'"><img class="img-bxh" src="'+ item.hinhnen+'"></a>';
@@ -137,7 +144,15 @@
                 s+='<tr>';
                 s+='<td>';
 
-                s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';
+                if(t==2){
+                    s+='         <span style="margin-top: 8px;color: rgba(0, 128, 0, 0.73)" class="sodb">'+t+'</span>';
+                }
+
+                else if(t==3){
+                    s+='         <span style="margin-top: 8px;color:orange;" class="sodb">'+t+'</span>';
+                }
+                else {s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';}
+
                 s+='         <div style="width: 350px;height: 10px;margin-left: 30px">';
                 s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
                 s+='                 <tr>';
@@ -178,7 +193,7 @@
 
                 s+='<td>';
 
-                s+='         <span style="margin-top: 45px" class="sodb">'+t+'</span>';
+                s+='         <span style="color:red;margin-top: 45px" class="sodb">'+t+'</span>';
                 s+='         <div style="width: 350px;height: 120px;margin-left: 30px">';
 
                 s+='         <a style="float: left" href="'+item.detail+'"><img class="img-bxh" src="'+ item.hinhnen+'"></a>';
@@ -198,7 +213,15 @@
                 s+='<tr>';
                 s+='<td>';
 
-                s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';
+                if(t==2){
+                    s+='         <span style="margin-top: 8px;color: rgba(0, 128, 0, 0.73)" class="sodb">'+t+'</span>';
+                }
+
+                else if(t==3){
+                    s+='         <span style="margin-top: 8px;color:orange;" class="sodb">'+t+'</span>';
+                }
+                else {s+='         <span style="margin-top: 8px;" class="sodb">'+t+'</span>';}
+
                 s+='         <div style="width: 350px;height: 10px;margin-left: 30px">';
                 s+='         <table style="float:left;margin-left: 20px; margin-top: -5px; width: 300px">';
                 s+='                 <tr>';

@@ -23,7 +23,7 @@
             </ul>
             <ul id="user"class="nav navbar-nav navbar-right">
                 <div class="dropdown ">
-                    <button class="btn btn-success dropdown-toggle namesong"type="button" data-toggle="dropdown"><p id="dangnhap" ></p>
+                    <button class="btn btn-success dropdown-toggle namesong"type="button" data-toggle="dropdown"style="height: 50px"><p id="dangnhap" ></p>
                         <span class="caret"></span></button>
                     <ul class="dropdown-menu">
 
@@ -110,6 +110,7 @@
         });
     });
     $("#button").click(function(){
+
         var u = $("#username").val();
 
         var p = $("#password").val();
@@ -179,6 +180,7 @@
         }
             $('.khungdn').hide();
             $('.nho').click(function () {
+                swal("Thông báo", "Tài Khoản Dùng Thủ:'admin'||'admin'", "success");
                 $('.den').toggleClass('hienlen1');
                 $('.khungdn').show();
             });
