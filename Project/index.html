@@ -195,7 +195,7 @@
             s+='    </div>'
             s+='    <div class="col-lg-12 col-xs-12">'
             s+='       <p class="namesong" style=" font-size:12pt;text-align: center"><a title="'+item.title+'-'+item.name+'" href="'+item.url+'">'+item.title+'</a></p>'
-            s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='        <p style=" margin-top:-10px;text-align: center"><a href="javascript:">'+item.name+'</a></p>'
             s+='    </div>'
             s+='</div>'
 
@@ -223,7 +223,7 @@
             s+='    </div>'
             s+='    <div class="col-lg-12 col-xs-12">'
             s+='       <p class="namesong"style=" font-size:12pt;text-align: center"><a title="'+item.title+'-'+item.name+'"href="'+item.url+'">'+item.title+'</a></p>'
-            s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='        <p style=" margin-top:-10px;text-align: center"><a href="javascript:">'+item.name+'</a></p>'
             s+='    </div>'
             s+='</div>'
 
@@ -246,7 +246,7 @@
             s+='         <table class="table table-hover"style="float:left;margin-left: 20px; margin-top: -5px; width: 350px">';
             s+='                 <tr>';
             s+='                      <td class="namesong"width="40%"><a title="'+item.tenbaihat+'" href="'+item.detail+'">'+item.tenbaihat+'</a><br>' ;
-            s+='                        <a href="#">'+item.trinhbay+'</a>'
+            s+='                        <a href="javascript:">'+item.trinhbay+'</a>'
             s+=                      '</td>';
             s+='                      <td  width="60%" style=" text-align:right;margin-left: 40px"><h6><span class="glyphicon glyphicon-headphones"></span>'+item.luotnghe+'</h6></td>';
             s+='                 </tr>';
@@ -269,10 +269,10 @@
         $.each (tintucIndex, function(index, item) {
             var s = "";
             if(t==1){
-                s+='    <a href="#"><img style="width: 150px;height: 150px;float: left; margin-right: 30px" src="'+item.img+'"></a> '
+                s+='    <a href="javascript:"><img style="width: 150px;height: 150px;float: left; margin-right: 30px" src="'+item.img+'"></a> '
                 s+='     <table style="">'
                 s+='        <tr>'
-                s+='            <td><a href style="font-size: 14pt" href="#">'+item.title+'</a></td>'
+                s+='            <td><a href style="font-size: 14pt" href="javascript:">'+item.title+'</a></td>'
                 s+='    </tr>'
                 s+='        <tr>'
                 s+='            <td style="font-size: 8pt">'+item.content+'</td>'
@@ -281,7 +281,7 @@
                 html1+=s;
             }
             else {
-                s+='<li  style="margin-bottom: 10px"><a href="#">'+item.title+'</a></li>'
+                s+='<li  style="margin-bottom: 10px"><a href="javascript:">'+item.title+'</a></li>'
                 html2+=s;
             }
 

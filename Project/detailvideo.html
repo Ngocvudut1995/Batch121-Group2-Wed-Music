@@ -61,7 +61,7 @@
 
             <div class="btn-group col-xs-12" style="margin-top: 20px; margin-bottom: 20px;float: left">
                 <a><button type="button" class="btn btn-defaul" id="addUserlist"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>
-                <a href="#" ><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
+                <a href="javascript:" ><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>
 
             </div>
             <div class="col-xs-6" style="float: right; width: 100px;margin-right: 100px; margin-top: 10px"
@@ -112,7 +112,9 @@
             </div>
         </div>
     </div>
-    <div class="fb-comments" data-href="http://localhost:63342/Project/index.html" data-numposts="5"></div>
+    <div id="comment">
+
+    </div>
 </div>
 <footer id="myfooter"></footer>
 <script>
@@ -132,7 +134,7 @@
             s+='    </div>'
             s+='    <div>'
             s+='       <p style=" font-size:12pt;text-align: center"><a href="'+item.url+'">'+item.title+'</a></p>'
-            s+='        <p style=" margin-top:-10px;text-align: center"><a href="#">'+item.name+'</a></p>'
+            s+='        <p style=" margin-top:-10px;text-align: center"><a href="javascript:">'+item.name+'</a></p>'
             s+='    </div>'
             s+='</div>'
 
@@ -199,15 +201,16 @@
     <script>
     $(document).ready(function(){
         var getid=getUrlVars()['id'];
-        var a='', b='', c='',d='',ten='',e='';
+        var a='', b='', c='',d='',ten='',e='',n='';
         $.each(detailvideo,function(index,item){
             if(item.id==getid){
                 a+='        <source src="'+item.url+'" type="video/mp4">'
                 b+='         <img src="'+item.hinhanh+'" style="width: 120px;height:120px">'
                 c+='         <h3 style="text-align: left"><a href="#">'+item.tenbaihat+'<br></a> </h3> <h5><a href="#"style="text-align: left">'+item.trinhbay+'</a> </h5>'
                 d+=         item.verse;
-                ten+='      <a href="#" >MV của '+item.trinhbay+'</a>'
+                ten+='      <a href="javascript:" >MV của '+item.trinhbay+'</a>'
                 e+=item.tenbaihat+'-'+item.trinhbay;
+                n+='<div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://batch121.aptech-vietnam.net/group2'+item.detail+'" data-numposts="5"></div>'
             }
 
 
@@ -218,6 +221,7 @@
         $('#show1').html(d);
         $('#tieude').text(e);
         $('#MVof').html(ten);
+        $('#comment').html(n);
 
     });
 

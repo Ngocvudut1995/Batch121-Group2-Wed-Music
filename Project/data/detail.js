@@ -180,7 +180,7 @@ detailbaihat.push( { theloai:'Nhạc Hàn Quốc',
  luotnghe:"567833",
  "trinhbay" : "Ikon",
  "url" : "http://mp3.zing.vn/xml/load-song/MjAxNS8wOS8xNS9iLzUvYjUwYzdiZGEwM2EzY2UxNWEzYmNkZWI5MDI3MGFjZjQubXAzfDEz",
- "hinhnen": "http://image.mp3.zdn.vn/cover3_artist/0/e/0e115d6fe0b3370267186b00a6ccc76f_1434946034.jpg",
+ "hinhnen": "http://avatar.nct.nixcdn.com/singer/avatar/2013/10211_Ikon_A.jpg",
  hinhanh:"http://image.mp3.zdn.vn/cover3_artist/f/f/ff48310dfe22c0702659253f9919a178_1442243697.png",
  "verse":"<br> <br>Achime nuneul tteumyeon jeil meonjeo saenggagina <br>Saenggagina ne eolguri saenggagina <br><br>Geoureul baraboni jeongmal jeongmal mossaenggyeossne <br>Mossaenggyeosseo neol gajgien mossaenggyeosseo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Daldalhan somsatangi ne mamcheoreom gureum gata <br>Gureum gata ne mamcheoreom gureum gata <br><br>Nae gaseum oenjjogeneun haru jongil nega isseo <br>Nega isseo jam jal ttaedo nega isseo wo <br><br>Kungkungkung daeneun gaseumi malhae <br>I soril deureobwa salmyeosi rarara <br>Meosjin eumak gata deo areumdawo <br>One two three four neomu manheungeol <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br><br>Naega kkok anajulge <br>Pyeongsaengeul da bachyeoseo <br>Neomaneul saranghalge wo <br><br>Kungkungkung daeneun gaseumi malhae <br>Jeo haneul ttangmankeum saranghae rarara <br>Ijen malhaebolge naega neol jikyeojulge <br>Eum eum eum pyeongsaeng neol saranghalge"
 });

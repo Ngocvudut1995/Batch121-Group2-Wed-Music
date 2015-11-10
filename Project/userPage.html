@@ -198,46 +198,55 @@
 
 
 
-    var playlistofUser =[];
-    var playlistafter=[];
-    var playlistbefore=[];
+
+
 
     $(document).ready(function(){
-        if (localStorage["play-list-of-User"].length>=5&&localStorage["play-list-of-User"]!=null) {
-            playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
-        }
-        var btn = {
-            play  : $('#play'),
-            pause  : $('#pause'),
-            prev : $('#prev'),
-            next  : $('#next'),
-            stop  : $('#stop'),
-            muteon  : $('#muteon'),
-            muteoff :$('#muteoff'),
-            vol	: 	$('.volume input')
-        }
-        var playlist = [];
-        if (localStorage["play-list-of-User"].length>=5&&localStorage["play-list-of-User"]!=null) {
-
-            //alert(playlist);
-            playlist = JSON.parse(localStorage["play-list-of-User"].toString());
-           // alert(playlist);
-        ul_playlist = $('.playlist');
-
-        create_playlist(playlist, ul_playlist,playlistofUser);
-
-        song 	= new Audio();
-        song.type= 'audio/mpeg';
-        song.volume = btn.vol.val()/100;
 
 
-        i = ul_playlist.find('.active').data('idx');
 
-        songPlayIndex(i,playlist,song);
+        if (localStorage["play-list-of-User"]!=null)
+            if(localStorage["play-list-of-User"].length>=4) {
+            var playlistofUser =[];
+            playlistofUser = JSON.parse(localStorage["play-list-of-User"].toString());
+            var btn = {
+                play  : $('#play'),
+                pause  : $('#pause'),
+                prev : $('#prev'),
+                next  : $('#next'),
+                stop  : $('#stop'),
+                muteon  : $('#muteon'),
+                muteoff :$('#muteoff'),
+                vol	: 	$('.volume input')
+            }
+             ul_playlist = $('.playlist');
 
-        control_player(song, btn, playlist, ul_playlist);
-            playlist='';
-            //alert(playlist);
+             create_playlist(playlistofUser, ul_playlist,playlistofUser);
+
+                song 	= new Audio();
+                song.type= 'audio/mpeg';
+             song.volume = btn.vol.val()/100;
+
+
+                i = ul_playlist.find('.active').data('idx');
+
+                songPlayIndex(i,playlistofUser,song);
+
+                 control_player(song, btn,playlistofUser, ul_playlist);
+                playlistofUser=[];
+
+
+                $("#PL li").bind('mouseenter', function () {
+                    $(this).css('background-color','#C8C8C8');
+
+
+
+
+                }).bind('mouseleave', function () {
+                    $(this).css('background-color','white');
+
+                });
+
         }
 
 
@@ -261,19 +270,7 @@
     });
 </script>
 <script>
-    $(document).ready(function() {
 
-        $("#PL li").bind('mouseenter', function () {
-            $(this).css('background-color','#C8C8C8');
-
-
-
-
-        }).bind('mouseleave', function () {
-            $(this).css('background-color','white');
-
-        });
-    });
     $(document).ready(function(){
         $("#myfooter").load("templates/footer.html");
         $("#myheader").load("templates/header.html");
@@ -287,7 +284,6 @@
 <script>
 
     $(document).ready(function(){
-        // Kiểm tra nếu đã có localStorage["shopping-cart-items"] hay chưa?
 
 
         $(".addmylist").click(function(){
@@ -346,9 +342,5 @@
         });
     });
 </script>
-<script>
 
-    if(localStorage['username']!=null)
-        var username=localStorage.getItem('username');
-</script>
 </html>

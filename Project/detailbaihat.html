@@ -145,6 +145,11 @@
                 <h1 style=""><a href="#" id="MVlp"></a></h1>
                 <div id="" class="row"style="margin-top: 20px; margin-left:10px">
                     <div id="" class="row"style="margin-top: 20px; margin-left: 10px">
+                        <div class="col-xs-3 "style="margin-left: -15px">
+                            <img class="img-thumbnail" style="width: ;height: 105px" src="http://avatar.nct.nixcdn.com/mv/2015/08/07/6/3/1/9/1438910856515_268.jpg">
+                            <h5>Âm Thầm Bên Em</h5>
+                            <h6>Sơn Tùng</h6>
+                        </div>
                         <div class="col-xs-3"style="margin-left: -15px">
                             <img  class="img-thumbnail"style="width: ; height: 105px;" src="http://avatar.nct.nixcdn.com/mv/2015/10/06/9/2/3/4/1444102477580_268.jpg">
                             <h5>Âm Thầm Bên Em</h5>
@@ -156,11 +161,7 @@
                             <h5>Âm Thầm Bên Em</h5>
                             <h6>Sơn Tùng</h6>
                         </div>
-                        <div class="col-xs-3 "style="margin-left: -15px">
-                            <img class="img-thumbnail" style="width: ;height: 105px" src="http://avatar.nct.nixcdn.com/mv/2015/08/07/6/3/1/9/1438910856515_268.jpg">
-                            <h5>Âm Thầm Bên Em</h5>
-                            <h6>Sơn Tùng</h6>
-                        </div>
+
                         <div class="col-xs-3 "style="margin-left: -15px">
                             <img class="img-thumbnail" style="width: ;height: 105px" src="http://avatar.nct.nixcdn.com/mv/2015/03/23/3/2/c/b/1427071179392_268.jpg">
                             <h5>Âm Thầm Bên Em</h5>
@@ -222,9 +223,14 @@
 </script>
 
 <script>
+
     $(document).ready(function(){
+        var playlistofUser =[];
+        if (localStorage["play-list-of-User"] != null) {
+            playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
+        }
         var getid=getUrlVars()['id'];
-        var a='', b='', c='',d='',e='',f='',g='',h='',m='',n='',o='';
+        var a='', b='', c='',d='',e='',f='',g='',h='',m='',n='',o='',test=0;
         $.each(detailbaihat,function(index,item){
             if(item.id==getid){
                 a+='<H3 style="padding-top: 10px;color: white">'+item.tenbaihat+' - '+item.trinhbay+'</H3><br>'
@@ -234,16 +240,24 @@
                 c+='<audio loop style="width:100%;background-color:black;"id ="a1" src="'+item.url+'" preload="none"controls></audio>';
                 d+='Bài hát: '+item.tenbaihat+' - '+item.trinhbay;
                 e+=item.verse;
-                f+='<a><button  id="'+item.id+'"type="button" class="btn btn-default addUserlist" data-name="'+item.tenbaihat+'"data-src="'+item.hinhanh+' "data-singer="'+item.trinhbay+'"data-url="'+item.url+'"data-verse="'+item.verse+'"><span class="glyphicon glyphicon-plus"></span>Thêm</button></a>'
+                $.each(playlistofUser,function(index2,val) {
+                    if (item.id == val.id) {
+                        f += '<a><button  id="' + item.id + '"type="button" class="btn btn-default addmylist" data-name="' + item.tenbaihat + '"data-src="' + item.hinhanh + ' "data-singer="' + item.trinhbay + '"data-url="' + item.url + '"data-verse="' + item.verse + '"><span style="color: red" class="glyphicon glyphicon-plus"></span>Thêm</button></a>';
+                        test=1;
+                        return false;
+                    }
+
+                });
+                if(test==0 ) f += '<a><button  id="' + item.id + '"type="button" class="btn btn-default addmylist" data-name="' + item.tenbaihat + '"data-src="' + item.hinhanh + ' "data-singer="' + item.trinhbay + '"data-url="' + item.url + '"data-verse="' + item.verse + '"><span style="color:black" class="glyphicon glyphicon-plus"></span>Thêm</button></a>'
                 f+='<a href="'+item.url+'" download="'+item.tenbaihat+'"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-save"></span>Tải Về</button></a>'
-                f+='<a href="#"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>'
+                f+='<a href="javascript:"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-headphones"></span>Nhạc Chờ</button></a>'
                 g+='Album '+item.trinhbay;
                 h+='MV '+item.trinhbay;
                 m+=item.tenbaihat+'-'+item.trinhbay;
                 n+='    <h1 style="">Bình Luận</h1>'
-                n+='<div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://batch121.aptech-vietnam.net/'+item.id+'" data-numposts="5"></div>'
+                n+='<div style="margin-left: 100px" class=" col-lg-8 col-xs-10 fb-comments" data-href="http://batch121.aptech-vietnam.net/group2'+item.detail+'" data-numposts="5"></div>'
                 o+=item.tenbaihat+' - '+item.trinhbay;
-                $('#og_img').attr('content',item.hinhanh);
+                $('#og_img').attr('content','http://avatar.nct.nixcdn.com/mv/2015/08/07/6/3/1/9/1438910856515_268.jpg');
                 $('#og_title').attr('content',o);
                 $('#og_url').attr('content',window.location);
                 $('.fb-like').attr('data-href',window.location);
@@ -273,7 +287,8 @@
             playlistofUser = JSON.parse(localStorage["play-list-of-User"]);
         }
         $(".addmylist").click(function(){
-            if(localStorage["username"].length>=4&&localStorage["username"]!=null) {
+            if(localStorage["username"]!=null){
+                if(localStorage["username"].length>=3){
                 var button = $(this);
                 var id = button.attr("id");
                 var namesong = button.attr("data-name");
@@ -311,7 +326,7 @@
                             return false;
                         }
                     });
-                    $(this).find('span').css('color', '#646464');
+                    $(this).find('span').css('color', 'black');
                 }
                 if (exists == false) {
                     playlistofUser.push(item);
@@ -323,7 +338,8 @@
 
 
                 localStorage["play-list-of-User"] = JSON.stringify(playlistofUser);
-            }
+                }
+                else  swal("Thông báo", "Bạn Phải Đăng Nhập Mới Sử Dụng Chức Năng Này", "error");}
             else  swal("Thông báo", "Bạn Phải Đăng Nhập Mới Sử Dụng Chức Năng Này", "error");
         });
     });
